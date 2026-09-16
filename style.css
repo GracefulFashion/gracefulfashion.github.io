@@ -198,6 +198,11 @@ nav a:hover {
     box-shadow: 0 8px 20px rgba(199, 91, 122, 0.2);
 }
 
+.product-link {
+    color: inherit;
+    text-decoration: none;
+}
+
 .product-image {
     width: 100%;
     height: 200px;
@@ -215,6 +220,51 @@ nav a:hover {
     color: #8b6b6b;
     padding: 0 1rem 1.5rem;
     font-size: 0.95rem;
+}
+
+.combo-collection {
+    text-align: center;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: var(--rose);
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+    margin-bottom: 2rem;
+}
+
+.home-button:hover {
+    background-color: var(--dark-rose);
+    transform: translateY(-2px);
+}
+
+.combo-card {
+    padding-bottom: 1rem;
+}
+
+.combo-image {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.combo-card h3 {
+    padding-bottom: 0.25rem;
+}
+
+.combo-card .price {
+    color: var(--dark-rose);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-bottom: 0;
 }
 
 /* CONTACT SECTION */
