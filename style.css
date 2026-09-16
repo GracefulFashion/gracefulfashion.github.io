@@ -40,13 +40,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 0.5rem;
 }
 
 .header-rose {
-    width: 80px;
-    height: 80px;
+    width: 8px;
+    height: 8px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(199, 91, 122, 0.2);
@@ -271,12 +271,12 @@ footer p:first-child {
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .header-roses {
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .header-rose {
-        width: 60px;
-        height: 60px;
+        width: 6px;
+        height: 6px;
     }
 
     .header-content h1 {
