@@ -24,7 +24,7 @@ body {
 /* HEADER */
 header {
     background: linear-gradient(135deg, #ffd4d8 0%, #ffe4e8 100%);
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(199, 91, 122, 0.1);
     border-bottom: 3px solid var(--blush);
@@ -34,6 +34,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 150px;
+    justify-content: center;
 }
 
 .header-roses {
@@ -42,15 +44,20 @@ header {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 0.5rem;
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .header-rose {
-    width: 10px;
-    height: 10px;
+    width: 10px !important;
+    height: 10px !important;
+    min-width: 10px;
+    min-height: 10px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(199, 91, 122, 0.2);
     transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
 .header-rose:hover {
@@ -61,12 +68,15 @@ header {
     font-size: 2.5rem;
     color: var(--dark-rose);
     letter-spacing: 2px;
+    flex-shrink: 0;
 }
 
 .tagline {
     font-size: 1.1rem;
     color: #8b6b6b;
     font-style: italic;
+    margin-top: 0.5rem;
+    flex-shrink: 0;
 }
 
 nav {
@@ -272,11 +282,14 @@ footer p:first-child {
 @media (max-width: 768px) {
     .header-roses {
         gap: 0.5rem;
+        height: 35px;
     }
 
     .header-rose {
-        width: 8px;
-        height: 8px;
+        width: 10px !important;
+        height: 10px !important;
+        min-width: 10px;
+        min-height: 10px;
     }
 
     .header-content h1 {
