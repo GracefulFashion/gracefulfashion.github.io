@@ -45,8 +45,8 @@ header {
 }
 
 .header-rose {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(199, 91, 122, 0.2);
@@ -275,8 +275,8 @@ footer p:first-child {
     }
 
     .header-rose {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
     }
 
     .header-content h1 {
