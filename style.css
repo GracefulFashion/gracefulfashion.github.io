@@ -256,7 +256,7 @@ nav a:hover {
 
 /* CATEGORY PRODUCT IMAGES */
 /* Keep full product photos visible on category pages without cropping. */
-.collection .product-card > img.product-image {
+.product-card > img.product-image {
     display: block;
     width: 100%;
     height: 320px;
