@@ -122,6 +122,26 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
+.cta-button {
+    background-color: var(--rose);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: var(--dark-rose);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(199, 91, 122, 0.4);
+}
+
 /* ABOUT SECTION */
 .about {
     max-width: 800px;
@@ -220,38 +240,37 @@ nav a:hover {
 }
 
 .size-button {
+    min-width: 3.5rem;
+    padding: 0.675rem 0.5rem;
     border: 1px solid var(--soft-pink);
     border-radius: 999px;
-    background-color: var(--pale-pink);
     color: var(--dark-rose);
     font-size: 0.85rem;
     font-weight: bold;
     line-height: 1;
-    min-width: 7.5rem;
-    padding: 0.675rem 2.4rem;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Size buttons progress from lightest pink (S) to darkest pink (XL), staying light enough to read. */
+/* Size buttons progress from the old M shade to the old XL shade. */
 .size-options .size-button:nth-child(1) {
-    background-color: #fff5f8;
-    border-color: #ffd9e3;
-}
-
-.size-options .size-button:nth-child(2) {
     background-color: #ffe3ec;
     border-color: #ffc2d4;
 }
 
+.size-options .size-button:nth-child(2) {
+    background-color: #ffd9e8;
+    border-color: #ffbad1;
+}
+
 .size-options .size-button:nth-child(3) {
-    background-color: #ffcfe0;
-    border-color: #ffabc6;
+    background-color: #ffcee1;
+    border-color: #ffacc7;
 }
 
 .size-options .size-button:nth-child(4) {
-    background-color: #ffbdd4;
-    border-color: #ff9bb9;
+    background-color: #ffc3d9;
+    border-color: #ff9fbd;
 }
 
 .size-button:hover,
@@ -268,10 +287,10 @@ nav a:hover {
 }
 
 .size-button[aria-pressed="true"] {
-    background-color: var(--rose);
-    border-color: var(--dark-rose);
-    color: white;
-    box-shadow: 0 3px 10px rgba(199, 91, 122, 0.3);
+    background-color: #ffd1e3;
+    border: 3px solid #ff1493;
+    color: #d1006d;
+    box-shadow: 0 3px 10px rgba(209, 0, 109, 0.25);
 }
 
 .center-collection {
