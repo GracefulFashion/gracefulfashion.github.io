@@ -9,20 +9,23 @@
     const allSizeButtons = [];
     const fallbackDescription = 'A graceful selection from our current collection.';
     let lastFocusedElement = null;
+    const modalIdSuffix = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+    const purchaseModalTitleId = `purchase-modal-title-${modalIdSuffix}`;
+    const purchaseModalDescriptionId = `purchase-modal-description-${modalIdSuffix}`;
 
     const purchaseModal = document.createElement('div');
     purchaseModal.className = 'purchase-modal-overlay';
     purchaseModal.hidden = true;
     purchaseModal.setAttribute('aria-hidden', 'true');
     purchaseModal.innerHTML = `
-        <div class="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="purchase-modal-title" aria-describedby="purchase-modal-description" tabindex="-1">
+        <div class="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="${purchaseModalTitleId}" aria-describedby="${purchaseModalDescriptionId}" tabindex="-1">
             <button type="button" class="purchase-modal-close" aria-label="Close purchase confirmation">&times;</button>
             <div class="purchase-modal-content">
                 <img class="purchase-modal-image" alt="">
                 <div class="purchase-modal-copy">
                     <p class="purchase-modal-eyebrow">Graceful Fashion</p>
-                    <h3 id="purchase-modal-title"></h3>
-                    <p id="purchase-modal-description" class="purchase-modal-description"></p>
+                    <h3 id="${purchaseModalTitleId}"></h3>
+                    <p id="${purchaseModalDescriptionId}" class="purchase-modal-description"></p>
                     <p class="purchase-modal-size"><span>Selected Size:</span> <strong></strong></p>
                 </div>
             </div>
@@ -33,8 +36,8 @@
 
     const purchaseModalDialog = purchaseModal.querySelector('.purchase-modal');
     const purchaseModalImage = purchaseModal.querySelector('.purchase-modal-image');
-    const purchaseModalTitle = purchaseModal.querySelector('#purchase-modal-title');
-    const purchaseModalDescription = purchaseModal.querySelector('#purchase-modal-description');
+    const purchaseModalTitle = purchaseModal.querySelector('.purchase-modal-copy h3');
+    const purchaseModalDescription = purchaseModal.querySelector('.purchase-modal-description');
     const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
     const purchaseModalCloseButton = purchaseModal.querySelector('.purchase-modal-close');
     const purchaseModalConfirmButton = purchaseModal.querySelector('.purchase-modal-confirm');
@@ -49,17 +52,21 @@
 
     const restorePageState = () => {
         getPageSections().forEach((section) => {
-            if (section.dataset.modalPreviousAriaHidden) {
-                section.setAttribute('aria-hidden', section.dataset.modalPreviousAriaHidden);
-                delete section.dataset.modalPreviousAriaHidden;
-            } else {
-                section.removeAttribute('aria-hidden');
+            if (section.dataset.modalManagedAriaHidden) {
+                if (section.dataset.modalPreviousAriaHidden) {
+                    section.setAttribute('aria-hidden', section.dataset.modalPreviousAriaHidden);
+                    delete section.dataset.modalPreviousAriaHidden;
+                } else {
+                    section.removeAttribute('aria-hidden');
+                }
             }
 
-            if (!section.dataset.modalWasInert) {
+            if (section.dataset.modalManagedInert) {
                 section.inert = false;
             }
 
+            delete section.dataset.modalManagedAriaHidden;
+            delete section.dataset.modalManagedInert;
             delete section.dataset.modalWasInert;
         });
     };
@@ -118,12 +125,8 @@
         productCard.querySelector('.size-button[aria-pressed="true"]')?.textContent?.trim() || 'Not selected';
 
     const getProductDescription = (productCard) => {
-        const descriptionElement = Array.from(productCard.querySelectorAll('p')).find(
-            (paragraph) => !paragraph.classList.contains('price')
-        );
-
         return (
-            descriptionElement?.textContent?.trim() ||
+            productCard.querySelector('.product-description, [data-product-description]')?.textContent?.trim() ||
             productCard.querySelector('.product-image')?.getAttribute('alt')?.trim() ||
             productCard.querySelector('h3')?.textContent?.trim() ||
             fallbackDescription
@@ -154,11 +157,13 @@
             if (section.hasAttribute('aria-hidden')) {
                 section.dataset.modalPreviousAriaHidden = section.getAttribute('aria-hidden');
             }
+            section.dataset.modalManagedAriaHidden = 'true';
 
             if (section.inert) {
                 section.dataset.modalWasInert = 'true';
             } else {
                 section.inert = true;
+                section.dataset.modalManagedInert = 'true';
             }
 
             section.setAttribute('aria-hidden', 'true');
