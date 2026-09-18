@@ -6,6 +6,7 @@
     }
 
     const sizes = ['S', 'M', 'L', 'XL'];
+    const allSizeButtons = [];
 
     productCards.forEach((productCard) => {
         const priceElement = productCard.querySelector('.price');
@@ -27,11 +28,12 @@
             sizeButton.setAttribute('aria-pressed', 'false');
 
             sizeButton.addEventListener('click', () => {
-                sizeOptions.querySelectorAll('.size-button').forEach((button) => {
+                allSizeButtons.forEach((button) => {
                     button.setAttribute('aria-pressed', button === sizeButton ? 'true' : 'false');
                 });
             });
 
+            allSizeButtons.push(sizeButton);
             sizeOptions.appendChild(sizeButton);
         });
 
