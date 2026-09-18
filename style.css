@@ -332,7 +332,7 @@ body.purchase-modal-open {
     overflow: hidden;
 }
 
-.purchase-modal:focus {
+.purchase-modal:focus-within {
     outline: 3px solid rgba(255, 105, 180, 0.35);
     outline-offset: 3px;
 }

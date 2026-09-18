@@ -67,7 +67,6 @@
 
             delete section.dataset.modalManagedAriaHidden;
             delete section.dataset.modalManagedInert;
-            delete section.dataset.modalWasInert;
         });
     };
 
@@ -123,7 +122,7 @@
     };
 
     const getSelectedSize = (productCard) =>
-        productCard.querySelector('.size-button[aria-pressed="true"]')?.textContent?.trim() || 'Not selected';
+        productCard.querySelector('.size-button[aria-pressed="true"]')?.textContent?.trim();
 
     const getProductDescription = (productCard) => {
         return (
@@ -139,6 +138,10 @@
         const productTitle = productCard.querySelector('h3')?.textContent?.trim() || 'Selected Product';
         const productDescription = getProductDescription(productCard);
         const selectedSize = getSelectedSize(productCard);
+
+        if (!selectedSize) {
+            return;
+        }
 
         purchaseModalTitle.textContent = productTitle;
         purchaseModalDescription.textContent = productDescription;
@@ -160,9 +163,7 @@
             }
             section.dataset.modalManagedAriaHidden = 'true';
 
-            if (!section.dataset.modalManagedInert && section.inert) {
-                section.dataset.modalWasInert = 'true';
-            } else {
+            if (!section.inert) {
                 section.inert = true;
                 section.dataset.modalManagedInert = 'true';
             }
