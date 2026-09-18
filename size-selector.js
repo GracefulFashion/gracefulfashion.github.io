@@ -45,6 +45,15 @@
     const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
     const purchaseModalCloseButton = purchaseModal.querySelector('.purchase-modal-close');
     const purchaseModalConfirmButton = purchaseModal.querySelector('.purchase-modal-confirm');
+
+    const showImageFallback = (message) => {
+        purchaseModalImage.removeAttribute('src');
+        purchaseModalImage.alt = '';
+        purchaseModalImage.hidden = true;
+        purchaseModalImageFallback.textContent = message;
+        purchaseModalImageFallback.hidden = false;
+    };
+
     const getFocusableElements = () =>
         Array.from(
             purchaseModal.querySelectorAll(
@@ -149,19 +158,24 @@
         purchaseModalTitle.textContent = productTitle;
         purchaseModalDescription.textContent = productDescription;
         purchaseModalSize.textContent = selectedSize;
+        purchaseModalImage.alt = '';
+        purchaseModalImage.onerror = () => {
+            showImageFallback(`${productTitle} preview unavailable`);
+        };
+        purchaseModalImage.onload = () => {
+            purchaseModalImage.alt = '';
+            purchaseModalImage.hidden = false;
+            purchaseModalImageFallback.hidden = true;
+            purchaseModalImageFallback.textContent = '';
+        };
 
         if (productImage?.getAttribute('src')) {
             purchaseModalImage.src = productImage.getAttribute('src');
-            purchaseModalImage.alt = productImage.getAttribute('alt')?.trim() || productTitle;
             purchaseModalImage.hidden = false;
             purchaseModalImageFallback.hidden = true;
             purchaseModalImageFallback.textContent = '';
         } else {
-            purchaseModalImage.removeAttribute('src');
-            purchaseModalImage.alt = '';
-            purchaseModalImage.hidden = true;
-            purchaseModalImageFallback.textContent = `${productTitle} preview unavailable`;
-            purchaseModalImageFallback.hidden = false;
+            showImageFallback(`${productTitle} preview unavailable`);
         }
 
         pageSections.forEach((section) => {
