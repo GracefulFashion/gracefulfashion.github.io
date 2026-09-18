@@ -16,6 +16,8 @@
 
         const sizeOptions = document.createElement('div');
         sizeOptions.className = 'size-options';
+        sizeOptions.setAttribute('role', 'group');
+        sizeOptions.setAttribute('aria-label', 'Select size');
 
         sizes.forEach((size) => {
             const sizeButton = document.createElement('button');
