@@ -76,6 +76,7 @@
             return;
         }
 
+        document.removeEventListener('keydown', handleModalKeydown);
         purchaseModal.hidden = true;
         purchaseModal.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('purchase-modal-open');
@@ -154,12 +155,12 @@
         }
 
         getPageSections().forEach((section) => {
-            if (section.hasAttribute('aria-hidden')) {
+            if (!section.dataset.modalManagedAriaHidden && section.hasAttribute('aria-hidden')) {
                 section.dataset.modalPreviousAriaHidden = section.getAttribute('aria-hidden');
             }
             section.dataset.modalManagedAriaHidden = 'true';
 
-            if (section.inert) {
+            if (!section.dataset.modalManagedInert && section.inert) {
                 section.dataset.modalWasInert = 'true';
             } else {
                 section.inert = true;
@@ -173,6 +174,7 @@
         purchaseModal.hidden = false;
         purchaseModal.setAttribute('aria-hidden', 'false');
         document.body.classList.add('purchase-modal-open');
+        document.addEventListener('keydown', handleModalKeydown);
         purchaseModalCloseButton.focus();
     };
 
@@ -183,7 +185,6 @@
             closePurchaseModal();
         }
     });
-    document.addEventListener('keydown', handleModalKeydown);
 
     productCards.forEach((productCard) => {
         const priceElement = productCard.querySelector('.price');

@@ -333,7 +333,8 @@ body.purchase-modal-open {
 }
 
 .purchase-modal:focus {
-    outline: none;
+    outline: 3px solid rgba(255, 105, 180, 0.35);
+    outline-offset: 3px;
 }
 
 .purchase-modal-close {
