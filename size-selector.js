@@ -139,7 +139,6 @@
     const getProductDescription = (productCard) => {
         return (
             productCard.querySelector('.product-description, [data-product-description]')?.textContent?.trim() ||
-            productCard.querySelector('.product-image')?.getAttribute('alt')?.trim() ||
             productCard.querySelector('h3')?.textContent?.trim() ||
             fallbackDescription
         );
