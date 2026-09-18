@@ -220,7 +220,7 @@ nav a:hover {
 }
 
 .size-button {
-    min-width: 3.5rem;
+    min-width: 3rem;
     padding: 0.675rem 0.5rem;
     border: 1px solid var(--soft-pink);
     border-radius: 999px;
@@ -268,9 +268,9 @@ nav a:hover {
 
 .size-button[aria-pressed="true"] {
     background-color: #ffd1e3;
-    border: 3px solid #ff1493;
-    color: #d1006d;
-    box-shadow: 0 3px 10px rgba(209, 0, 109, 0.25);
+    border: 3px solid #ff10f0;
+    color: #ff10f0;
+    box-shadow: 0 3px 10px rgba(255, 16, 240, 0.35);
 }
 
 .center-collection {
