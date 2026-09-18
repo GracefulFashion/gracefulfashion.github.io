@@ -276,6 +276,32 @@ nav a:hover {
     box-shadow: 0 3px 10px rgba(255, 16, 240, 0.35);
 }
 
+.purchase-button {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0;
+    background-color: #fff0f3;
+    color: #b88a9b;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.purchase-button:not(:disabled) {
+    background-color: var(--rose);
+    color: white;
+    cursor: pointer;
+}
+
+.purchase-button:not(:disabled):hover {
+    background-color: var(--dark-rose);
+    transform: translateY(-1px);
+}
+
 .center-collection {
     text-align: center;
 }
