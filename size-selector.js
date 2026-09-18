@@ -7,12 +7,10 @@
 
     const sizes = ['S', 'M', 'L', 'XL'];
     const allSizeButtons = [];
-    const fallbackDescription = 'A graceful selection from our current collection.';
     let lastFocusedElement = null;
     let activePurchaseDetails = null;
     const modalIdSuffix = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
     const purchaseModalTitleId = `purchase-modal-title-${modalIdSuffix}`;
-    const purchaseModalDescriptionId = `purchase-modal-description-${modalIdSuffix}`;
     const pageSections = Array.from(document.querySelectorAll('header, main, footer'));
 
     const purchaseModal = document.createElement('div');
@@ -20,7 +18,7 @@
     purchaseModal.hidden = true;
     purchaseModal.setAttribute('aria-hidden', 'true');
     purchaseModal.innerHTML = `
-        <div class="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="${purchaseModalTitleId}" aria-describedby="${purchaseModalDescriptionId}" tabindex="-1">
+        <div class="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="${purchaseModalTitleId}" tabindex="-1">
             <button type="button" class="purchase-modal-close" aria-label="Close purchase confirmation">&times;</button>
             <div class="purchase-modal-content">
                 <img class="purchase-modal-image">
@@ -28,7 +26,6 @@
                 <div class="purchase-modal-copy">
                     <p class="purchase-modal-eyebrow">Graceful Fashion</p>
                     <h3 id="${purchaseModalTitleId}"></h3>
-                    <p id="${purchaseModalDescriptionId}" class="purchase-modal-description"></p>
                     <p class="purchase-modal-size"><span>Selected Size:</span> <strong></strong></p>
                 </div>
             </div>
@@ -41,7 +38,6 @@
     const purchaseModalImage = purchaseModal.querySelector('.purchase-modal-image');
     const purchaseModalImageFallback = purchaseModal.querySelector('.purchase-modal-image-fallback');
     const purchaseModalTitle = purchaseModal.querySelector('.purchase-modal-copy h3');
-    const purchaseModalDescription = purchaseModal.querySelector('.purchase-modal-description');
     const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
     const purchaseModalCloseButton = purchaseModal.querySelector('.purchase-modal-close');
     const purchaseModalConfirmButton = purchaseModal.querySelector('.purchase-modal-confirm');
@@ -136,18 +132,9 @@
     const getSelectedSize = (productCard) =>
         productCard.querySelector('.size-button[aria-pressed="true"]')?.textContent?.trim();
 
-    const getProductDescription = (productCard) => {
-        return (
-            productCard.querySelector('.product-description, [data-product-description]')?.textContent?.trim() ||
-            productCard.querySelector('h3')?.textContent?.trim() ||
-            fallbackDescription
-        );
-    };
-
     const openPurchaseModal = (productCard, purchaseButton) => {
         const productImage = productCard.querySelector('.product-image');
         const productTitle = productCard.querySelector('h3')?.textContent?.trim() || 'Selected Product';
-        const productDescription = getProductDescription(productCard);
         const selectedSize = getSelectedSize(productCard);
 
         if (!selectedSize) {
@@ -155,7 +142,6 @@
         }
 
         purchaseModalTitle.textContent = productTitle;
-        purchaseModalDescription.textContent = productDescription;
         purchaseModalSize.textContent = selectedSize;
         purchaseModalImage.removeAttribute('alt');
         purchaseModalImage.onerror = () => {
@@ -193,7 +179,6 @@
 
         lastFocusedElement = purchaseButton;
         activePurchaseDetails = {
-            description: productDescription,
             image: purchaseModalImage.hidden ? null : purchaseModalImage.getAttribute('src'),
             name: productTitle,
             size: selectedSize
