@@ -8,7 +8,6 @@
     const sizes = ['S', 'M', 'L', 'XL'];
     const allSizeButtons = [];
     const fallbackDescription = 'A graceful selection from our current collection.';
-    const pageSections = Array.from(document.body.children);
     let lastFocusedElement = null;
 
     const purchaseModal = document.createElement('div');
@@ -39,6 +38,7 @@
     const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
     const purchaseModalCloseButton = purchaseModal.querySelector('.purchase-modal-close');
     const purchaseModalConfirmButton = purchaseModal.querySelector('.purchase-modal-confirm');
+    const getPageSections = () => Array.from(document.body.children).filter((section) => section !== purchaseModal);
 
     const getFocusableElements = () =>
         Array.from(
@@ -48,11 +48,7 @@
         ).filter((element) => !element.disabled && !element.hidden);
 
     const restorePageState = () => {
-        pageSections.forEach((section) => {
-            if (section === purchaseModal) {
-                return;
-            }
-
+        getPageSections().forEach((section) => {
             if (section.dataset.modalPreviousAriaHidden) {
                 section.setAttribute('aria-hidden', section.dataset.modalPreviousAriaHidden);
                 delete section.dataset.modalPreviousAriaHidden;
@@ -128,8 +124,8 @@
 
         return (
             descriptionElement?.textContent?.trim() ||
-            productCard.querySelector('h3')?.textContent?.trim() ||
             productCard.querySelector('.product-image')?.getAttribute('alt')?.trim() ||
+            productCard.querySelector('h3')?.textContent?.trim() ||
             fallbackDescription
         );
     };
@@ -154,11 +150,7 @@
             purchaseModalImage.hidden = true;
         }
 
-        pageSections.forEach((section) => {
-            if (section === purchaseModal) {
-                return;
-            }
-
+        getPageSections().forEach((section) => {
             if (section.hasAttribute('aria-hidden')) {
                 section.dataset.modalPreviousAriaHidden = section.getAttribute('aria-hidden');
             }
