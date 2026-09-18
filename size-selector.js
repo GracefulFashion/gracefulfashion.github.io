@@ -20,6 +20,12 @@
         sizeOptions.setAttribute('role', 'group');
         sizeOptions.setAttribute('aria-label', 'Select size');
 
+        const purchaseButton = document.createElement('button');
+        purchaseButton.type = 'button';
+        purchaseButton.className = 'purchase-button';
+        purchaseButton.textContent = 'Purchase';
+        purchaseButton.disabled = true;
+
         sizes.forEach((size) => {
             const sizeButton = document.createElement('button');
             sizeButton.type = 'button';
@@ -31,6 +37,10 @@
                 allSizeButtons.forEach((button) => {
                     button.setAttribute('aria-pressed', button === sizeButton ? 'true' : 'false');
                 });
+
+                document.querySelectorAll('.purchase-button').forEach((button) => {
+                    button.disabled = button !== purchaseButton;
+                });
             });
 
             allSizeButtons.push(sizeButton);
@@ -38,5 +48,6 @@
         });
 
         priceElement.insertAdjacentElement('afterend', sizeOptions);
+        sizeOptions.insertAdjacentElement('afterend', purchaseButton);
     });
 })();
