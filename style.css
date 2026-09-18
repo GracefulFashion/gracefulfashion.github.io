@@ -215,8 +215,8 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem 1.5rem;
+    gap: 0.75rem;
+    padding: 1.1rem 1rem 2.25rem;
 }
 
 .size-button {
@@ -227,10 +227,31 @@ nav a:hover {
     font-size: 0.85rem;
     font-weight: bold;
     line-height: 1;
-    min-width: 2.5rem;
-    padding: 0.45rem 0.8rem;
+    min-width: 7.5rem;
+    padding: 0.675rem 2.4rem;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Size buttons progress from lightest pink (S) to darkest pink (XL), staying light enough to read. */
+.size-options .size-button:nth-child(1) {
+    background-color: #fff5f8;
+    border-color: #ffd9e3;
+}
+
+.size-options .size-button:nth-child(2) {
+    background-color: #ffe3ec;
+    border-color: #ffc2d4;
+}
+
+.size-options .size-button:nth-child(3) {
+    background-color: #ffcfe0;
+    border-color: #ffabc6;
+}
+
+.size-options .size-button:nth-child(4) {
+    background-color: #ffbdd4;
+    border-color: #ff9bb9;
 }
 
 .size-button:hover,
