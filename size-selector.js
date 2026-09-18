@@ -22,6 +22,7 @@
             <button type="button" class="purchase-modal-close" aria-label="Close purchase confirmation">&times;</button>
             <div class="purchase-modal-content">
                 <img class="purchase-modal-image" alt="">
+                <div class="purchase-modal-image-fallback" hidden></div>
                 <div class="purchase-modal-copy">
                     <p class="purchase-modal-eyebrow">Graceful Fashion</p>
                     <h3 id="${purchaseModalTitleId}"></h3>
@@ -36,6 +37,7 @@
 
     const purchaseModalDialog = purchaseModal.querySelector('.purchase-modal');
     const purchaseModalImage = purchaseModal.querySelector('.purchase-modal-image');
+    const purchaseModalImageFallback = purchaseModal.querySelector('.purchase-modal-image-fallback');
     const purchaseModalTitle = purchaseModal.querySelector('.purchase-modal-copy h3');
     const purchaseModalDescription = purchaseModal.querySelector('.purchase-modal-description');
     const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
@@ -151,10 +153,14 @@
             purchaseModalImage.src = productImage.getAttribute('src');
             purchaseModalImage.alt = productImage.getAttribute('alt')?.trim() || productTitle;
             purchaseModalImage.hidden = false;
+            purchaseModalImageFallback.hidden = true;
+            purchaseModalImageFallback.textContent = '';
         } else {
             purchaseModalImage.removeAttribute('src');
             purchaseModalImage.alt = '';
             purchaseModalImage.hidden = true;
+            purchaseModalImageFallback.textContent = `${productTitle} preview unavailable`;
+            purchaseModalImageFallback.hidden = false;
         }
 
         getPageSections().forEach((section) => {

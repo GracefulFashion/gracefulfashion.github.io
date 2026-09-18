@@ -377,6 +377,21 @@ body.purchase-modal-open {
     padding: 0.5rem;
 }
 
+.purchase-modal-image-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 11rem;
+    padding: 1rem;
+    border: 1px dashed #f2c8d3;
+    border-radius: 16px;
+    background-color: #fff7fa;
+    color: var(--dark-rose);
+    font-weight: bold;
+    text-align: center;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
+}
+
 .purchase-modal-copy {
     text-align: left;
 }
