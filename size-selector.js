@@ -9,9 +9,11 @@
     const allSizeButtons = [];
     const fallbackDescription = 'A graceful selection from our current collection.';
     let lastFocusedElement = null;
+    let activePurchaseDetails = null;
     const modalIdSuffix = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
     const purchaseModalTitleId = `purchase-modal-title-${modalIdSuffix}`;
     const purchaseModalDescriptionId = `purchase-modal-description-${modalIdSuffix}`;
+    const pageSections = Array.from(document.querySelectorAll('header, main, footer'));
 
     const purchaseModal = document.createElement('div');
     purchaseModal.className = 'purchase-modal-overlay';
@@ -43,8 +45,6 @@
     const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
     const purchaseModalCloseButton = purchaseModal.querySelector('.purchase-modal-close');
     const purchaseModalConfirmButton = purchaseModal.querySelector('.purchase-modal-confirm');
-    const getPageSections = () => Array.from(document.body.children).filter((section) => section !== purchaseModal);
-
     const getFocusableElements = () =>
         Array.from(
             purchaseModal.querySelectorAll(
@@ -53,7 +53,7 @@
         ).filter((element) => !element.disabled && !element.hidden);
 
     const restorePageState = () => {
-        getPageSections().forEach((section) => {
+        pageSections.forEach((section) => {
             if (section.dataset.modalManagedAriaHidden) {
                 if (section.dataset.modalPreviousAriaHidden) {
                     section.setAttribute('aria-hidden', section.dataset.modalPreviousAriaHidden);
@@ -82,6 +82,7 @@
         purchaseModal.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('purchase-modal-open');
         restorePageState();
+        activePurchaseDetails = null;
 
         if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
             lastFocusedElement.focus();
@@ -163,7 +164,7 @@
             purchaseModalImageFallback.hidden = false;
         }
 
-        getPageSections().forEach((section) => {
+        pageSections.forEach((section) => {
             if (!section.dataset.modalManagedAriaHidden && section.hasAttribute('aria-hidden')) {
                 section.dataset.modalPreviousAriaHidden = section.getAttribute('aria-hidden');
             }
@@ -178,6 +179,12 @@
         });
 
         lastFocusedElement = purchaseButton;
+        activePurchaseDetails = {
+            description: productDescription,
+            image: purchaseModalImage.hidden ? null : purchaseModalImage.getAttribute('src'),
+            name: productTitle,
+            size: selectedSize
+        };
         purchaseModal.hidden = false;
         purchaseModal.setAttribute('aria-hidden', 'false');
         document.body.classList.add('purchase-modal-open');
@@ -186,7 +193,17 @@
     };
 
     purchaseModalCloseButton.addEventListener('click', closePurchaseModal);
-    purchaseModalConfirmButton.addEventListener('click', closePurchaseModal);
+    purchaseModalConfirmButton.addEventListener('click', () => {
+        if (activePurchaseDetails) {
+            document.dispatchEvent(
+                new CustomEvent('gracefulfashion:purchase-confirmed', {
+                    detail: activePurchaseDetails
+                })
+            );
+        }
+
+        closePurchaseModal();
+    });
     purchaseModal.addEventListener('click', (event) => {
         if (event.target === purchaseModal) {
             closePurchaseModal();
