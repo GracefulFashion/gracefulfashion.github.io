@@ -21,7 +21,7 @@
         <div class="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="${purchaseModalTitleId}" tabindex="-1">
             <button type="button" class="purchase-modal-close" aria-label="Close purchase confirmation">&times;</button>
             <div class="purchase-modal-content">
-                <img class="purchase-modal-image">
+                <img class="purchase-modal-image" alt="">
                 <div class="purchase-modal-image-fallback" hidden></div>
                 <div class="purchase-modal-copy">
                     <p class="purchase-modal-eyebrow">Graceful Fashion</p>
@@ -44,7 +44,7 @@
 
     const showImageFallback = (message) => {
         purchaseModalImage.removeAttribute('src');
-        purchaseModalImage.removeAttribute('alt');
+        purchaseModalImage.alt = '';
         purchaseModalImage.hidden = true;
         purchaseModalImageFallback.textContent = message;
         purchaseModalImageFallback.hidden = false;
@@ -143,12 +143,12 @@
 
         purchaseModalTitle.textContent = productTitle;
         purchaseModalSize.textContent = selectedSize;
-        purchaseModalImage.removeAttribute('alt');
+        purchaseModalImage.alt = '';
         purchaseModalImage.onerror = () => {
             showImageFallback(`${productTitle} preview unavailable`);
         };
         purchaseModalImage.onload = () => {
-            purchaseModalImage.removeAttribute('alt');
+            purchaseModalImage.alt = '';
             purchaseModalImage.hidden = false;
             purchaseModalImageFallback.hidden = true;
             purchaseModalImageFallback.textContent = '';
