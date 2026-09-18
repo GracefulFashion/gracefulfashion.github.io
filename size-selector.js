@@ -7,6 +7,186 @@
 
     const sizes = ['S', 'M', 'L', 'XL'];
     const allSizeButtons = [];
+    const fallbackDescription = 'A graceful selection from our current collection.';
+    const pageSections = Array.from(document.body.children);
+    let lastFocusedElement = null;
+
+    const purchaseModal = document.createElement('div');
+    purchaseModal.className = 'purchase-modal-overlay';
+    purchaseModal.hidden = true;
+    purchaseModal.setAttribute('aria-hidden', 'true');
+    purchaseModal.innerHTML = `
+        <div class="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="purchase-modal-title" aria-describedby="purchase-modal-description" tabindex="-1">
+            <button type="button" class="purchase-modal-close" aria-label="Close purchase confirmation">&times;</button>
+            <div class="purchase-modal-content">
+                <img class="purchase-modal-image" alt="">
+                <div class="purchase-modal-copy">
+                    <p class="purchase-modal-eyebrow">Graceful Fashion</p>
+                    <h3 id="purchase-modal-title"></h3>
+                    <p id="purchase-modal-description" class="purchase-modal-description"></p>
+                    <p class="purchase-modal-size"><span>Selected Size:</span> <strong></strong></p>
+                </div>
+            </div>
+            <button type="button" class="purchase-modal-confirm">Confirm Purchase</button>
+        </div>
+    `;
+    document.body.appendChild(purchaseModal);
+
+    const purchaseModalDialog = purchaseModal.querySelector('.purchase-modal');
+    const purchaseModalImage = purchaseModal.querySelector('.purchase-modal-image');
+    const purchaseModalTitle = purchaseModal.querySelector('#purchase-modal-title');
+    const purchaseModalDescription = purchaseModal.querySelector('#purchase-modal-description');
+    const purchaseModalSize = purchaseModal.querySelector('.purchase-modal-size strong');
+    const purchaseModalCloseButton = purchaseModal.querySelector('.purchase-modal-close');
+    const purchaseModalConfirmButton = purchaseModal.querySelector('.purchase-modal-confirm');
+
+    const getFocusableElements = () =>
+        Array.from(
+            purchaseModal.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            )
+        ).filter((element) => !element.disabled && !element.hidden);
+
+    const restorePageState = () => {
+        pageSections.forEach((section) => {
+            if (section === purchaseModal) {
+                return;
+            }
+
+            if (section.dataset.modalPreviousAriaHidden) {
+                section.setAttribute('aria-hidden', section.dataset.modalPreviousAriaHidden);
+                delete section.dataset.modalPreviousAriaHidden;
+            } else {
+                section.removeAttribute('aria-hidden');
+            }
+
+            if (!section.dataset.modalWasInert) {
+                section.inert = false;
+            }
+
+            delete section.dataset.modalWasInert;
+        });
+    };
+
+    const closePurchaseModal = () => {
+        if (purchaseModal.hidden) {
+            return;
+        }
+
+        purchaseModal.hidden = true;
+        purchaseModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('purchase-modal-open');
+        restorePageState();
+
+        if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+            lastFocusedElement.focus();
+        }
+    };
+
+    const handleModalKeydown = (event) => {
+        if (purchaseModal.hidden) {
+            return;
+        }
+
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            closePurchaseModal();
+            return;
+        }
+
+        if (event.key !== 'Tab') {
+            return;
+        }
+
+        const focusableElements = getFocusableElements();
+
+        if (!focusableElements.length) {
+            event.preventDefault();
+            purchaseModalDialog.focus();
+            return;
+        }
+
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (event.shiftKey && document.activeElement === firstElement) {
+            event.preventDefault();
+            lastElement.focus();
+        } else if (!event.shiftKey && document.activeElement === lastElement) {
+            event.preventDefault();
+            firstElement.focus();
+        }
+    };
+
+    const getSelectedSize = (productCard) =>
+        productCard.querySelector('.size-button[aria-pressed="true"]')?.textContent?.trim() || 'Not selected';
+
+    const getProductDescription = (productCard) => {
+        const descriptionElement = Array.from(productCard.querySelectorAll('p')).find(
+            (paragraph) => !paragraph.classList.contains('price')
+        );
+
+        return (
+            descriptionElement?.textContent?.trim() ||
+            productCard.querySelector('h3')?.textContent?.trim() ||
+            productCard.querySelector('.product-image')?.getAttribute('alt')?.trim() ||
+            fallbackDescription
+        );
+    };
+
+    const openPurchaseModal = (productCard, purchaseButton) => {
+        const productImage = productCard.querySelector('.product-image');
+        const productTitle = productCard.querySelector('h3')?.textContent?.trim() || 'Selected Product';
+        const productDescription = getProductDescription(productCard);
+        const selectedSize = getSelectedSize(productCard);
+
+        purchaseModalTitle.textContent = productTitle;
+        purchaseModalDescription.textContent = productDescription;
+        purchaseModalSize.textContent = selectedSize;
+
+        if (productImage?.getAttribute('src')) {
+            purchaseModalImage.src = productImage.getAttribute('src');
+            purchaseModalImage.alt = productImage.getAttribute('alt')?.trim() || productTitle;
+            purchaseModalImage.hidden = false;
+        } else {
+            purchaseModalImage.removeAttribute('src');
+            purchaseModalImage.alt = '';
+            purchaseModalImage.hidden = true;
+        }
+
+        pageSections.forEach((section) => {
+            if (section === purchaseModal) {
+                return;
+            }
+
+            if (section.hasAttribute('aria-hidden')) {
+                section.dataset.modalPreviousAriaHidden = section.getAttribute('aria-hidden');
+            }
+
+            if (section.inert) {
+                section.dataset.modalWasInert = 'true';
+            } else {
+                section.inert = true;
+            }
+
+            section.setAttribute('aria-hidden', 'true');
+        });
+
+        lastFocusedElement = purchaseButton;
+        purchaseModal.hidden = false;
+        purchaseModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('purchase-modal-open');
+        purchaseModalCloseButton.focus();
+    };
+
+    purchaseModalCloseButton.addEventListener('click', closePurchaseModal);
+    purchaseModalConfirmButton.addEventListener('click', closePurchaseModal);
+    purchaseModal.addEventListener('click', (event) => {
+        if (event.target === purchaseModal) {
+            closePurchaseModal();
+        }
+    });
+    document.addEventListener('keydown', handleModalKeydown);
 
     productCards.forEach((productCard) => {
         const priceElement = productCard.querySelector('.price');
@@ -25,6 +205,13 @@
         purchaseButton.className = 'purchase-button';
         purchaseButton.textContent = 'Purchase';
         purchaseButton.disabled = true;
+        purchaseButton.addEventListener('click', () => {
+            if (purchaseButton.disabled) {
+                return;
+            }
+
+            openPurchaseModal(productCard, purchaseButton);
+        });
 
         sizes.forEach((size) => {
             const sizeButton = document.createElement('button');
