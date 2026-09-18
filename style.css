@@ -318,6 +318,10 @@ body.purchase-modal-open {
     backdrop-filter: blur(3px);
 }
 
+.purchase-modal-overlay[hidden] {
+    display: none;
+}
+
 .purchase-modal {
     width: min(100%, 38rem);
     max-height: min(90vh, 44rem);
