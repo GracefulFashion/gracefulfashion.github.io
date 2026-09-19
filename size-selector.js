@@ -29,7 +29,7 @@
                     <p class="purchase-modal-size"><span>Selected Size:</span> <strong></strong></p>
                 </div>
             </div>
-            <button type="button" class="purchase-modal-confirm">Pay with Paystack</button>
+            <button type="button" class="purchase-modal-confirm">Add to Cart</button>
         </div>
     `;
     document.body.appendChild(purchaseModal);
