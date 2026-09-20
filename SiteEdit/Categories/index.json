@@ -1,0 +1,38 @@
+[
+  {
+    "folder": "Accessories",
+    "file": "Accessories.json"
+  },
+  {
+    "folder": "Blouses",
+    "file": "Blouses.json"
+  },
+  {
+    "folder": "Combos",
+    "file": "Combos.json"
+  },
+  {
+    "folder": "Dresses",
+    "file": "Dresses.json"
+  },
+  {
+    "folder": "Pants",
+    "file": "Pants.json"
+  },
+  {
+    "folder": "Shirts",
+    "file": "Shirts.json"
+  },
+  {
+    "folder": "Shorts",
+    "file": "Shorts.json"
+  },
+  {
+    "folder": "Skirts",
+    "file": "Skirts.json"
+  },
+  {
+    "folder": "Vests",
+    "file": "Vests.json"
+  }
+]

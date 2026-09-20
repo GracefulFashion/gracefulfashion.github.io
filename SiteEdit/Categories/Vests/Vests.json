@@ -1,0 +1,9 @@
+{
+  "slug": "vests",
+  "label": "Vests",
+  "title": "Vests",
+  "description": "The layer that changes the mood of everything underneath.",
+  "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg",
+  "folder": "Vests",
+  "productsFile": "/SiteEdit/Vests/Vests.json"
+}

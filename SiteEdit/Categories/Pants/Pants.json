@@ -1,0 +1,9 @@
+{
+  "slug": "pants",
+  "label": "Pants",
+  "title": "Pants",
+  "description": "Comfortable foundations with enough character to lead the outfit.",
+  "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg",
+  "folder": "Pants",
+  "productsFile": "/SiteEdit/Pants/Pants.json"
+}
