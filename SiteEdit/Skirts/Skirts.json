@@ -3,7 +3,7 @@
   "label": "Skirts",
   "title": "Skirts",
   "description": "Movement, colour, and shapes that make every step feel lighter.",
-  "image": "/assets/Skirts/pink_skirt.jpeg",
+  "image": "/SiteEdit/Skirts/pink_skirt.jpeg",
   "products": [
     {
       "id": "long-flowing-pink-skirt",
@@ -11,7 +11,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A graceful, full-length shape made for catching the breeze.",
-      "image": "/assets/Skirts/pink_skirt.jpeg",
+      "image": "/SiteEdit/Skirts/pink_skirt.jpeg",
       "sizes": [
         "S",
         "M",
@@ -25,7 +25,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A clean, full shape in a bright blue that does the talking.",
-      "image": "/assets/Skirts/blue_skirt.jpeg",
+      "image": "/SiteEdit/Skirts/blue_skirt.jpeg",
       "sizes": [
         "S",
         "M",
@@ -39,7 +39,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A vivid everyday skirt with generous movement and soft volume.",
-      "image": "/assets/Skirts/red_skirt.jpeg",
+      "image": "/SiteEdit/Skirts/red_skirt.jpeg",
       "sizes": [
         "S",
         "M",

@@ -3,7 +3,7 @@
   "label": "Blouses",
   "title": "Blouses",
   "description": "Soft shapes, thoughtful details, and sleeves worth noticing.",
-  "image": "/assets/Blouses/green_blouse.webp",
+  "image": "/SiteEdit/Blouses/green_blouse.webp",
   "products": [
     {
       "id": "green-light-blouse",
@@ -11,7 +11,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A soft, tailored blouse with a ruffled collar and easy sleeves.",
-      "image": "/assets/Blouses/green_blouse.webp",
+      "image": "/SiteEdit/Blouses/green_blouse.webp",
       "sizes": [
         "S",
         "M",
@@ -25,7 +25,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A cropped, tie-front blouse with a warm vintage rhythm.",
-      "image": "/assets/Blouses/brown_blouse.jpeg",
+      "image": "/SiteEdit/Blouses/brown_blouse.jpeg",
       "sizes": [
         "S",
         "M",

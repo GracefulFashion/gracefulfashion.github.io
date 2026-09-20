@@ -3,7 +3,7 @@
   "label": "Vests",
   "title": "Vests",
   "description": "The layer that changes the mood of everything underneath.",
-  "image": "/assets/Vests/pink_flower_hem_vest.jpeg",
+  "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg",
   "products": [
     {
       "id": "green-hem-vest",
@@ -11,7 +11,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "An olive halter with gathered lines and a little silver detail.",
-      "image": "/assets/Vests/green_hem_vest.jpeg",
+      "image": "/SiteEdit/Vests/green_hem_vest.jpeg",
       "sizes": [
         "S",
         "M",
@@ -25,7 +25,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A floral tie-neck top with a romantic, easy-to-layer finish.",
-      "image": "/assets/Vests/pink_flower_hem_vest.jpeg",
+      "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg",
       "sizes": [
         "S",
         "M",

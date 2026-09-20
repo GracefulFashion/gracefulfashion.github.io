@@ -3,7 +3,7 @@
   "label": "Shirts",
   "title": "Shirts",
   "description": "Everyday favourites with a little more personality.",
-  "image": "/assets/Shirts/evil_smile_bear.jpeg",
+  "image": "/SiteEdit/Shirts/evil_smile_bear.jpeg",
   "products": [
     {
       "id": "evil-smile-bear-shirt",
@@ -11,7 +11,7 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "A bright statement tee for adding a wink to your everyday.",
-      "image": "/assets/Shirts/evil_smile_bear.jpeg",
+      "image": "/SiteEdit/Shirts/evil_smile_bear.jpeg",
       "sizes": [
         "S",
         "M",
