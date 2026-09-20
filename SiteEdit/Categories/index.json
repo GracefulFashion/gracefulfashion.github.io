@@ -3,6 +3,10 @@
     "folder": "Accessories",
     "file": "Accessories.json"
   },
+   {
+    "folder": "Makeup",
+    "file": "Makeup.json"
+  },
   {
     "folder": "Blouses",
     "file": "Blouses.json"
