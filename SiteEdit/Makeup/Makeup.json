@@ -1,0 +1,23 @@
+{
+  "slug": "makeup",
+  "label": "Makeup",
+  "title": "Makeup",
+  "description": "Comfortable foundations with enough character to lead the outfit.",
+  "image": "/SiteEdit/Makeup/makeup_sample.jpg",
+  "products": [
+    {
+      "id": "makeup-sample",
+      "name": "Makeup Sample",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "Relaxed denim with a little city attitude and lots of movement.",
+      "image": "/SiteEdit/Makeup/makeup_sample.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ]
+}
