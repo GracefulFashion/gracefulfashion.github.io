@@ -1,0 +1,37 @@
+{
+  "slug": "shorts",
+  "label": "Shorts",
+  "title": "Shorts",
+  "description": "Warm-weather pieces for moving through your day with ease.",
+  "image": "/assets/Shorts/baggy_shorts.jpeg",
+  "products": [
+    {
+      "id": "hand-worn-booty-shorts",
+      "name": "Hand Worn Booty Shorts",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "A sun-washed denim pair with frayed edges and easy confidence.",
+      "image": "/assets/Shorts/booty_shorts.jpeg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "id": "baggy-long-shorts",
+      "name": "Baggy Long Shorts",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "Utility-inspired shorts with a relaxed fit for warm Delta days.",
+      "image": "/assets/Shorts/baggy_shorts.jpeg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ]
+}

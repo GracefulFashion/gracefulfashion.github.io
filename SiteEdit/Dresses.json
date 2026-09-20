@@ -1,0 +1,23 @@
+{
+  "slug": "dresses",
+  "label": "Dresses",
+  "title": "Dresses",
+  "description": "A little romance, a strong silhouette, and somewhere to go.",
+  "image": "/assets/Dresses/black_polkadot_dress.jpeg",
+  "products": [
+    {
+      "id": "white-black-polkadot-dress",
+      "name": "White Black Polkadot Dress",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "A playful halter silhouette with a softly gathered hem.",
+      "image": "/assets/Dresses/black_polkadot_dress.jpeg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ]
+}

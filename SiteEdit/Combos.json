@@ -1,0 +1,37 @@
+{
+  "slug": "combos",
+  "label": "Combos",
+  "title": "Combos",
+  "description": "The easiest way to look considered: two pieces, one lovely answer.",
+  "image": "/assets/Combos/pink_top_skirt_combo.jpeg",
+  "products": [
+    {
+      "id": "pink-pajamas",
+      "name": "Pink Pajamas",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "Candy-striped ease for slow mornings and soft evenings.",
+      "image": "/assets/Combos/pink_pajamas.jpeg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "id": "pink-top-skirt-combo",
+      "name": "Pink Top and Skirt Combo",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "A lilac two-piece with just enough drama for a sunny entrance.",
+      "image": "/assets/Combos/pink_top_skirt_combo.jpeg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ]
+}

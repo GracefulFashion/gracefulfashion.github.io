@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "eyebrow": "A softer way to dress",
+    "titleBefore": "Dress for the ",
+    "titleEmphasis": "feeling.",
+    "intro": "Small, considered pieces for the woman who likes her style warm, effortless, and unmistakably her own.",
+    "shopButton": "Shop the collection",
+    "storyButton": "Our story",
+    "image": "/assets/header_pink_rose1.jpg",
+    "imageAlt": "A blush pink rose, the signature flower of Graceful Fashion",
+    "note": "Dress for the feeling.",
+    "noteSmall": "Graceful Fashion · 2026"
+  },
+  "marquee": [
+    "Soft pieces",
+    "Personal style",
+    "Asaba, Delta",
+    "Everyday elegance"
+  ],
+  "collection": {
+    "eyebrow": "Take your pick",
+    "title": "Find the piece that feels like you.",
+    "intro": "From a just-because necklace to a full look for a special day, browse the collection at your own pace."
+  },
+  "about": {
+    "eyebrow": "A little about us",
+    "titleBefore": "Clothes should make you feel ",
+    "titleEmphasis": "beautiful.",
+    "image": "/assets/header_pink_rose2.jpg",
+    "imageAlt": "A pink rose beside the Graceful Fashion story",
+    "tag": "From Asaba, with care",
+    "paragraphs": [
+      "At Graceful Fashion, we believe getting dressed can be a small, lovely act of self-trust. We curate soft, elegant pieces in romantic blushes, pastel tones, and timeless shapes that meet you where you are.",
+      "We are a personal fashion label in Asaba, Delta State — here for the days you want to feel polished, comfortable, confident, or simply a bit more like yourself."
+    ],
+    "signature": "With love, Grace"
+  },
+  "contact": {
+    "eyebrow": "Come say hello",
+    "title": "Let’s find your next favourite.",
+    "intro": "Have a question about a piece, a size, or delivery around Asaba? Grace would love to hear from you."
+  }
+}

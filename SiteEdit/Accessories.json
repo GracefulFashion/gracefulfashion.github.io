@@ -1,0 +1,20 @@
+{
+  "slug": "accessories",
+  "label": "Accessories",
+  "title": "Accessories",
+  "description": "Little details that make the whole look feel like yours.",
+  "image": "/assets/Accessories/gold_necklace.jpg",
+  "products": [
+    {
+      "id": "gold-heart-necklace",
+      "name": "Gold Heart Necklace",
+      "price": null,
+      "priceLabel": "Priceless",
+      "description": "A delicate little keepsake for days that call for something personal.",
+      "image": "/assets/Accessories/gold_necklace.jpg",
+      "sizes": [
+        "One Size"
+      ]
+    }
+  ]
+}
