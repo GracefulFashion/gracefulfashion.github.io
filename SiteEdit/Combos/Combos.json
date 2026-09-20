@@ -9,7 +9,7 @@
       "id": "pink-pajamas",
       "name": "Pink Pajamas",
       "price": 3000000,
-      "priceLabel": "₦5,000,000",
+      "priceLabel": "₦3,000,000",
       "description": "Candy-striped ease for slow mornings and soft evenings.",
       "image": "/SiteEdit/Combos/pink_pajamas.jpeg",
       "sizes": [
@@ -29,9 +29,7 @@
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
-      ]
+        "L","XL"]
     }
   ]
 }
