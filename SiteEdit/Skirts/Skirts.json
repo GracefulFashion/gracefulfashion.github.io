@@ -12,12 +12,7 @@
       "priceLabel": "₦3,000,000",
       "description": "A graceful, full-length shape made for catching the breeze.",
       "image": "/SiteEdit/Skirts/pink_skirt.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "blue-skirt",
@@ -26,12 +21,7 @@
       "priceLabel": "₦3,000,000",
       "description": "A clean, full shape in a bright blue that does the talking.",
       "image": "/SiteEdit/Skirts/blue_skirt.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "red-skirt",
@@ -40,12 +30,7 @@
       "priceLabel": "₦3,000,000",
       "description": "A vivid everyday skirt with generous movement and soft volume.",
       "image": "/SiteEdit/Skirts/red_skirt.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     }
   ]
 }
