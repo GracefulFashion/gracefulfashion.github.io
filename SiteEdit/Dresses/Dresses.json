@@ -12,12 +12,7 @@
       "priceLabel": "₦3,000,000",
       "description": "A playful halter silhouette with a softly gathered hem.",
       "image": "/SiteEdit/Dresses/black_polkadot_dress.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     }
   ]
 }
