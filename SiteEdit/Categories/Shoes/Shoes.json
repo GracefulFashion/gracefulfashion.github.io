@@ -1,0 +1,11 @@
+{
+  "slug": "shoes",
+  "label": "Shoes",
+  "title": "Shoes",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
+  "description": "Footwear for any occasion.",
+  "image": "/SiteEdit/Shoes/paz_sandle_woven.jpeg",
+  "folder": "Shoes",
+  "productsFile": "/SiteEdit/Shoes/Shoes.json"
+}
