@@ -12,12 +12,7 @@
       "priceLabel": "₦3,000,000",
       "description": "An olive halter with gathered lines and a little silver detail.",
       "image": "/SiteEdit/Vests/green_hem_vest.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "pink-flower-hem-vest",
@@ -26,12 +21,7 @@
       "priceLabel": "₦3,000,000",
       "description": "A floral tie-neck top with a romantic, easy-to-layer finish.",
       "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     }
   ]
 }
