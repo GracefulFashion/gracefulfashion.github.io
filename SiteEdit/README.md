@@ -16,7 +16,7 @@ The `Categories/index.json` file controls which collection cards appear on the h
 
 Inside each category folder, open the category JSON file and edit its `products` list. To remove a product, delete its whole `{ ... }` entry. To add a product, copy an existing product entry and change its values. Keep `id` unique and use an image path beginning with `/SiteEdit/`. For normal apparel sizes, use `"sizes": ["S","M","L","XL"]`; these appear as buttons. For footwear or any product that needs a menu, use `"dropsizes": ["35","36","37","38"]` instead; these appear in a dropdown. Do not use both fields on the same product. A product with neither field does not require a size before adding to cart.
 
-A numeric `price` is used for cart totals. `priceLabel` is the visible text shown on product cards. Use `"price": null` for a price-on-request item and set a friendly `priceLabel`, such as `"Price on request"` or `"Priceless"`.
+The numeric `price` is stored in **kobo**. The site divides it by 100 and displays it as naira with two decimals, so `3000000` displays as `₦30,000.00`. You no longer need `priceLabel`; delete it if present. Use `"price": null` for a price-on-request item; it displays as `Price on request` on the product card and in the cart.
 
 ## Editing categories
 

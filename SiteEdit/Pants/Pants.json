@@ -9,10 +9,14 @@
       "id": "new-york-elastic-jeans",
       "name": "New York Elastic Jeans",
       "price": 3000000,
-      "priceLabel": "₦3,000,000",
       "description": "Relaxed denim with a little city attitude and lots of movement.",
       "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     }
   ]
 }
