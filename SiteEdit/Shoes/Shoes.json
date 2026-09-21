@@ -11,7 +11,8 @@
       "price": 3000000,
       "priceLabel": "₦3,000,000",
       "description": "High quality and airy.",
-      "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg"
+      "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg",
+      "dropsizes": ["36","37","38","39"]
     }
   ]
 }
