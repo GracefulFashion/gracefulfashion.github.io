@@ -12,12 +12,7 @@
       "priceLabel": "₦3,000,000",
       "description": "A sun-washed denim pair with frayed edges and easy confidence.",
       "image": "/SiteEdit/Shorts/booty_shorts.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "baggy-long-shorts",
@@ -26,12 +21,7 @@
       "priceLabel": "₦3,000,000",
       "description": "Utility-inspired shorts with a relaxed fit for warm Delta days.",
       "image": "/SiteEdit/Shorts/baggy_shorts.jpeg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     }
   ]
 }
