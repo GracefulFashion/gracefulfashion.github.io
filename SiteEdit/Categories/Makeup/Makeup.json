@@ -2,6 +2,8 @@
   "slug": "makeup",
   "label": "Makeup",
   "title": "Makeup",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Glop it on and good to go!",
   "image": "/SiteEdit/Makeup/makeup_sample.jpg",
   "folder": "Makeup",

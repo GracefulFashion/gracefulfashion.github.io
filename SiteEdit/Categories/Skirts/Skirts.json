@@ -2,6 +2,8 @@
   "slug": "skirts",
   "label": "Skirts",
   "title": "Skirts",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Movement, colour, and shapes that make every step feel lighter.",
   "image": "/SiteEdit/Skirts/pink_skirt.jpeg",
   "folder": "Skirts",

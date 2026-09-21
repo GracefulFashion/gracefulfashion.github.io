@@ -2,6 +2,8 @@
   "slug": "shirts",
   "label": "Shirts",
   "title": "Shirts",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Everyday favourites with a little more personality.",
   "image": "/SiteEdit/Shirts/evil_smile_bear.jpeg",
   "folder": "Shirts",

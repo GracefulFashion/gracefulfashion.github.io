@@ -2,6 +2,8 @@
   "slug": "combos",
   "label": "Combos",
   "title": "Combos",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "The easiest way to look considered: two pieces, one lovely answer.",
   "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
   "folder": "Combos",

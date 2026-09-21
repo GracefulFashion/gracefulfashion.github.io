@@ -2,6 +2,8 @@
   "slug": "pants",
   "label": "Pants",
   "title": "Pants",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Comfortable foundations with enough character to lead the outfit.",
   "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg",
   "folder": "Pants",

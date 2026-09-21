@@ -2,6 +2,8 @@
   "slug": "dresses",
   "label": "Dresses",
   "title": "Dresses",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "A little romance, a strong silhouette, and somewhere to go.",
   "image": "/SiteEdit/Dresses/black_polkadot_dress.jpeg",
   "folder": "Dresses",

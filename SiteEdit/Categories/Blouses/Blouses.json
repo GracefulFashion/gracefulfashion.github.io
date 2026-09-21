@@ -2,6 +2,8 @@
   "slug": "blouses",
   "label": "Blouses",
   "title": "Blouses",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Soft shapes, thoughtful details, and sleeves worth noticing.",
   "image": "/SiteEdit/Blouses/green_blouse.webp",
   "folder": "Blouses",

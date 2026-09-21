@@ -2,6 +2,8 @@
   "slug": "shorts",
   "label": "Shorts",
   "title": "Shorts",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Warm-weather pieces for moving through your day with ease.",
   "image": "/SiteEdit/Shorts/baggy_shorts.jpeg",
   "folder": "Shorts",

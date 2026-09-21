@@ -2,6 +2,8 @@
   "slug": "accessories",
   "label": "Accessories",
   "title": "Accessories",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
   "description": "Little details that make the whole look feel like yours.",
   "image": "/SiteEdit/Accessories/gold_necklace.jpg",
   "folder": "Accessories",
