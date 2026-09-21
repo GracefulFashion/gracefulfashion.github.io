@@ -1,0 +1,17 @@
+{
+  "slug": "shoes",
+  "label": "Shoes",
+  "title": "Shoes",
+  "description": "Comfortable foundations with enough character to lead the outfit.",
+  "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg",
+  "products": [
+    {
+      "id": "paz-sandles-woven",
+      "name": "Paz Leather Woven Sandles",
+      "price": 3000000,
+      "priceLabel": "₦3,000,000",
+      "description": "High quality and airy.",
+      "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg"
+    }
+  ]
+}
