@@ -30,8 +30,8 @@
       "sizes": ["S","M","L","XL"]
     }
     {
-      "id": "red-skirt",
-      "name": "Red Skirt",
+      "id": "wtop-pskirt",
+      "name": "White Top with Pink Skirt",
       "price": 1200000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
       "image": "/SiteEdit/Kids/wtop_pskirt.jpg",
