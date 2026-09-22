@@ -1,0 +1,13 @@
+{
+  "backendUrl": "https://graceful-fashion-backend.vercel.app",
+  "paymentProvider": "paystack",
+  "currency": "NGN",
+  "currencyLocale": "en-NG",
+  "checkoutEnabled": true,
+  "testMode": true,
+  "storeName": "Graceful Fashion",
+  "checkoutButtonText": "Pay with Paystack",
+  "checkoutEmailLabel": "Email address",
+  "checkoutEmailPlaceholder": "you@example.com",
+  "checkoutNote": "You will be redirected to Paystack to complete your payment."
+}

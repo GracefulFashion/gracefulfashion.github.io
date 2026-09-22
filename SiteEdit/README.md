@@ -41,3 +41,8 @@ Edit `contact.links` in `Home.json` to change the contact buttons. Each entry us
 ## Editing safely
 
 JSON is strict: use double quotes, do not add comments, and keep commas between entries but not after the last entry. After editing, check the file with a JSON validator before committing. Product image files belong in the matching category folder beside its JSON file. The `image` value should use the category folder path, such as `/SiteEdit/Blouses/green_blouse.webp`. The `dropsizes` menu stays open while the page is scrolled or a drag is in progress, and closes when blank space is clicked or tapped.
+## Checkout settings
+
+The public checkout settings are in `SiteEdit/cart.json`. You may edit the backend base URL, provider label, currency display settings, checkout availability, test-mode indicator, store name, button text, email-field text, and checkout note. The frontend appends `/api/initialize-payment` to `backendUrl`. Product prices and the cart subtotal remain in kobo and are sent directly to the backend without conversion.
+
+**Never put a Paystack secret key, public key, token, password, or other private credential in `SiteEdit/cart.json` or anywhere in this repository.** The Paystack secret remains exclusively in Vercel as the `PAYSTACK_SECRET_KEY` environment variable. The `testMode` setting is informational only and does not select credentials.
