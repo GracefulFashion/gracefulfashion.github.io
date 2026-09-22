@@ -1,0 +1,11 @@
+{
+  "slug": "kids",
+  "label": "Kids",
+  "title": "Kids",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
+  "description": "Little things for the little ones.",
+  "image": "/SiteEdit/Kids/pink_skirt.jpeg",
+  "folder": "Kids",
+  "productsFile": "/SiteEdit/Kids/Kids.json"
+}
