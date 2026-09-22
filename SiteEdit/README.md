@@ -18,6 +18,10 @@ Inside each category folder, open the category JSON file and edit its `products`
 
 The numeric `price` is stored in **kobo**. The site divides it by 100 and displays it as naira with two decimals, so `3000000` displays as `₦30,000.00`. You no longer need `priceLabel`; delete it if present. Use `"price": null` for a price-on-request item; it displays as `Price on request` on the product card and in the cart.
 
+## Collection page colors
+
+Each product collection file, such as `SiteEdit/Blouses/Blouses.json`, has its own `colors` object for that collection page. These colors affect the collection page only. Edit the six-digit CSS hex values for `background`, `foreground`, `primary`, `primaryForeground`, `secondary`, `secondaryForeground`, `border`, `muted`, `mutedForeground`, `accent`, `accentForeground`, and `pageHero`. This is separate from `SiteEdit/Categories/<Category>/<Category>.json`, whose `titleColor` and `backgroundColor` control the homepage collection card.
+
 ## Editing categories
 
 Change `label` to change the home-page card label, `description` to change the category-page introduction, and `image` to change the home-page card image. The `slug` should normally stay unchanged because it is part of the page URL.

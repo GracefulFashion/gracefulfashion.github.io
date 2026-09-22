@@ -11,7 +11,12 @@
       "price": 3000000,
       "description": "Candy-striped ease for slow mornings and soft evenings.",
       "image": "/SiteEdit/Combos/pink_pajamas.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": "pink-top-skirt-combo",
@@ -19,7 +24,26 @@
       "price": 3000000,
       "description": "A lilac two-piece with just enough drama for a sunny entrance.",
       "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     }
-  ]
+  ],
+  "colors": {
+    "background": "#fff8f4",
+    "foreground": "#4b303b",
+    "primary": "#b54863",
+    "primaryForeground": "#ffffff",
+    "secondary": "#f4dfe6",
+    "secondaryForeground": "#5f3443",
+    "border": "#e5cfd5",
+    "muted": "#f3e8e3",
+    "mutedForeground": "#806670",
+    "accent": "#d4ad55",
+    "accentForeground": "#4b303b",
+    "pageHero": "#f5eaed"
+  }
 }

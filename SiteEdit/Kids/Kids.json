@@ -11,7 +11,12 @@
       "price": 1700000,
       "description": "A graceful, full-length shape made for catching the breeze.",
       "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": "pink-t",
@@ -19,7 +24,12 @@
       "price": 900000,
       "description": "A clean, full shape in a bright blue that does the talking.",
       "image": "/SiteEdit/Kids/pink_t.jpg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": "denim-dress",
@@ -27,7 +37,12 @@
       "price": 2000000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
       "image": "/SiteEdit/Kids/denim_dress.jpg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": "wtop-pskirt",
@@ -35,7 +50,26 @@
       "price": 1200000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
       "image": "/SiteEdit/Kids/wtop_pskirt.jpg",
-      "sizes": ["S","M","L","XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     }
-  ]
+  ],
+  "colors": {
+    "background": "#fff8f4",
+    "foreground": "#4b303b",
+    "primary": "#b54863",
+    "primaryForeground": "#ffffff",
+    "secondary": "#f4dfe6",
+    "secondaryForeground": "#5f3443",
+    "border": "#e5cfd5",
+    "muted": "#f3e8e3",
+    "mutedForeground": "#806670",
+    "accent": "#d4ad55",
+    "accentForeground": "#4b303b",
+    "pageHero": "#f5eaed"
+  }
 }
