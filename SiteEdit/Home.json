@@ -69,8 +69,6 @@
     "primaryForeground": "#ffffff",
     "secondary": "#f4dfe6",
     "secondaryForeground": "#5f3443",
-    "card": "#ffffff",
-    "cardForeground": "#4b303b",
     "border": "#e5cfd5",
     "muted": "#f3e8e3",
     "mutedForeground": "#806670",
