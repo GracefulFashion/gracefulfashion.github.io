@@ -3,38 +3,38 @@
   "label": "Kids",
   "title": "Kids",
   "description": "Little things for the little ones.",
-  "image": "/SiteEdit/Kids/pink_skirt.jpeg",
+  "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
   "products": [
     {
-      "id": "long-flowing-pink-skirt",
-      "name": "Long Flowing Pink Skirt",
-      "price": 3000000,
+      "id": "pink-top-blue-skirt",
+      "name": "Pink Top with Blue Skirt",
+      "price": 1700000,
       "description": "A graceful, full-length shape made for catching the breeze.",
-      "image": "/SiteEdit/Kids/pink_skirt.jpeg",
+      "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
       "sizes": ["S","M","L","XL"]
     },
     {
-      "id": "blue-skirt",
-      "name": "Blue Skirt",
-      "price": 3000000,
+      "id": "pink-t",
+      "name": "Pink Sassy T-Shirt",
+      "price": 900000,
       "description": "A clean, full shape in a bright blue that does the talking.",
-      "image": "/SiteEdit/Kids/blue_skirt.jpeg",
+      "image": "/SiteEdit/Kids/pink_t.jpg",
       "sizes": ["S","M","L","XL"]
     },
     {
-      "id": "red-skirt",
-      "name": "Red Skirt",
-      "price": 3000000,
+      "id": "denim-dress",
+      "name": "Denim Dress",
+      "price": 2000000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
-      "image": "/SiteEdit/Kids/red_skirt.jpeg",
+      "image": "/SiteEdit/Kids/denim_dress.jpg",
       "sizes": ["S","M","L","XL"]
     }
     {
       "id": "red-skirt",
       "name": "Red Skirt",
-      "price": 3000000,
+      "price": 1200000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
-      "image": "/SiteEdit/Kids/red_skirt.jpeg",
+      "image": "/SiteEdit/Kids/wtop_pskirt.jpg",
       "sizes": ["S","M","L","XL"]
     }
   ]
