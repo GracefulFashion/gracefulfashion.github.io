@@ -28,7 +28,7 @@ All editable SiteEdit text values support a small set of safe formatting tags, i
 
 ## Page colors
 
-Edit the `colors` object in `Home.json` to change the main page palette. Use six-digit CSS hex colors. Available fields are `background`, `foreground`, `primary`, `primaryForeground`, `secondary`, `secondaryForeground`, `card`, `cardForeground`, `border`, `muted`, `mutedForeground`, `accent`, and `accentForeground`. Omit a field to keep the built-in color.
+Edit the `colors` object in `Home.json` to change the main page palette. Use six-digit CSS hex colors. Available fields are `background`, `foreground`, `primary`, `primaryForeground`, `secondary`, `secondaryForeground`, `card`, `cardForeground`, `border`, `muted`, `mutedForeground`, `accent`, and `accentForeground`. Omit a field to keep the built-in color. `colors.card` controls product cards and other general card surfaces; it does not replace the individual homepage collection-card colors. Keep using each category file's `backgroundColor` for those collection cards.
 
 ## Contact information
 
