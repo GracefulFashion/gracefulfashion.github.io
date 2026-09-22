@@ -24,7 +24,15 @@ Change `label` to change the home-page card label, `description` to change the c
 
 ## Formatting the homepage intro
 
-The `hero.intro` value supports a small set of safe formatting tags: `<b>...</b>` or `<strong>...</strong>` for bold, `<u>...</u>` for underline, `<i>...</i>` or `<em>...</em>` for italics, and `<br>` for a line break. Do not use arbitrary HTML or attributes. For example: `"intro": "Soft <b>pieces</b><br>for every day."`
+All editable SiteEdit text values support a small set of safe formatting tags, including homepage text, category titles and descriptions, product names, story paragraphs, contact labels, and cart product names. The `hero.intro` value is one example. Supported tags: `<b>...</b>` or `<strong>...</strong>` for bold, `<u>...</u>` for underline, `<i>...</i>` or `<em>...</em>` for italics, and `<br>` for a line break. Do not use arbitrary HTML or attributes. For example: `"intro": "Soft <b>pieces</b><br>for every day."`
+
+## Page colors
+
+Edit the `colors` object in `Home.json` to change the main page palette. Use six-digit CSS hex colors. Available fields are `background`, `foreground`, `primary`, `primaryForeground`, `secondary`, `secondaryForeground`, `card`, `cardForeground`, `border`, `muted`, `mutedForeground`, `accent`, and `accentForeground`. Omit a field to keep the built-in color.
+
+## Contact information
+
+Edit `contact.links` in `Home.json` to change the contact buttons. Each entry uses `type`, `label`, and `url`; use `type: "email"` for an email link, and use other types such as `whatsapp`, `tiktok`, or `facebook` for links that open in a new tab. You can add, remove, reorder, or rename entries.
 
 ## Editing safely
 

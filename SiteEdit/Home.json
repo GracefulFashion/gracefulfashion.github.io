@@ -38,6 +38,43 @@
   "contact": {
     "eyebrow": "Come say hello",
     "title": "Let’s find your next favourite.",
-    "intro": "Have a question about a piece, a size, or delivery around Asaba? Grace would love to hear from you."
+    "intro": "Have a question about a piece, a size, or delivery around Asaba? Grace would love to hear from you.",
+    "links": [
+      {
+        "type": "email",
+        "label": "Email us",
+        "url": "mailto:adam.young811@gmail.com"
+      },
+      {
+        "type": "whatsapp",
+        "label": "WhatsApp · Grace Ohwimu",
+        "url": "https://wa.me/2347034981960"
+      },
+      {
+        "type": "tiktok",
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@gracefulfashion"
+      },
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/gracefulfashion"
+      }
+    ]
+  },
+  "colors": {
+    "background": "#fff8f4",
+    "foreground": "#4b303b",
+    "primary": "#b54863",
+    "primaryForeground": "#ffffff",
+    "secondary": "#f4dfe6",
+    "secondaryForeground": "#5f3443",
+    "card": "#ffffff",
+    "cardForeground": "#4b303b",
+    "border": "#e5cfd5",
+    "muted": "#f3e8e3",
+    "mutedForeground": "#806670",
+    "accent": "#d4ad55",
+    "accentForeground": "#4b303b"
   }
 }
