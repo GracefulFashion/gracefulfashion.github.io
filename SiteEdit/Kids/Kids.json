@@ -1,0 +1,41 @@
+{
+  "slug": "kids",
+  "label": "Kids",
+  "title": "Kids",
+  "description": "Little things for the little ones.",
+  "image": "/SiteEdit/Kids/pink_skirt.jpeg",
+  "products": [
+    {
+      "id": "long-flowing-pink-skirt",
+      "name": "Long Flowing Pink Skirt",
+      "price": 3000000,
+      "description": "A graceful, full-length shape made for catching the breeze.",
+      "image": "/SiteEdit/Kids/pink_skirt.jpeg",
+      "sizes": ["S","M","L","XL"]
+    },
+    {
+      "id": "blue-skirt",
+      "name": "Blue Skirt",
+      "price": 3000000,
+      "description": "A clean, full shape in a bright blue that does the talking.",
+      "image": "/SiteEdit/Kids/blue_skirt.jpeg",
+      "sizes": ["S","M","L","XL"]
+    },
+    {
+      "id": "red-skirt",
+      "name": "Red Skirt",
+      "price": 3000000,
+      "description": "A vivid everyday skirt with generous movement and soft volume.",
+      "image": "/SiteEdit/Kids/red_skirt.jpeg",
+      "sizes": ["S","M","L","XL"]
+    }
+    {
+      "id": "red-skirt",
+      "name": "Red Skirt",
+      "price": 3000000,
+      "description": "A vivid everyday skirt with generous movement and soft volume.",
+      "image": "/SiteEdit/Kids/red_skirt.jpeg",
+      "sizes": ["S","M","L","XL"]
+    }
+  ]
+}
