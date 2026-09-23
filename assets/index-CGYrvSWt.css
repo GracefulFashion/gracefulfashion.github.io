@@ -2,5 +2,7 @@
 
 /* Cart-page controls: configurable theme plus separated remove action. */
 .cart-page .cart-item{position:relative}
-.cart-page .remove-item{position:absolute;right:.75rem;top:3.2rem}
+.cart-page .remove-item{position:absolute;right:.75rem;bottom:1rem}
+.checkout-button.is-ready{border-color:hsl(var(--primary));background:hsl(var(--primary));color:hsl(var(--primary-foreground));cursor:pointer;opacity:1}
+.checkout-button.is-pressed{border-color:hsl(var(--primary));background:hsl(var(--primary));color:hsl(var(--primary-foreground));cursor:wait;opacity:1;transform:scale(.98)}
 @media(max-width:600px){.cart-page .cart-item{grid-template-columns:5.3rem minmax(0,1fr) auto}.cart-page .cart-item-total{grid-column:auto}}
