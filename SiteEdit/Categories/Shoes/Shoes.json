@@ -7,5 +7,7 @@
   "description": "Footwear for any occasion.",
   "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg",
   "folder": "Shoes",
-  "productsFile": "/SiteEdit/Shoes/Shoes.json"
+  "productsFile": "/SiteEdit/Shoes/Shoes.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
 }

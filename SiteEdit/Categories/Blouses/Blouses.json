@@ -7,5 +7,7 @@
   "description": "Soft shapes, thoughtful details, and sleeves worth noticing.",
   "image": "/SiteEdit/Blouses/green_blouse.webp",
   "folder": "Blouses",
-  "productsFile": "/SiteEdit/Blouses/Blouses.json"
+  "productsFile": "/SiteEdit/Blouses/Blouses.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
 }

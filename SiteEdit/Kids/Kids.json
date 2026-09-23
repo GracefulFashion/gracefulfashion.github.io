@@ -11,12 +11,7 @@
       "price": 1700000,
       "description": "A graceful, full-length shape made for catching the breeze.",
       "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "pink-t",
@@ -24,12 +19,7 @@
       "price": 900000,
       "description": "A clean, full shape in a bright blue that does the talking.",
       "image": "/SiteEdit/Kids/pink_t.jpg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "denim-dress",
@@ -37,12 +27,7 @@
       "price": 2000000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
       "image": "/SiteEdit/Kids/denim_dress.jpg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     },
     {
       "id": "wtop-pskirt",
@@ -50,12 +35,7 @@
       "price": 1200000,
       "description": "A vivid everyday skirt with generous movement and soft volume.",
       "image": "/SiteEdit/Kids/wtop_pskirt.jpg",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
+      "sizes": ["S","M","L","XL"]
     }
   ],
   "colors": {
@@ -70,6 +50,44 @@
     "mutedForeground": "#806670",
     "accent": "#d4ad55",
     "accentForeground": "#4b303b",
-    "pageHero": "#f5eaed"
+    "pageHero": "#f5eaed",
+    "backgroundOpacity": 1,
+    "foregroundOpacity": 1,
+    "primaryOpacity": 1,
+    "primaryForegroundOpacity": 1,
+    "secondaryOpacity": 1,
+    "secondaryForegroundOpacity": 1,
+    "borderOpacity": 1,
+    "mutedOpacity": 1,
+    "mutedForegroundOpacity": 1,
+    "accentOpacity": 1,
+    "accentForegroundOpacity": 1,
+    "buttons": {
+      "default": {
+        "background": "#4b303b",
+        "foreground": "#fff8f4",
+        "border": "#4b303b",
+        "opacity": 1
+      },
+      "hover": {
+        "background": "#b54863",
+        "foreground": "#ffffff",
+        "border": "#b54863",
+        "opacity": 1
+      },
+      "pressed": {
+        "background": "#b54863",
+        "foreground": "#ffffff",
+        "border": "#b54863",
+        "opacity": 1
+      },
+      "disabled": {
+        "background": "#4b303b",
+        "foreground": "#fff8f4",
+        "border": "#4b303b",
+        "opacity": 0.45
+      }
+    },
+    "pageHeroOpacity": 1
   }
 }

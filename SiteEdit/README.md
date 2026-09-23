@@ -30,6 +30,12 @@ Change `label` to change the home-page card label, `description` to change the c
 
 All editable SiteEdit text values support a small set of safe formatting tags, including homepage text, category titles and descriptions, product names, story paragraphs, contact labels, and cart product names. The `hero.intro` value is one example. Supported tags: `<b>...</b>` or `<strong>...</strong>` for bold, `<u>...</u>` for underline, `<i>...</i>` or `<em>...</em>` for italics, and `<br>` for a line break. Do not use arbitrary HTML or attributes. For example: `"intro": "Soft <b>pieces</b><br>for every day."`
 
+## Button colors and opacity
+
+Each color-bearing SiteEdit file also accepts a `colors.buttons` object with `default`, `hover`, `pressed`, and `disabled` states. Each state has `background`, `foreground`, `border`, and `opacity` fields. The button states control the primary page buttons, product-card Add to cart states, and the cart Pay with Paystack states. Opacity values range from `0` (transparent) to `1` (fully opaque).
+
+Every palette color may also have a matching opacity field, such as `backgroundOpacity`, `primaryOpacity`, or `borderOpacity`, with a value from `0` to `1`. These are optional and default to `1`, so existing color files continue to look the same. Category-card files additionally support `backgroundColorOpacity` and `titleColorOpacity`.
+
 ## Page colors
 
 Edit the `colors` object in `Home.json` to change the main page palette. Use six-digit CSS hex colors. Available fields are `background`, `foreground`, `primary`, `primaryForeground`, `secondary`, `secondaryForeground`, `border`, `muted`, `mutedForeground`, `accent`, and `accentForeground`. Omit a field to keep the built-in color. Collection-category card colors are controlled only by each category file's `titleColor` and `backgroundColor` in `SiteEdit/Categories/<Category>/<Category>.json`; do not use the homepage `colors` object for those cards.

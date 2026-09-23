@@ -33,6 +33,44 @@
     "mutedForeground": "#806670",
     "accent": "#d4ad55",
     "accentForeground": "#4b303b",
-    "pageHero": "#f5eaed"
+    "pageHero": "#f5eaed",
+    "backgroundOpacity": 1,
+    "foregroundOpacity": 1,
+    "primaryOpacity": 1,
+    "primaryForegroundOpacity": 1,
+    "secondaryOpacity": 1,
+    "secondaryForegroundOpacity": 1,
+    "borderOpacity": 1,
+    "mutedOpacity": 1,
+    "mutedForegroundOpacity": 1,
+    "accentOpacity": 1,
+    "accentForegroundOpacity": 1,
+    "buttons": {
+      "default": {
+        "background": "#4b303b",
+        "foreground": "#fff8f4",
+        "border": "#4b303b",
+        "opacity": 1
+      },
+      "hover": {
+        "background": "#b54863",
+        "foreground": "#ffffff",
+        "border": "#b54863",
+        "opacity": 1
+      },
+      "pressed": {
+        "background": "#b54863",
+        "foreground": "#ffffff",
+        "border": "#b54863",
+        "opacity": 1
+      },
+      "disabled": {
+        "background": "#4b303b",
+        "foreground": "#fff8f4",
+        "border": "#4b303b",
+        "opacity": 0.45
+      }
+    },
+    "pageHeroOpacity": 1
   }
 }

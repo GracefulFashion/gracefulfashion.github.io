@@ -6,3 +6,14 @@
 .checkout-button.is-ready{border-color:hsl(var(--primary));background:hsl(var(--primary));color:hsl(var(--primary-foreground));cursor:pointer;opacity:1}
 .checkout-button.is-pressed{border-color:hsl(var(--primary));background:hsl(var(--primary));color:hsl(var(--primary-foreground));cursor:wait;opacity:1;transform:scale(.98)}
 @media(max-width:600px){.cart-page .cart-item{grid-template-columns:5.3rem minmax(0,1fr) auto}.cart-page .cart-item-total{grid-column:auto}}
+
+/* SiteEdit button palette and state overrides. */
+.button-primary{border-color:hsl(var(--button-default-border));background:hsl(var(--button-default-background));color:hsl(var(--button-default-foreground))}
+.button-primary:hover{border-color:hsl(var(--button-hover-border));background:hsl(var(--button-hover-background));color:hsl(var(--button-hover-foreground))}
+.add-button{border-color:hsl(var(--button-default-border));background:hsl(var(--button-default-background));color:hsl(var(--button-default-foreground));opacity:var(--button-default-opacity,1)}
+.add-button:not(:disabled):hover{border-color:hsl(var(--button-hover-border));background:hsl(var(--button-hover-background));color:hsl(var(--button-hover-foreground));opacity:var(--button-hover-opacity,1)}
+.add-button.is-pressed{border-color:hsl(var(--button-pressed-border));background:hsl(var(--button-pressed-background));color:hsl(var(--button-pressed-foreground));opacity:var(--button-pressed-opacity,1)}
+.add-button:disabled{border-color:hsl(var(--button-disabled-border));background:hsl(var(--button-disabled-background));color:hsl(var(--button-disabled-foreground));opacity:var(--button-disabled-opacity,1)}
+.checkout-button{border-color:hsl(var(--button-disabled-border));background:hsl(var(--button-disabled-background));color:hsl(var(--button-disabled-foreground));opacity:var(--button-disabled-opacity,1)}
+.checkout-button.is-ready{border-color:hsl(var(--button-default-border));background:hsl(var(--button-default-background));color:hsl(var(--button-default-foreground));opacity:var(--button-default-opacity,1)}
+.checkout-button.is-pressed{border-color:hsl(var(--button-pressed-border));background:hsl(var(--button-pressed-background));color:hsl(var(--button-pressed-foreground));opacity:var(--button-pressed-opacity,1)}

@@ -7,5 +7,7 @@
   "description": "Movement, colour, and shapes that make every step feel lighter.",
   "image": "/SiteEdit/Skirts/pink_skirt.jpeg",
   "folder": "Skirts",
-  "productsFile": "/SiteEdit/Skirts/Skirts.json"
+  "productsFile": "/SiteEdit/Skirts/Skirts.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
 }

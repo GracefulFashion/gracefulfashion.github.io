@@ -7,5 +7,7 @@
   "description": "Glop it on and good to go!",
   "image": "/SiteEdit/Makeup/makeup_sample.jpg",
   "folder": "Makeup",
-  "productsFile": "/SiteEdit/Makeup/Makeup.json"
+  "productsFile": "/SiteEdit/Makeup/Makeup.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
 }

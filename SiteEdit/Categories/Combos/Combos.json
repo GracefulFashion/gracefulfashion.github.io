@@ -7,5 +7,7 @@
   "description": "The easiest way to look considered: two pieces, one lovely answer.",
   "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
   "folder": "Combos",
-  "productsFile": "/SiteEdit/Combos/Combos.json"
+  "productsFile": "/SiteEdit/Combos/Combos.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
 }

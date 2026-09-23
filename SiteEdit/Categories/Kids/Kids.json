@@ -7,5 +7,7 @@
   "description": "Little things for the little ones.",
   "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
   "folder": "Kids",
-  "productsFile": "/SiteEdit/Kids/Kids.json"
+  "productsFile": "/SiteEdit/Kids/Kids.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
 }
