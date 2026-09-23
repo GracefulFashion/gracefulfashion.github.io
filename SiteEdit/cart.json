@@ -3,7 +3,7 @@
   "paymentProvider": "paystack",
   "currency": "NGN",
   "currencyLocale": "en-NG",
-  "checkoutEnabled": true,
+  "checkoutEnabled": false,
   "testMode": true,
   "storeName": "Graceful Fashion",
   "checkoutButtonText": "Pay with Paystack",
