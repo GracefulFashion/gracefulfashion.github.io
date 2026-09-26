@@ -7,19 +7,11 @@
   "products": [
     {
       "id": "blouses-001",
-      "name": "Green Light Blouse",
-      "price": 3000000,
-      "description": "A soft, tailored blouse with a ruffled collar and easy sleeves.",
-      "image": "/SiteEdit/Blouses/green_blouse.webp",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Blouses/green_blouse.webp"
     },
     {
       "id": "blouses-002",
-      "name": "Brown Blouse with Lace and here's a bunch of extra words to test",
-      "price": 3000000,
-      "description": "A cropped, tie-front blouse with a warm vintage rhythm.",
-      "image": "/SiteEdit/Blouses/brown_blouse.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Blouses/brown_blouse.jpeg"
     }
   ],
   "colors": {
