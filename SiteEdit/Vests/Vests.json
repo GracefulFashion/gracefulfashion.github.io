@@ -7,19 +7,11 @@
   "products": [
     {
       "id": "green-hem-vest",
-      "name": "Green Hem Vest",
-      "price": 3000000,
-      "description": "An olive halter with gathered lines and a little silver detail.",
-      "image": "/SiteEdit/Vests/green_hem_vest.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Vests/green_hem_vest.jpeg"
     },
     {
       "id": "pink-flower-hem-vest",
-      "name": "Pink Flower Hem Vest",
-      "price": 3000000,
-      "description": "A floral tie-neck top with a romantic, easy-to-layer finish.",
-      "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg"
     }
   ],
   "colors": {
