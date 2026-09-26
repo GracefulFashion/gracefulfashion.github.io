@@ -7,11 +7,7 @@
   "products": [
     {
       "id": "evil-smile-bear-shirt",
-      "name": "Evil Smile Bear Shirt",
-      "price": 3000000,
-      "description": "A bright statement tee for adding a wink to your everyday.",
-      "image": "/SiteEdit/Shirts/evil_smile_bear.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Shirts/evil_smile_bear.jpeg"
     }
   ],
   "colors": {
