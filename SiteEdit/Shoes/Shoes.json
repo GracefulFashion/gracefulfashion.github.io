@@ -7,18 +7,7 @@
   "products": [
     {
       "id": "paz-sandles-woven",
-      "name": "Paz Leather Woven Sandles",
-      "price": 3000000,
-      "description": "High quality and airy.",
-      "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg",
-      "dropsizes": [
-        "37",
-        "38",
-        "39",
-        "40",
-        "41",
-        "42"
-      ]
+      "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg"
     }
   ],
   "colors": {
