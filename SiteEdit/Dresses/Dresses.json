@@ -7,11 +7,7 @@
   "products": [
     {
       "id": "dresses-001",
-      "name": "White Black Polkadot Dress",
-      "price": 3000000,
-      "description": "A playful halter silhouette with a softly gathered hem.",
-      "image": "/SiteEdit/Dresses/black_polkadot_dress.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Dresses/black_polkadot_dress.jpeg"
     }
   ],
   "colors": {
