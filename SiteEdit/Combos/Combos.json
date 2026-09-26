@@ -6,7 +6,7 @@
   "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
   "products": [
     {
-      "id": "pink-pajamas",
+      "id": "combos-001",
       "name": "Pink Pajamas",
       "price": 3000000,
       "description": "Candy-striped ease for slow mornings and soft evenings.",
@@ -14,7 +14,7 @@
       "sizes": ["S","M","L","XL"]
     },
     {
-      "id": "pink-top-skirt-combo",
+      "id": "combos-002",
       "name": "Pink Top and Skirt Combo",
       "price": 3000000,
       "description": "A lilac two-piece with just enough drama for a sunny entrance.",
