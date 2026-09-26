@@ -6,12 +6,8 @@
   "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg",
   "products": [
     {
-      "id": "new-york-elastic-jeans",
-      "name": "New York Elastic Jeans",
-      "price": 3000000,
-      "description": "Relaxed denim with a little city attitude and lots of movement.",
-      "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg",
-      "sizes": ["S","M","L","XL"]
+      "id": "pants-001",
+      "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg"
     }
   ],
   "colors": {
@@ -61,9 +57,3 @@
         "background": "#4b303b",
         "foreground": "#fff8f4",
         "border": "#4b303b",
-        "opacity": 0.45
-      }
-    },
-    "pageHeroOpacity": 1
-  }
-}
