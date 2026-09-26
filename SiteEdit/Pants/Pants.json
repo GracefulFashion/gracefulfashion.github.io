@@ -57,3 +57,9 @@
         "background": "#4b303b",
         "foreground": "#fff8f4",
         "border": "#4b303b",
+        "opacity": 0.45
+      }
+    },
+    "pageHeroOpacity": 1
+  }
+}
