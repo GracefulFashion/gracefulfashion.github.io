@@ -6,11 +6,11 @@
   "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg",
   "products": [
     {
-      "id": "green-hem-vest",
+      "id": "vests-001",
       "image": "/SiteEdit/Vests/green_hem_vest.jpeg"
     },
     {
-      "id": "pink-flower-hem-vest",
+      "id": "vests-002",
       "image": "/SiteEdit/Vests/pink_flower_hem_vest.jpeg"
     }
   ],
