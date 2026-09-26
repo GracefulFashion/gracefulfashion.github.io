@@ -7,35 +7,19 @@
   "products": [
     {
       "id": "kids-001",
-      "name": "Pink Top with Blue Skirt",
-      "price": 1700000,
-      "description": "A graceful, full-length shape made for catching the breeze.",
-      "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Kids/ptop_bskirt.jpg"
     },
     {
       "id": "kids-002",
-      "name": "Pink Sassy T-Shirt",
-      "price": 900000,
-      "description": "A clean, full shape in a bright blue that does the talking.",
-      "image": "/SiteEdit/Kids/pink_t.jpg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Kids/pink_t.jpg"
     },
     {
       "id": "kids-003",
-      "name": "Denim Dress",
-      "price": 2000000,
-      "description": "A vivid everyday skirt with generous movement and soft volume.",
-      "image": "/SiteEdit/Kids/denim_dress.jpg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Kids/denim_dress.jpg"
     },
     {
       "id": "kids-004",
-      "name": "White Top with Pink Skirt",
-      "price": 1200000,
-      "description": "A vivid everyday skirt with generous movement and soft volume.",
-      "image": "/SiteEdit/Kids/wtop_pskirt.jpg",
-      "sizes": ["S","M","L","XL"]
+      "image": "/SiteEdit/Kids/wtop_pskirt.jpg"
     }
   ],
   "colors": {
