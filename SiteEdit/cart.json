@@ -10,6 +10,9 @@
   "checkoutEmailLabel": "Email address",
   "checkoutEmailPlaceholder": "you@example.com",
   "checkoutNote": "You will be redirected to Paystack to complete your payment.",
+  "orderConfirmingMessage": "We're confirming your payment — this only takes a moment.",
+  "orderPaidMessage": "Thank you! Your payment was successful.",
+  "orderFailedMessage": "We couldn't confirm this payment. If you were charged, please contact us so we can help.",
   "colors": {
     "background": "#fff8f4",
     "foreground": "#4b303b",
