@@ -38,8 +38,8 @@
   "deliveryMethodTitle": "How would you like to get your order?",
   "$comment_deliveryMethods": "THE TWO CHOICES. Change 'label' and 'description' freely. Never change 'key': it must stay exactly pickup and delivery.",
   "deliveryMethods": [
-    { "key": "pickup", "label": "Pickup", "description": "Collect your order in store or at a delivery center." },
-    { "key": "delivery", "label": "Delivery", "description": "Bring it to me or a recipient." }
+    { "key": "pickup", "label": "Pickup", "description": "Collect your order in store or delivery center." },
+    { "key": "delivery", "label": "Delivery", "description": "Bring it to your doorstep or a recipient." }
   ],
   "pickupTitle": "Pickup location",
   "pickupPlaceholder": "Choose a pickup location",
