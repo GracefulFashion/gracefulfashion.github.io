@@ -26,7 +26,7 @@
     },
     {
       "key": "phone",
-      "label": "Phone number",
+      "label": "Phone number [+234]",
       "placeholder": "0803 123 4567",
       "type": "tel",
       "required": true,
