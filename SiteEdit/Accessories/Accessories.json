@@ -10,56 +10,176 @@
       "image": "/SiteEdit/Accessories/gold_necklace.jpg"
     }
   ],
-  "colors": {
-    "background": "#fff8f4",
-    "foreground": "#4b303b",
-    "primary": "#b54863",
-    "primaryForeground": "#ffffff",
-    "secondary": "#f4dfe6",
-    "secondaryForeground": "#5f3443",
-    "border": "#e5cfd5",
-    "muted": "#f3e8e3",
-    "mutedForeground": "#806670",
-    "accent": "#d4ad55",
-    "accentForeground": "#4b303b",
-    "pageHero": "#f5eaed",
-    "backgroundOpacity": 1,
-    "foregroundOpacity": 1,
-    "primaryOpacity": 1,
-    "primaryForegroundOpacity": 1,
-    "secondaryOpacity": 1,
-    "secondaryForegroundOpacity": 1,
-    "borderOpacity": 1,
-    "mutedOpacity": 1,
-    "mutedForegroundOpacity": 1,
-    "accentOpacity": 1,
-    "accentForegroundOpacity": 1,
-    "buttons": {
-      "default": {
-        "background": "#4b303b",
-        "foreground": "#fff8f4",
-        "border": "#4b303b",
-        "opacity": 1
-      },
-      "hover": {
-        "background": "#b54863",
-        "foreground": "#ffffff",
-        "border": "#b54863",
-        "opacity": 1
-      },
-      "pressed": {
-        "background": "#b54863",
-        "foreground": "#ffffff",
-        "border": "#b54863",
-        "opacity": 1
-      },
-      "disabled": {
-        "background": "#4b303b",
-        "foreground": "#fff8f4",
-        "border": "#4b303b",
-        "opacity": 0.45
-      }
+  "categoryPageStyle": {
+    "$comment": "CATEGORY PAGE STYLE. THIS WHOLE BLOCK IS IDENTICAL FOR EVERY CATEGORY: copy it from here and paste it over the same block in any other category file. Only the words above it (slug, label, title, description, image) and the products list differ per category. Groups run from the top of the page downward. Inside a group: the words first, then font and font size, then colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px.",
+    "basePalette": {
+      "$comment": "BASE COLOURS for this category page only. Anything without its own colour below uses these.",
+      "pageBackgroundColor": "#fff8f4",
+      "pageBackgroundOpacity": 1,
+      "mainTextColor": "#4b303b",
+      "mainTextOpacity": 1,
+      "brandColor": "#b54863",
+      "brandOpacity": 1,
+      "textOnBrandColor": "#ffffff",
+      "textOnBrandOpacity": 1,
+      "softBackgroundColor": "#f4dfe6",
+      "softBackgroundOpacity": 1,
+      "textOnSoftBackgroundColor": "#5f3443",
+      "textOnSoftBackgroundOpacity": 1,
+      "lineColor": "#e5cfd5",
+      "lineOpacity": 1,
+      "mutedBackgroundColor": "#f3e8e3",
+      "mutedBackgroundOpacity": 1,
+      "softTextColor": "#806670",
+      "softTextOpacity": 1,
+      "accentColor": "#d4ad55",
+      "accentOpacity": 1,
+      "textOnAccentColor": "#4b303b",
+      "textOnAccentOpacity": 1
     },
-    "pageHeroOpacity": 1
+    "hero": {
+      "$comment": "TOP OF THE CATEGORY PAGE: the All collections button, then the category title and description (their words are edited at the top of this file).",
+      "sectionBackgroundColor": "#f5eaed",
+      "sectionBackgroundOpacity": 1,
+      "sectionBottomLineColor": "#e5cfd5",
+      "sectionBottomLineOpacity": 1,
+      "allCollectionsButton": {
+        "$comment": "ALL COLLECTIONS BUTTON (same look as the cart's Continue shopping button). normal = resting, hover = mouse over.",
+        "text": "All collections",
+        "font": "default",
+        "fontSize": "default",
+        "normal": {
+          "backgroundColor": "#4b303b",
+          "backgroundOpacity": 1,
+          "textColor": "#fff8f4",
+          "textOpacity": 1,
+          "borderColor": "#4b303b",
+          "borderOpacity": 1
+        },
+        "hover": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        }
+      },
+      "titleFont": "default",
+      "titleFontSize": "default",
+      "titleColor": "#4b303b",
+      "titleOpacity": 1,
+      "descriptionFont": "default",
+      "descriptionFontSize": "default",
+      "descriptionColor": "#806670",
+      "descriptionOpacity": 1
+    },
+    "productCards": {
+      "$comment": "THE PRODUCT CARDS. Product names and prices come from the shop database, so only their look is set here.",
+      "cardBackgroundColor": "#ffffff",
+      "cardBackgroundOpacity": 1,
+      "cardBorderColor": "#e5cfd5",
+      "cardBorderOpacity": 1,
+      "imageBackgroundColor": "#faf7f5",
+      "imageBackgroundOpacity": 1,
+      "nameFont": "default",
+      "nameFontSize": "default",
+      "nameColor": "#4b303b",
+      "nameOpacity": 1,
+      "priceFont": "default",
+      "priceFontSize": "default",
+      "priceColor": "#b54863",
+      "priceOpacity": 1,
+      "sizeLabelText": "Select a size",
+      "sizeLabelFont": "default",
+      "sizeLabelFontSize": "default",
+      "sizeLabelColor": "#806670",
+      "sizeLabelOpacity": 1,
+      "sizeButtons": {
+        "$comment": "SIZE BUTTONS (for products with a few sizes such as S, M, L). 'highlight' is the look when hovered or selected.",
+        "buttonFont": "default",
+        "buttonFontSize": "default",
+        "textColor": "#4b303b",
+        "textOpacity": 1,
+        "borderColor": "#e5cfd5",
+        "borderOpacity": 1,
+        "backgroundColor": "#ffffff",
+        "backgroundOpacity": 0,
+        "highlightTextColor": "#ffffff",
+        "highlightTextOpacity": 1,
+        "highlightBorderColor": "#b54863",
+        "highlightBorderOpacity": 1,
+        "highlightBackgroundColor": "#b54863",
+        "highlightBackgroundOpacity": 1
+      },
+      "sizeDropdown": {
+        "$comment": "SIZE DROPDOWN (for products with a longer list of sizes, such as shoes). The same look is used for the cart's State, Town and Pickup menus.",
+        "placeholderText": "Choose a size",
+        "placeholderFont": "default",
+        "placeholderFontSize": "default",
+        "triggerBackgroundColor": "#fff8f4",
+        "triggerBackgroundOpacity": 1,
+        "triggerTextColor": "#4b303b",
+        "triggerTextOpacity": 1,
+        "triggerBorderColor": "#e5cfd5",
+        "triggerBorderOpacity": 1,
+        "triggerHoverBorderColor": "#b54863",
+        "triggerHoverBorderOpacity": 1,
+        "arrowColor": "#b54863",
+        "arrowOpacity": 1,
+        "menuBackgroundColor": "#fff8f4",
+        "menuBackgroundOpacity": 1,
+        "menuBorderColor": "#e5cfd5",
+        "menuBorderOpacity": 1,
+        "optionFont": "default",
+        "optionFontSize": "default",
+        "optionTextColor": "#4b303b",
+        "optionTextOpacity": 1,
+        "optionHighlightBackgroundColor": "#b54863",
+        "optionHighlightBackgroundOpacity": 1,
+        "optionHighlightTextColor": "#ffffff",
+        "optionHighlightTextOpacity": 1
+      },
+      "addButton": {
+        "$comment": "ADD TO CART BUTTON. text = normal wording, addedText = wording for a moment after adding, chooseSizeText = wording while a size is still needed. States: normal, hover (mouse over), pressed (just clicked), disabled (size not chosen yet).",
+        "text": "Add to cart",
+        "addedText": "Added to cart",
+        "chooseSizeText": "Choose a size",
+        "font": "default",
+        "fontSize": "default",
+        "normal": {
+          "backgroundColor": "#4b303b",
+          "backgroundOpacity": 1,
+          "textColor": "#fff8f4",
+          "textOpacity": 1,
+          "borderColor": "#4b303b",
+          "borderOpacity": 1
+        },
+        "hover": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        },
+        "pressed": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        },
+        "disabled": {
+          "backgroundColor": "#4b303b",
+          "backgroundOpacity": 0.45,
+          "textColor": "#fff8f4",
+          "textOpacity": 0.45,
+          "borderColor": "#4b303b",
+          "borderOpacity": 0.45
+        }
+      }
+    }
   }
 }
