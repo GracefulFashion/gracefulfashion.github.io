@@ -1,27 +1,11 @@
 [
   {
-    "folder": "Accessories",
-    "file": "Accessories.json"
-  },
-   {
-    "folder": "Makeup",
-    "file": "Makeup.json"
-  },
-  {
     "folder": "Kids",
     "file": "Kids.json"
   },
   {
-    "folder": "Blouses",
-    "file": "Blouses.json"
-  },
-  {
     "folder": "Combos",
     "file": "Combos.json"
-  },
-  {
-    "folder": "Dresses",
-    "file": "Dresses.json"
   },
   {
     "folder": "Pants",
@@ -32,15 +16,15 @@
     "file": "Shirts.json"
   },
   {
-    "folder": "Skirts",
-    "file": "Skirts.json"
-  },
-  {
-    "folder": "Vests",
-    "file": "Vests.json"
-  },
-  {
     "folder": "Shoes",
     "file": "Shoes.json"
+  },
+    {
+    "folder": "Accessories",
+    "file": "Accessories.json"
+  },
+   {
+    "folder": "Makeup",
+    "file": "Makeup.json"
   }
 ]
