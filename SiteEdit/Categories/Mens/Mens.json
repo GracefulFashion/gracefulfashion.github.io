@@ -6,8 +6,8 @@
   "backgroundColor": "#fffaf8",
   "description": "Im sorry is this too girly for you dear?  The website said it was for men!",
   "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
-  "folder": "Combos",
-  "productsFile": "/SiteEdit/Combos/Combos.json",
+  "folder": "Mens",
+  "productsFile": "/SiteEdit/Mens/Mens.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
