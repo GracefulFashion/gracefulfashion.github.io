@@ -1,17 +1,17 @@
 {
-  "slug": "combos",
-  "label": "Combos",
-  "title": "Combos",
+  "slug": "dresses-combos",
+  "label": "Dresses-Combos",
+  "title": "Dresses & Combos",
   "description": "The easiest way to look considered: two pieces, one lovely answer.",
-  "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
+  "image": "/SiteEdit/dresses-combos/pink_top_skirt_combo.jpeg",
   "products": [
     {
       "id": "combos-001",
-      "image": "/SiteEdit/Combos/pink_pajamas.jpeg"
+      "image": "/SiteEdit/dresses-ombos/pink_pajamas.jpeg"
     },
     {
       "id": "combos-002",
-      "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg"
+      "image": "/SiteEdit/dresses-combos/pink_top_skirt_combo.jpeg"
     }
   ],
   "categoryPageStyle": {
