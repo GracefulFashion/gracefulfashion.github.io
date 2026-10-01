@@ -7,11 +7,15 @@
   "products": [
     {
       "id": "mens-001",
-      "image": "/SiteEdit/Combos/pink_pajamas.jpeg"
+      "image": "/SiteEdit/Mens/mens-agbada.jpg"
     },
     {
       "id": "mens-002",
-      "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg"
+      "image": "/SiteEdit/Mens/mens-satin-necktie.jpg"
+    },
+    {
+      "id": "mens-003",
+      "image": "/SiteEdit/Mens/mens-fila.jpg"
     }
   ],
   "categoryPageStyle": {
