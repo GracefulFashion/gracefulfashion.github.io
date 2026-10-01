@@ -1,5 +1,13 @@
 [
   {
+    "folder": "Accessories",
+    "file": "Accessories.json"
+  },
+  {
+    "folder": "Makeup",
+    "file": "Makeup.json"
+  },
+  {
     "folder": "Kids",
     "file": "Kids.json"
   },
@@ -23,12 +31,8 @@
     "folder": "Shoes",
     "file": "Shoes.json"
   },
-    {
-    "folder": "Accessories",
-    "file": "Accessories.json"
-  },
-   {
-    "folder": "Makeup",
-    "file": "Makeup.json"
+  {
+    "folder": "test",
+    "file": "test.json"
   }
 ]
