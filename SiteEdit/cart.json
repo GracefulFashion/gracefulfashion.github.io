@@ -114,7 +114,7 @@
     "deliveryPromptText": "Select Delivery or Pickup",
     "noDeliveryFeeText": "No Delivery Fee",
     "taxLabelText": "Tax",
-    "taxIncludedText": "Included",
+    "taxIncludedText": "VAT {percent}% included",
     "vatIncludedText": "VAT {percent}% included",
     "totalLabelText": "Total",
     "rowLabelFont": "default",
