@@ -1,0 +1,13 @@
+{
+  "slug": "fall-winter",
+  "label": "fall-winter",
+  "title": "Fall & Winter",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
+  "description": "For the coming cold season to stay cozy and warm.",
+  "image": "/SiteEdit/fall-winter/slt-sweater-green.jpeg",
+  "folder": "fall-winter",
+  "productsFile": "/SiteEdit/fall-winter/fall-winter.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
+}
