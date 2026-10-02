@@ -7,7 +7,27 @@
   "products": [
     {
       "id": "shoes-001",
-      "image": "/SiteEdit/Shoes/paz_sandles_woven.jpg"
+      "image": "/SiteEdit/Shoes/stiletto-black.jpg"
+    },
+    {
+      "id": "shoes-002",
+      "image": "/SiteEdit/Shoes/stiletto-white.jpg"
+    },
+    {
+      "id": "shoes-003",
+      "image": "/SiteEdit/Shoes/leaf-lace-heels-red.jpg"
+    },
+    {
+      "id": "shoes-004",
+      "image": "/SiteEdit/Shoes/leaf-lace-heels-green.jpg"
+    }
+    {
+      "id": "shoes-005",
+      "image": "/SiteEdit/Shoes/leaf-lace-heels-black.jpg"
+    },
+    {
+      "id": "shoes-006",
+      "image": "/SiteEdit/Shoes/leaf-lace-heels-gold.jpg"
     }
   ],
   "categoryPageStyle": {
