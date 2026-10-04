@@ -15,13 +15,16 @@
         { "id": "fall-winter-002-green", "image": "/SiteEdit/fall-winter/kmr-sweater-green.jpeg", "swatch": "#2f6b45" },
         { "id": "fall-winter-002-red", "image": "/SiteEdit/fall-winter/kmr-sweater-red.jpeg", "swatch": "#a8242f" },
         { "id": "fall-winter-002-gray", "image": "/SiteEdit/fall-winter/kmr-sweater-gray.jpeg", "swatch": "#999999" },
-        { "id": "fall-winter-002-green", "image": "/SiteEdit/fall-winter/kmr-sweater-black.jpeg", "swatch": "#000000" }
+        { "id": "fall-winter-002-black", "image": "/SiteEdit/fall-winter/kmr-sweater-black.jpeg", "swatch": "#111111" }
       ]
     },
     {
       "id": "fall-winter-003",
       "image": "/SiteEdit/fall-winter/opspeed-sweater-gray.jpeg"
-    }
+    },
+    {
+      "id": "fall-winter-004",
+      "image": "/SiteEdit/fall-winter/cnt-sweater-green.jpeg"
   ],
     "categoryPageStyle": {
     "$comment": "CATEGORY PAGE STYLE. THIS WHOLE BLOCK IS IDENTICAL FOR EVERY CATEGORY: copy it from here and paste it over the same block in any other category file. Only the words above it (slug, label, title, description, image) and the products list differ per category. Groups run from the top of the page downward. Inside a group: the words first, then font and font size, then colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px.",
