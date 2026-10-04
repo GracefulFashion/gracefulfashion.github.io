@@ -11,6 +11,14 @@
     {
       "id": "mens-003",
       "image": "/SiteEdit/mens/mens-fila.jpg"
+    },
+    {
+      "$comment": "A product sold in colours: list each colour by its id from CatalogEdit, with its photo and the colour of its circle (a six-digit code like #c9a54a). The product's own id comes first; it groups the colours into one card.",
+      "id": "mens-004",
+      "variants": [
+        { "id": "mens-004-green", "image": "/SiteEdit/mens/trunks-green.jpeg", "swatch": "#2f6b45" },
+        { "id": "mens-004-black", "image": "/SiteEdit/mens/trunks-black.jpeg", "swatch": "#111111" }
+      ]
     }
   ],
   "categoryPageStyle": {
