@@ -1,9 +1,4 @@
 {
-  "slug": "test",
-  "label": "Test products",
-  "title": "Test Products",
-  "description": "Labelled for cart and inventory testing",
-  "image": "/SiteEdit/test/test.jpg",
   "products": [
     {
       "id": "test-001",
