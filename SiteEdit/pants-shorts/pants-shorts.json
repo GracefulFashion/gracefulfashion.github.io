@@ -2,15 +2,15 @@
   "products": [
     {
       "id": "pants-001",
-      "image": "/SiteEdit/pants/ny_elastic_jeans.jpeg"
+      "image": "/SiteEdit/pants-shorts/ny_elastic_jeans.jpeg"
     },
     {
       "id": "pants-002",
-      "image": "/SiteEdit/pants/lep_cross_jeans.jpeg"
+      "image": "/SiteEdit/pants-shorts/lep_cross_jeans.jpeg"
     },
     {
       "id": "pants-003",
-      "image": "/SiteEdit/pants/stud_jeans.jpeg"
+      "image": "/SiteEdit/pants-shorts/stud_jeans.jpeg"
     }
   ],
   "categoryPageStyle": {
