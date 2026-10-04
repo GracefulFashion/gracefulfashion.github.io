@@ -1,25 +1,20 @@
 {
-  "slug": "pants",
-  "label": "Pants & Shorts",
-  "title": "Pants & Shorts",
-  "description": "Comfortable foundations with enough character to lead the outfit.",
-  "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg",
   "products": [
     {
       "id": "pants-001",
-      "image": "/SiteEdit/Pants/ny_elastic_jeans.jpeg"
+      "image": "/SiteEdit/pants/ny_elastic_jeans.jpeg"
     },
     {
       "id": "pants-002",
-      "image": "/SiteEdit/Pants/lep_cross_jeans.jpeg"
+      "image": "/SiteEdit/pants/lep_cross_jeans.jpeg"
     },
     {
       "id": "pants-003",
-      "image": "/SiteEdit/Pants/jean_shorts.jpeg"
+      "image": "/SiteEdit/pants/jean_shorts.jpeg"
     },
     {
       "id": "pants-004",
-      "image": "/SiteEdit/Pants/stud_jeans.jpeg"
+      "image": "/SiteEdit/pants/stud_jeans.jpeg"
     }
   ],
   "categoryPageStyle": {
