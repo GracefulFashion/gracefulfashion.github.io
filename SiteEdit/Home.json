@@ -2,7 +2,7 @@
   "$comment": "SITE EDIT FILE FOR THE HOME PAGE AND THE PARTS SHARED BY EVERY PAGE (top bar, navigation, footer, base colours). Groups run from the top of the page downward. Inside a group: the words first, then that text's font and font size, then its colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px. Keep every comma and quotation mark; check the file with a JSON validator before saving. Notes like this one start with $comment and are ignored by the site.",
   "errors": {
     "$comment": "WHEN SOMETHING CAN'T BE SHOWN. image: the picture used for any product, colour or category photo that can't be found, and on cards that are Temporarily Unavailable. Put the file in the assets folder next to the roses and write its name here, starting with a slash (change .jpg to .png or .webp if your file is one of those). unavailableText: the words shown on a card or category whose file has a mistake. The mistake itself (file, line and column) is written to the Vercel logs, never shown to visitors.",
-    "image": "/assets/gf-error.jpg",
+    "image": "/assets/gf-error.png",
     "unavailableText": "Temporarily Unavailable"
   },
   "basePalette": {
