@@ -1,21 +1,16 @@
 {
-  "slug": "mens",
-  "label": "For Men",
-  "title": "For Men",
-  "description": "Im sorry is this too girly for you dear?  The website said it was for men!",
-  "image": "/SiteEdit/Combos/pink_top_skirt_combo.jpeg",
   "products": [
     {
       "id": "mens-001",
-      "image": "/SiteEdit/Mens/mens-agbada.jpg"
+      "image": "/SiteEdit/mens/mens-agbada.jpg"
     },
     {
       "id": "mens-002",
-      "image": "/SiteEdit/Mens/mens-satin-necktie.jpg"
+      "image": "/SiteEdit/mens/mens-satin-necktie.jpg"
     },
     {
       "id": "mens-003",
-      "image": "/SiteEdit/Mens/mens-fila.jpg"
+      "image": "/SiteEdit/mens/mens-fila.jpg"
     }
   ],
   "categoryPageStyle": {
