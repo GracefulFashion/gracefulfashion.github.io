@@ -4,17 +4,17 @@
       "$comment": "A product sold in colours: list each colour by its id from CatalogEdit, with its photo and the colour of its circle (a six-digit code like #c9a54a). The product's own id comes first; it groups the colours into one card.",
       "id": "shoes-001",
       "variants": [
-        { "id": "shoes-001-black", "image": "/SiteEdit/Shoes/stiletto-black.jpeg", "swatch": "#1f1a1c" },
-        { "id": "shoes-001-white", "image": "/SiteEdit/Shoes/stiletto-white.jpeg", "swatch": "#ffffff" }
+        { "id": "shoes-001-black", "image": "/SiteEdit/shoes/stiletto-black.jpeg", "swatch": "#1f1a1c" },
+        { "id": "shoes-001-white", "image": "/SiteEdit/shoes/stiletto-white.jpeg", "swatch": "#ffffff" }
       ]
     },
     {
       "id": "shoes-002",
       "variants": [
-        { "id": "shoes-002-green", "image": "/SiteEdit/Shoes/leaf-lace-heels-green.jpg", "swatch": "#2f6b45" },
-        { "id": "shoes-002-red", "image": "/SiteEdit/Shoes/leaf-lace-heels-red.jpg", "swatch": "#a8242f" },
-        { "id": "shoes-002-black", "image": "/SiteEdit/Shoes/leaf-lace-heels-black.jpg", "swatch": "#1f1a1c" },
-        { "id": "shoes-002-gold", "image": "/SiteEdit/Shoes/leaf-lace-heels-gold.jpg", "swatch": "#c9a54a" }
+        { "id": "shoes-002-green", "image": "/SiteEdit/shoes/leaf-lace-heels-green.jpg", "swatch": "#2f6b45" },
+        { "id": "shoes-002-red", "image": "/SiteEdit/shoes/leaf-lace-heels-red.jpg", "swatch": "#a8242f" },
+        { "id": "shoes-002-black", "image": "/SiteEdit/shoes/leaf-lace-heels-black.jpg", "swatch": "#1f1a1c" },
+        { "id": "shoes-002-gold", "image": "/SiteEdit/shoes/leaf-lace-heels-gold.jpg", "swatch": "#c9a54a" }
       ]
     }
   ],
