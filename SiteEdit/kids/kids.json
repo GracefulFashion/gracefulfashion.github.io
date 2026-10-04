@@ -1,25 +1,20 @@
 {
-  "slug": "kids",
-  "label": "Kids",
-  "title": "Kids",
-  "description": "Little things for the little ones.",
-  "image": "/SiteEdit/Kids/ptop_bskirt.jpg",
   "products": [
     {
       "id": "kids-001",
-      "image": "/SiteEdit/Kids/ptop_bskirt.jpg"
+      "image": "/SiteEdit/kids/ptop_bskirt.jpg"
     },
     {
       "id": "kids-002",
-      "image": "/SiteEdit/Kids/pink_t.jpg"
+      "image": "/SiteEdit/kids/pink_t.jpg"
     },
     {
       "id": "kids-003",
-      "image": "/SiteEdit/Kids/denim_dress.jpg"
+      "image": "/SiteEdit/kids/denim_dress.jpg"
     },
     {
       "id": "kids-004",
-      "image": "/SiteEdit/Kids/wtop_pskirt.jpg"
+      "image": "/SiteEdit/kids/wtop_pskirt.jpg"
     }
   ],
     "categoryPageStyle": {
