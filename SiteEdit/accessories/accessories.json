@@ -1,13 +1,8 @@
 {
-  "slug": "accessories",
-  "label": "Accessories",
-  "title": "Accessories",
-  "description": "Little details that make the whole look feel like yours.",
-  "image": "/SiteEdit/Accessories/gold_necklace.jpg",
   "products": [
     {
       "id": "accessories-001",
-      "image": "/SiteEdit/Accessories/gold_necklace.jpg"
+      "image": "/SiteEdit/accessories/gold_necklace.jpg"
     }
   ],
   "categoryPageStyle": {
