@@ -6,7 +6,7 @@
   "backgroundColor": "#fffaf8",
   "description": "Everyday favourites with a little more personality.",
   "image": "/SiteEdit/shirts/evil_smile_bear.jpeg",
-  "folder": "Shirts",
+  "folder": "shirts",
   "productsFile": "/SiteEdit/shirts/shirts.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
