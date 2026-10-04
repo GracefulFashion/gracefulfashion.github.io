@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "id": "fall-winter-001-green",
-      "image": "/SiteEdit/fall-winter/stl-sweater-green.jpeg"
-    },
-    {
-      "id": "fall-winter-001-red",
-      "image": "/SiteEdit/fall-winter/stl-sweater-red.jpeg"
+      "$comment": "A product sold in colours: list each colour by its id from CatalogEdit, with its photo and the colour of its circle (a six-digit code like #c9a54a). The product's own id comes first; it groups the colours into one card.",
+      "id": "fall-winter-001",
+      "variants": [
+        { "id": "fall-winter-001-green", "image": "/SiteEdit/fall-winter/stl-sweater-green.jpeg", "swatch": "#2f6b45" },
+        { "id": "fall-winter-001-red", "image": "/SiteEdit/fall-winter/stl-sweater-red.jpeg", "swatch": "#a8242f" }
+      ]
     },
     {
       "id": "fall-winter-003",
