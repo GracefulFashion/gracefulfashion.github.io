@@ -16,12 +16,12 @@
     "file": "Kids.json"
   },
   {
-    "folder": "dresses-combos",
-    "file": "dresses-combos.json"
-  },
-  {
     "folder": "Mens",
     "file": "Mens.json"
+  },
+  {
+    "folder": "skirts-dresses",
+    "file": "skirts-dresses.json"
   },
   {
     "folder": "Pants",
