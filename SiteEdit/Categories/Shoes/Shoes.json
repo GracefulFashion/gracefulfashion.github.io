@@ -5,9 +5,9 @@
   "titleColor": "#864f5d",
   "backgroundColor": "#fffaf8",
   "description": "Footwear for any occasion.",
-  "image": "/SiteEdit/Shoes/stiletto-black.jpeg",
-  "folder": "Shoes",
-  "productsFile": "/SiteEdit/Shoes/Shoes.json",
+  "image": "/SiteEdit/shoes/stiletto-black.jpeg",
+  "folder": "shoes",
+  "productsFile": "/SiteEdit/shoes/shoes.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
