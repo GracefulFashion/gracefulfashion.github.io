@@ -28,8 +28,8 @@
     "file": "pants.json"
   },
   {
-    "folder": "Shirts",
-    "file": "Shirts.json"
+    "folder": "shirts",
+    "file": "shirts.json"
   },
   {
     "folder": "shoes",
