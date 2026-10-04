@@ -5,9 +5,9 @@
   "titleColor": "#864f5d",
   "backgroundColor": "#fffaf8",
   "description": "Flashy styles for proper peacocking!",
-  "image": "/SiteEdit/Mens/mens-agbada.jpg",
-  "folder": "Mens",
-  "productsFile": "/SiteEdit/Mens/Mens.json",
+  "image": "/SiteEdit/mens/mens-agbada.jpg",
+  "folder": "mens",
+  "productsFile": "/SiteEdit/mens/mens.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
