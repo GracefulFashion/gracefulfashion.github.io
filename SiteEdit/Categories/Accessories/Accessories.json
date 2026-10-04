@@ -5,9 +5,9 @@
   "titleColor": "#864f5d",
   "backgroundColor": "#fffaf8",
   "description": "Little details that make the whole look feel like yours.",
-  "image": "/SiteEdit/Accessories/gold_necklace.jpg",
-  "folder": "Accessories",
-  "productsFile": "/SiteEdit/Accessories/Accessories.json",
+  "image": "/SiteEdit/accessories/gold_necklace.jpg",
+  "folder": "accessories",
+  "productsFile": "/SiteEdit/accessories/Accessories.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
