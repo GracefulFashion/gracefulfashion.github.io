@@ -11,6 +11,10 @@
         { "id": "accessories-002-black", "image": "/SiteEdit/accessories/chrisb_bag-black.jpeg", "swatch": "#111111" },
         { "id": "accessories-002-green", "image": "/SiteEdit/accessories/chrisb_bag-green.jpeg", "swatch": "#2f6b45" }
       ]
+    },
+    {
+      "id": "accessories-003",
+      "image": "/quilted_chain_shoulder_bag.jpg"
     }
   ],
   "categoryPageStyle": {
