@@ -19,6 +19,17 @@
         { "id": "mens-004-green", "image": "/SiteEdit/mens/trunks-green.jpeg", "swatch": "#2f6b45" },
         { "id": "mens-004-black", "image": "/SiteEdit/mens/trunks-black.jpeg", "swatch": "#111111" }
       ]
+    },
+    {
+      "$comment": "A product sold in colours: list each colour by its id from CatalogEdit, with its photo and the colour of its circle (a six-digit code like #c9a54a). The product's own id comes first; it groups the colours into one card.",
+      "id": "mens-005",
+      "variants": [
+        { "id": "mens-004-black", "image": "/SiteEdit/mens/tracksuit-black.jpeg", "swatch": "#111111" },
+        { "id": "mens-004-charcoal", "image": "/SiteEdit/mens/tracksuit-charcoal.jpeg", "swatch": "#555555" },
+        { "id": "mens-004-white", "image": "/SiteEdit/mens/tracksuit-white.jpeg", "swatch": "#eeeeee" },
+        { "id": "mens-004-yellow", "image": "/SiteEdit/mens/tracksuit-yellow.jpeg", "swatch": "#FFFF00" },
+        { "id": "mens-004-magenta", "image": "/SiteEdit/mens/tracksuit-magenta.jpeg", "swatch": "#FEF65C" },
+      ]
     }
   ],
   "categoryPageStyle": {
