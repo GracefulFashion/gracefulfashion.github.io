@@ -7,7 +7,7 @@
   "description": "Flashy styles for proper peacocking!",
   "image": "/SiteEdit/mens/mens-agbada.jpg",
   "folder": "mens",
-  "productsFile": "/SiteEdit/mens/mens.json",
+  "productsFile": "/SiteEdit/mens/Mens.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
