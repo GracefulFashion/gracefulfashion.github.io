@@ -5,9 +5,9 @@
   "titleColor": "#864f5d",
   "backgroundColor": "#fffaf8",
   "description": "Labelled for cart and inventory testing",
-  "image": "/SiteEdit/test/test.jpg",
+  "image": "/SiteEdit/test/empty-error-test.jpg",
   "folder": "test",
-  "productsFile": "/SiteEdit/test/test.json",
+  "productsFile": "/SiteEdit/test/Test.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
