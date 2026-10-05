@@ -26,7 +26,7 @@
       "variants": [
         { "id": "mens-005-black", "image": "/SiteEdit/mens/tracksuit-black.jpeg", "swatch": "#121212" },
         { "id": "mens-005-charcoal", "image": "/SiteEdit/mens/tracksuit-charcoal.jpeg", "swatch": "#555555" },
-        { "id": "mens-005-white", "image": "/SiteEdit/mens/tracksuit-white.jpeg", "swatch": "#EEEEEE" },
+        { "id": "mens-005-white", "image": "/SiteEdit/mens/tracksuit-lightgray.jpeg", "swatch": "#EEEEEE" },
         { "id": "mens-005-yellow", "image": "/SiteEdit/mens/tracksuit-yellow.jpeg", "swatch": "#FFFF01" },
         { "id": "mens-005-magenta", "image": "/SiteEdit/mens/tracksuit-magenta.jpeg", "swatch": "#AB0041" }
       ]
