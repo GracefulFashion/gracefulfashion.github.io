@@ -7,7 +7,7 @@
   "description": "Footwear for any occasion.",
   "image": "/SiteEdit/shoes/stiletto-black.jpeg",
   "folder": "shoes",
-  "productsFile": "/SiteEdit/shoes/shoes.json",
+  "productsFile": "/SiteEdit/shoes/Shoes.json",
   "backgroundColorOpacity": 1,
   "titleColorOpacity": 1
 }
