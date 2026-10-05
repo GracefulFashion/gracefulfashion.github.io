@@ -1,7 +1,7 @@
 [
   {
     "folder": "accessories",
-    "file": "Accessories.json"
+    "file": "accessories.json"
   },
   {
     "folder": "makeup",
@@ -33,7 +33,7 @@
   },
   {
     "folder": "shoes",
-    "file": "Shoes.json"
+    "file": "shoes.json"
   },
   {
     "folder": "test",
