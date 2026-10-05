@@ -28,7 +28,7 @@
         { "id": "mens-005-charcoal", "image": "/SiteEdit/mens/tracksuit-charcoal.jpeg", "swatch": "#555555" },
         { "id": "mens-005-white", "image": "/SiteEdit/mens/tracksuit-white.jpeg", "swatch": "#eeeeee" },
         { "id": "mens-005-yellow", "image": "/SiteEdit/mens/tracksuit-yellow.jpeg", "swatch": "#FFFF00" },
-        { "id": "mens-005-magenta", "image": "/SiteEdit/mens/tracksuit-magenta.jpeg", "swatch": "#FEF65C" },
+        { "id": "mens-005-magenta", "image": "/SiteEdit/mens/tracksuit-magenta.jpeg", "swatch": "#FEF65C" }
       ]
     }
   ],
