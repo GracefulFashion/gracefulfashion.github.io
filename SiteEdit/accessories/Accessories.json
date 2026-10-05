@@ -11,7 +11,7 @@
         { "id": "accessories-002-black", "image": "/SiteEdit/accessories/chrisb_bag-black.jpeg", "swatch": "#111111" },
         { "id": "accessories-002-green", "image": "/SiteEdit/accessories/chrisb_bag-green.jpeg", "swatch": "#2f6b45" }
       ]
-    },
+    }
   ],
   "categoryPageStyle": {
     "$comment": "CATEGORY PAGE STYLE. THIS WHOLE BLOCK IS IDENTICAL FOR EVERY CATEGORY: copy it from here and paste it over the same block in any other category file. Only the words above it (slug, label, title, description, image) and the products list differ per category. Groups run from the top of the page downward. Inside a group: the words first, then font and font size, then colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px.",
