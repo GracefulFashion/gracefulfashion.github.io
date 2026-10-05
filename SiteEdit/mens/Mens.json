@@ -30,6 +30,10 @@
         { "id": "mens-005-yellow", "image": "/SiteEdit/mens/tracksuit-yellow.jpeg", "swatch": "#FFFF01" },
         { "id": "mens-005-magenta", "image": "/SiteEdit/mens/tracksuit-magenta.jpeg", "swatch": "#AB0041" }
       ]
+    },
+    {
+      "id": "mens-006",
+      "image": "/SiteEdit/mens/sport_jacket_shorts-red.jpeg"
     }
   ],
   "categoryPageStyle": {
