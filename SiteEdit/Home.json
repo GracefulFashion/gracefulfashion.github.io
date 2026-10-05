@@ -138,7 +138,7 @@
     "titleOpacity": 1,
     "titleEmphasisColor": "#b54863",
     "titleEmphasisOpacity": 1,
-    "introText": "Small, considered pieces for the woman who likes her style warm, effortless, and unmistakably her own.<br><br><u><b>Note:</b></u> This site is under construction.  Some products not are real and we are testing with stock photos.  Checkout button is enabled but Paystack is in test mode.  No real money or financial information can be used in checkout.",
+    "introText": "Small, considered pieces for the woman who likes her style warm, effortless, and unmistakably her own.<br><br><u><b>Note:</b></u>  Site still under construction; multiple refreshes might still be necessary to see new updates.  Checkout button is enabled but Paystack is in test mode.  No real financial information can be entered.",
     "introFont": "default",
     "introFontSize": "default",
     "introColor": "#806670",
@@ -281,7 +281,7 @@
       },
       {
         "type": "facebook",
-        "label": "Facebook · ",
+        "label": "Facebook · Grace Ohwimu",
         "url": "https://www.facebook.com/profile.php?id=61580684528720&mibextid=ZbWKwL"
       }
     ],
