@@ -1,18 +1,6 @@
 {
   "products": [
     {
-      "id": "mens-001",
-      "image": "/SiteEdit/mens/mens-agbada.jpg"
-    },
-    {
-      "id": "mens-002",
-      "image": "/SiteEdit/mens/mens-satin-necktie.jpg"
-    },
-    {
-      "id": "mens-003",
-      "image": "/SiteEdit/mens/mens-fila.jpg"
-    },
-    {
       "$comment": "A product sold in colours: list each colour by its id from CatalogEdit, with its photo and the colour of its circle (a six-digit code like #c9a54a). The product's own id comes first; it groups the colours into one card.",
       "id": "mens-004",
       "variants": [
