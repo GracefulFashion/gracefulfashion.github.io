@@ -3,6 +3,10 @@
     {
       "id": "shirts-001",
       "image": "/SiteEdit/shirts-tops/evil_smile_bear.jpeg"
+    },
+    {
+      "id": "shirts-002",
+      "image": "/SiteEdit/shirts-tops/gothic_print_button_up_shirt.jpeg"
     }
   ],
   "categoryPageStyle": {
