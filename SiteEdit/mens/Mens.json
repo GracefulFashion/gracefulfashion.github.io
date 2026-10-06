@@ -34,6 +34,13 @@
     {
       "id": "mens-006",
       "image": "/SiteEdit/mens/sport_jacket_shorts-red.jpeg"
+    },
+    {
+      "id": "mens-007",
+      "variants": [
+        { "id": "mens-007-lightgray", "image": "/SiteEdit/mens/pleated_wide_leg_trousers-lightgray.jpeg", "swatch": "#EEEEEE" },
+        { "id": "mens-007-burgundy", "image": "/SiteEdit/mens/pleated_wide_leg_trousers-burgundy.jpeg", "swatch": "#660033" }
+      ]
     }
   ],
   "categoryPageStyle": {
