@@ -231,9 +231,7 @@ These rights may be subject to lawful conditions and exceptions.
 
 For example, we may be required to retain certain transaction records even after a customer requests deletion.
 
-To exercise your rights, please contact:
-
-info@ndpc.gov.ng
+To exercise your rights, please contact: gg2134590@gmail.com
 
 We may request reasonable verification of identity before disclosing, correcting, or deleting personal information.
 
