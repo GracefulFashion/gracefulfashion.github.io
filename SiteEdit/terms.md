@@ -48,13 +48,13 @@ Graceful Fashion initially serves customers within Delta State, Nigeria.
 
 Depending on the customer's location and service availability, the following options may be offered:
 
-Doorstep Delivery:
+### Doorstep Delivery:
 Orders may be delivered to an address supplied by the customer using GIG Logistics or another approved delivery provider.
 
-GIG Pickup or Collection:
+### GIG Pickup or Collection:
 Customers may choose an available GIG Logistics collection location and collect their orders according to the carrier's requirements.
 
-Graceful Fashion Store Pickup:
+### Graceful Fashion Store Pickup:
 Where available, customers may arrange to collect their purchases directly from the designated Graceful Fashion pickup location in Asaba.
 
 Delivery charges, availability, and estimated delivery times will be communicated before the customer commits to a delivery charge or completes the relevant purchase.
