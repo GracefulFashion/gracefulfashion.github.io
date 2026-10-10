@@ -46,6 +46,16 @@ We reserve the right to investigate suspected fraudulent transactions and to dec
 
 Graceful Fashion initially serves customers within Delta State, Nigeria.
 
+Delivery charges, availability, and estimated delivery times will be communicated before the customer commits to a delivery charge or completes the relevant purchase.
+
+Delivery times are estimates unless a specific delivery commitment is expressly agreed.
+
+Graceful Fashion will make reasonable efforts to fulfil orders promptly and communicate significant delays.
+
+Customers are responsible for providing accurate delivery details, including a working telephone number, area, street information where available, and useful landmarks.
+
+If delivery cannot be completed because of incorrect or incomplete customer information, reasonable additional delivery charges may apply, provided the customer is informed and agrees before those charges are incurred.
+
 Depending on the customer's location and service availability, the following options may be offered:
 
 ### Doorstep Delivery:
@@ -56,16 +66,6 @@ Customers may choose an available GIG Logistics collection location and collect 
 
 ### Graceful Fashion Store Pickup:
 Where available, customers may arrange to collect their purchases directly from the designated Graceful Fashion pickup location in Asaba.
-
-Delivery charges, availability, and estimated delivery times will be communicated before the customer commits to a delivery charge or completes the relevant purchase.
-
-Delivery times are estimates unless a specific delivery commitment is expressly agreed.
-
-Graceful Fashion will make reasonable efforts to fulfil orders promptly and communicate significant delays.
-
-Customers are responsible for providing accurate delivery details, including a working telephone number, area, street information where available, and useful landmarks.
-
-If delivery cannot be completed because of incorrect or incomplete customer information, reasonable additional delivery charges may apply, provided the customer is informed and agrees before those charges are incurred.
 
 ## 4. Returns and Exchanges
 
