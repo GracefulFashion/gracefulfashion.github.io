@@ -22,5 +22,9 @@
   {
     "folder": "body-care",
     "file": "Body-Care.json"
+  },
+  {
+    "folder": "test",
+    "file": "Test.json"
   }
 ]
