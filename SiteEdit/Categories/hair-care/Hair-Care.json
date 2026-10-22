@@ -1,0 +1,13 @@
+{
+  "slug": "hair-care",
+  "label": "Hair Care & Colour",
+  "title": "Hair Care & Colour",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
+  "description": "From roots to tips",
+  "image": "/SiteEdit/hair-care/hair_care_example.jpeg",
+  "folder": "hair-care",
+  "productsFile": "/SiteEdit/hair-care/Hair-Care.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
+}
