@@ -5,7 +5,7 @@
   "titleColor": "#864f5d",
   "backgroundColor": "#fffaf8",
   "description": "A signature scent for every mood.",
-  "image": "/SiteEdit/fragrances/freg_example.jpg",
+  "image": "/SiteEdit/fragrances/fragrance_example.jpg",
   "folder": "fragrances",
   "productsFile": "/SiteEdit/fragrances/Fragrances.json",
   "backgroundColorOpacity": 1,
