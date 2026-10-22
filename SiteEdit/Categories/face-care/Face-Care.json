@@ -1,0 +1,13 @@
+{
+  "slug": "face-care",
+  "label": "Face & Skin Care",
+  "title": "Face & Skin Care",
+  "titleColor": "#864f5d",
+  "backgroundColor": "#fffaf8",
+  "description": "For exfoliating, rejuvenating radiance.",
+  "image": "/SiteEdit/face-care/face_care_example.jpg",
+  "folder": "face-care",
+  "productsFile": "/SiteEdit/face-care/Face-Care.json",
+  "backgroundColorOpacity": 1,
+  "titleColorOpacity": 1
+}
