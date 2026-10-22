@@ -8,35 +8,19 @@
     "file": "Makeup.json"
   },
   {
-    "folder": "fall-winter",
-    "file": "Fall-Winter.json"
+    "folder": "fragrance",
+    "file": "Fragrance.json"
   },
   {
-    "folder": "kids",
-    "file": "Kids.json"
+    "folder": "hair-care",
+    "file": "Hair-Care.json"
   },
   {
-    "folder": "mens",
-    "file": "Mens.json"
+    "folder": "face-care",
+    "file": "Face-Care.json"
   },
   {
-    "folder": "skirts-dresses",
-    "file": "Skirts-Dresses.json"
-  },
-  {
-    "folder": "pants-shorts",
-    "file": "Pants-Shorts.json"
-  },
-  {
-    "folder": "shirts-tops",
-    "file": "Shirts-Tops.json"
-  },
-  {
-    "folder": "shoes",
-    "file": "Shoes.json"
-  },
-  {
-    "folder": "test",
-    "file": "Test.json"
+    "folder": "body-care",
+    "file": "Body-Care.json"
   }
 ]
