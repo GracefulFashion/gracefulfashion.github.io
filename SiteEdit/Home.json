@@ -95,7 +95,7 @@
     "bottomLineOpacity": 1,
     "$commentLogos": "THE TWO LOGO PICTURES at the left of this bar. circleLogoImage is the round G logo; brandLogoImage is the Graceful Fashion wordmark beside it. Each is a path to a picture in the repo, starting with / (for example /assets/gf_circle_logo_clear.png). Transparent PNGs look best. The site shows exactly the picture named here, so check the spelling of the path.",
     "circleLogoImage": "/assets/gf_circle_logo_clear.png",
-    "brandLogoImage": "/assets/gf_brand_logo_clear.png",
+    "brandLogoImage": "/assets/gb_brand_logo-clear.png",
     "links": {
       "$comment": "THE FOUR LINKS share one font, size and set of colours.",
       "homeText": "Home",
