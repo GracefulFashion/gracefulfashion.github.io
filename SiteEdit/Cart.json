@@ -1,6 +1,7 @@
 {
   "$comment": "SITE EDIT FILE FOR THE CART PAGE, CHECKOUT FORM AND PAYMENT-RESULT PAGE. Groups run from the top of the cart page downward, then the payment-result page. Inside a group: the words first, then that text's font and font size, then its colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Keep every comma and quotation mark; check the file with a JSON validator before saving. Notes like this one start with $comment and are ignored by the site. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px.",
   "backendUrl": "https://graceful-fashion-backend.vercel.app",
+  "localCatalogBackendUrl": "http://127.0.0.1:3100",
   "paymentProvider": "paystack",
   "currency": "NGN",
   "currencyLocale": "en-NG",
