@@ -2,7 +2,11 @@
   "products": [
     {
       "id": "hair-001",
-      "image": "/SiteEdit/hair-care/hair_care_example.jpeg"
+      "variants": [
+        { "id": "hair-001-pink", "image": "/SiteEdit/fall-winter/stl-sweater-green.jpeg", "swatch": "#ed727c" },
+        { "id": "hair-001-blue", "image": "/SiteEdit/fall-winter/stl-sweater-red.jpeg", "swatch": "#0911ed" },
+        { "id": "hair-001-red", "image": "/SiteEdit/fall-winter/stl-sweater-red.jpeg", "swatch": "#a8242f" }
+      ]
     }
   ],
   "categoryPageStyle": {
