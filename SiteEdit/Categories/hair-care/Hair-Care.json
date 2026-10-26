@@ -6,7 +6,8 @@
   "backgroundColor": "#fffaf8",
   "description": "From roots to tips",
   "subcategories": [
-    { "key": "hair-coloring", "label": "Hair Coloring" }
+    { "key": "hair-coloring", "label": "Hair Coloring" },
+    { "key": "hair-wash", "label": "Shampoo & Conditioner" }
   ],
   "image": "/SiteEdit/hair-care/hair_care_example.jpeg",
   "folder": "hair-care",
