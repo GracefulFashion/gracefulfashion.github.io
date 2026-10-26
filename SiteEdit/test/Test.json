@@ -7,14 +7,14 @@
     {
       "id": "test-002",
       "variants": [
-        { "id": "test-002-red", "image": "/SiteEdit/test/red.jpeg", "swatch": "#ff0000" },
-        { "id": "test-002-orange", "image": "/SiteEdit/test/orange.jpeg", "swatch": "#ffa500" },
-        { "id": "test-002-yellow", "image": "/SiteEdit/test/yellow.jpeg", "swatch": "#ffff00" },
-        { "id": "test-002-green", "image": "/SiteEdit/test/green.jpeg", "swatch": "#008000" },
-        { "id": "test-002-blue", "image": "/SiteEdit/test/blue.jpeg", "swatch": "#0000ff" },
-        { "id": "test-002-purple", "image": "/SiteEdit/test/purple.jpeg", "swatch": "#800080" },
-        { "id": "test-002-black", "image": "/SiteEdit/test/black.jpeg", "swatch": "#000000" },
-        { "id": "test-002-white", "image": "/SiteEdit/test/white.jpeg", "swatch": "#ffffff" }
+        { "id": "test-002-red", "image": "/SiteEdit/test/red.jpg", "swatch": "#ff0000" },
+        { "id": "test-002-orange", "image": "/SiteEdit/test/orange.jpg", "swatch": "#ffa500" },
+        { "id": "test-002-yellow", "image": "/SiteEdit/test/yellow.jpg", "swatch": "#ffff00" },
+        { "id": "test-002-green", "image": "/SiteEdit/test/green.jpg", "swatch": "#008000" },
+        { "id": "test-002-blue", "image": "/SiteEdit/test/blue.jpg", "swatch": "#0000ff" },
+        { "id": "test-002-purple", "image": "/SiteEdit/test/purple.jpg", "swatch": "#800080" },
+        { "id": "test-002-black", "image": "/SiteEdit/test/black.jpg", "swatch": "#000000" },
+        { "id": "test-002-white", "image": "/SiteEdit/test/white.jpg", "swatch": "#ffffff" }
       ]
     },
     {
