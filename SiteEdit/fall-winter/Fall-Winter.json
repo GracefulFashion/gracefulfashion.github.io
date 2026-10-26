@@ -94,6 +94,36 @@
       "descriptionColor": "#806670",
       "descriptionOpacity": 1
     },
+    "subcategories": {
+      "$comment": "SUBCATEGORIES (only on categories whose card file in SiteEdit/Categories has a subcategories list). Each subcategory gets a heading with its products under it. When there are two or more, a row of jump buttons sits above the first heading; each one goes to its subcategory and is also a link you can share, such as /category/hair-care#hair-coloring. otherHeadingText = the heading over products that have no subcategory. headingLine = the thin line under each heading. jumpButtons: normal = resting, hover = mouse over.",
+      "otherHeadingText": "More",
+      "headingFont": "default",
+      "headingFontSize": "default",
+      "headingColor": "#4b303b",
+      "headingOpacity": 1,
+      "headingLineColor": "#e5cfd5",
+      "headingLineOpacity": 1,
+      "jumpButtons": {
+        "font": "default",
+        "fontSize": "default",
+        "normal": {
+          "backgroundColor": "#fff8f4",
+          "backgroundOpacity": 1,
+          "textColor": "#4b303b",
+          "textOpacity": 1,
+          "borderColor": "#e5cfd5",
+          "borderOpacity": 1
+        },
+        "hover": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        }
+      }
+    },
     "productCards": {
       "$comment": "THE PRODUCT CARDS. Product names and prices come from the shop database, so only their look is set here.",
       "cardBackgroundColor": "#ffffff",

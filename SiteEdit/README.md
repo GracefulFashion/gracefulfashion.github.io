@@ -112,6 +112,38 @@ Each category has two files, named in `Categories/index.json`:
 `SiteEdit/<folder>/<file>` holds only the `products` list and one block called `categoryPageStyle`. Each product's `"id"` must match an `"id"` in the backend's CatalogEdit file exactly. The `categoryPageStyle` block is identical for every category: to style every category the same way, copy the whole block from one file and paste it over the matching block in the others.
 
 
+## Subcategories (groups inside a category page)
+
+A category page can split its products into groups, each with its own heading. Hair Care & Colour is set up this way, with one subcategory, Hair Coloring. Two small additions do it, and a category without them looks exactly as before.
+
+1. In the category's card file, `SiteEdit/Categories/<folder>/<file>`, list the subcategories in the order they should appear on the page:
+
+```json
+"subcategories": [
+  { "key": "hair-coloring", "label": "Hair Coloring" },
+  { "key": "hair-care", "label": "Hair Care" }
+],
+```
+
+2. In the category's products list, `SiteEdit/<folder>/<file>`, give each product the `key` of its subcategory, right under its `id`:
+
+```json
+{
+  "id": "hair-001",
+  "subcategory": "hair-coloring",
+  "variants": [ ... ]
+}
+```
+
+- `label` is the heading shoppers see. Change it whenever you like; the formatting tags (`<b>`, `<i>`...) work in it.
+- `key` is small letters, numbers and dashes only. It is also the end of that subcategory's **shareable link**, such as `gracefulfashion.com.ng/category/hair-care#hair-coloring`, which opens the page at that heading. Once you have shared a link, keep its `key` the same. A link whose `key` no longer exists simply opens the page at the top.
+- A product with no `subcategory` goes in a last group headed **More**. A product whose `subcategory` is not in the list also goes there, and the Vercel logs say which product.
+- A subcategory with no products is not shown, so you can list one before its products arrive.
+- With two or more groups, a row of buttons above the first heading jumps to each group. Each button is that group's shareable link, and the browser's Back button returns to where you were.
+- Colours, fonts and the word "More" are in `categoryPageStyle` → `subcategories` (heading, the thin line under it, and the jump buttons' `normal` and `hover` looks). Every category file has this group, so the block stays identical across categories.
+- Subcategories are a SiteEdit setting only. The backend's CatalogEdit files and the admin stock page are not affected.
+
+
 ## Stock wording on product cards and in the cart
 
 The product card and cart show live stock from the backend. All of this wording has a built-in default, so nothing below has to be added. To change a word, add the line to the matching group.
