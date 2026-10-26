@@ -5,6 +5,9 @@
   "titleColor": "#864f5d",
   "backgroundColor": "#fffaf8",
   "description": "From roots to tips",
+  "subcategories": [
+    { "key": "hair-coloring", "label": "Hair Coloring" }
+  ],
   "image": "/SiteEdit/hair-care/hair_care_example.jpeg",
   "folder": "hair-care",
   "productsFile": "/SiteEdit/hair-care/Hair-Care.json",
