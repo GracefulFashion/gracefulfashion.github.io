@@ -99,11 +99,11 @@
         "font": "default",
         "fontSize": "default",
         "normal": {
-          "backgroundColor": "#fff8f4",
+          "backgroundColor": "#4b303b",
           "backgroundOpacity": 1,
-          "textColor": "#4b303b",
+          "textColor": "#fff8f4",
           "textOpacity": 1,
-          "borderColor": "#e5cfd5",
+          "borderColor": "#4b303b",
           "borderOpacity": 1
         },
         "hover": {
