@@ -236,6 +236,22 @@ body{white-space:pre-wrap}
 .gf-swatch.is-out:after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:2px;border-radius:1px;background:hsl(var(--gf-sw-line,var(--foreground)));transform:translateX(-50%)rotate(45deg)}
 /* a colour with no circle colour in SiteEdit: striped and dashed, so it is easy to spot */
 .gf-swatch.is-missing{background:repeating-linear-gradient(45deg,#d9d9d9 0 3px,#fff 3px 6px);border-style:dashed}
+/* shades: the note above the circles, the small arrow on a colour that has shades, and its menu
+   (the menu uses the size dropdown menu's colours; it opens towards the middle of the card) */
+.gf-shade-note{flex:0 0 100%;margin:0;text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.04em;color:hsl(var(--gf-shade-note,var(--muted-foreground)))}
+.gf-lb-details .gf-shade-note{text-align:left}
+.gf-swatch-wrap{position:relative;display:inline-flex}
+.gf-swatch-arrow{position:absolute;right:-.35rem;bottom:-.35rem;width:.9rem;height:.9rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.6rem;line-height:1;background:hsl(var(--gf-card-bg,var(--card)));color:hsl(var(--gf-shade-arrow,var(--foreground)));box-shadow:0 0 0 1px hsl(var(--gf-sw-border,var(--muted-foreground)/.6));pointer-events:none}
+.gf-swatch.is-out .gf-swatch-arrow{opacity:1}
+.gf-shade-menu{position:absolute;top:calc(100% + .55rem);z-index:30;min-width:8.5rem;max-width:min(14rem,80vw);max-height:12rem;overflow-y:auto;overscroll-behavior:contain;border:1px solid hsl(var(--gf-dd-menu-border,var(--border)));background:hsl(var(--gf-dd-menu-bg,var(--background)));box-shadow:var(--shadow-soft);text-align:left}
+.gf-shade-menu.is-start{left:-.25rem}
+.gf-shade-menu.is-end{right:-.25rem}
+.gf-shade-option{display:flex;align-items:center;gap:.55rem;width:100%;min-height:2.4rem;padding:.5rem .7rem;border:0;border-bottom:1px solid hsl(var(--gf-dd-menu-border,var(--border)));background:transparent;color:hsl(var(--gf-dd-opt-text,var(--foreground)));font-size:.76rem;font-weight:700;text-align:left;cursor:pointer}
+.gf-shade-option:last-child{border-bottom:0}
+.gf-shade-option:hover:not(:disabled),.gf-shade-option[aria-selected=true]{background:hsl(var(--gf-dd-opt-hi-bg,var(--primary)));color:hsl(var(--gf-dd-opt-hi-text,var(--primary-foreground)))}
+.gf-shade-option:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.gf-shade-dot{flex:0 0 auto;width:1rem;height:1rem;border-radius:50%;border:1px solid hsl(var(--gf-sw-border,var(--muted-foreground)/.6));background:var(--gf-swatch,transparent)}
+.gf-shade-dot.is-missing{background:repeating-linear-gradient(45deg,#d9d9d9 0 3px,#fff 3px 6px);border-style:dashed}
 /* Temporarily Unavailable: product card text, category page text */
 .gf-unavailable .gf-unavailable-text{letter-spacing:.1em;text-transform:uppercase}
 .gf-category-hero p.gf-unavailable-text{color:hsl(var(--primary));font-weight:700;letter-spacing:.1em;text-transform:uppercase}
