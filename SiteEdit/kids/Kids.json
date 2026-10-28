@@ -137,7 +137,18 @@
         "selectedRingColor": "#b54863",
         "selectedRingOpacity": 1,
         "soldOutLineColor": "#4b303b",
-        "soldOutLineOpacity": 1
+        "soldOutLineOpacity": 1,
+        "shades": {
+          "$comment": "SHADES (only on products where a colour has shades). Each shade's circle colour (swatch) and photo are set in this file's products list, inside its colour, under the shade's id. noteText = the words above the circles. A colour with shades has a small arrow mark on its circle; tapping it opens a menu of its shades, and once a shade is picked the circle takes the shade's colour. chooseShadeText = the Add to cart button's wording until a shade is picked. The menu uses the size dropdown's menu colours below.",
+          "noteText": "Select color for shade",
+          "noteFont": "default",
+          "noteFontSize": "default",
+          "noteColor": "#806670",
+          "noteOpacity": 1,
+          "arrowColor": "#4b303b",
+          "arrowOpacity": 1,
+          "chooseShadeText": "Choose a shade"
+        }
       },
       "sizeLabelText": "Select a size",
       "sizeLabelFont": "default",

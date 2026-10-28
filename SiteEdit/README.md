@@ -173,6 +173,23 @@ A product sold in colours shows as ONE card with colour circles under the price.
 - When some sizes cost more (`sizePrices` in CatalogEdit), the card shows "From ₦…" (the lowest price) until a size is picked, then that size's price. The words are `fromPriceText` in `categoryPageStyle` ({price} is replaced by the amount).
 - Circle size, gap, border, the ring around the chosen colour and the sold-out line are in `categoryPageStyle` → `productCards` → `colorSwatches`. Phones fit 4 circles in one row at the default size, tablets about 6, computers about 8; more wrap onto a centred second row.
 
+### Shades of a colour
+
+A colour can have shades, for example Red → Red, Wine, Crimson. The shades (names, ids, prices, sizes) are set in the backend's `CatalogEdit` file inside their colour; see example 4 in `CatalogEdit/variantTemplate`. A colour with shades is not sold itself, so to sell plain Red too, list it as a shade called Red. Here, each shade gets its photo and circle colour inside its colour, under the shade's id:
+
+```json
+{ "id": "test-002-red", "image": "/SiteEdit/test/red.jpg", "swatch": "#ff0000", "shades": [
+  { "id": "test-002-red-red", "image": "/SiteEdit/test/red.jpg", "swatch": "#ff0000" },
+  { "id": "test-002-red-wine", "image": "/SiteEdit/test/wine.jpg", "swatch": "#722f37" }
+] }
+```
+
+- The colour keeps its own `image` and `swatch`: they are shown until a shade is picked, with Add to cart reading "Choose a shade".
+- A colour with shades has a small ▾ on its circle. Tapping it opens a menu of its shades (a shade sold out in every size is crossed out and can't be picked). After a shade is picked, the circle takes the shade's colour and the photo, title ("Always in stock — Red - Wine"), price, sizes and stock switch to that shade. The choice is remembered while the page is open.
+- "Select color for shade" shows above the circles on any product that has a colour with shades.
+- The note's words, font, size and colour, the ▾ colour and the "Choose a shade" wording are in `categoryPageStyle` → `productCards` → `colorSwatches` → `shades`. The shade menu uses the `sizeDropdown` menu colours.
+- The product's description is shared by every colour and shade.
+
 ## Product photo galleries (the lightbox)
 
 Tapping a product photo opens a large view (a "lightbox") over the page. It works on every category page, with or without extra photos. It shows:
