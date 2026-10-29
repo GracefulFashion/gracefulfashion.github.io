@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "id": "hair-001",
+      "id": "hair-color-001",
       "subcategory": "hair-coloring",
       "variants": [
-        { "id": "hair-001-pink", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#ed727c" },
-        { "id": "hair-001-blue", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#0911ed" },
-        { "id": "hair-001-red", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#a8242f" }
+        { "id": "hair-color-001-pink", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#ed727c" },
+        { "id": "hair-color-001-blue", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#0911ed" },
+        { "id": "hair-color-001-red", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#a8242f" }
       ]
     },
     {
