@@ -70,8 +70,9 @@
       "descriptionOpacity": 1
     },
     "subcategories": {
-      "$comment": "SUBCATEGORIES (only on categories whose card file in SiteEdit/Categories has a subcategories list). Each subcategory gets a heading with its products under it. When there are two or more, a row of jump buttons sits above the first heading; each one goes to its subcategory and is also a link you can share, such as /category/hair-care#hair-coloring. otherHeadingText = the heading over products that have no subcategory. headingLine = the thin line under each heading. jumpButtons: normal = resting, hover = mouse over.",
+      "$comment": "SUBCATEGORIES (only on categories whose card file in SiteEdit/Categories has a subcategories list). Each subcategory gets a heading with its products under it. When there are two or more, a row of jump buttons sits above the first heading; each one goes to its subcategory and is also a link you can share, such as /category/hair-care#hair-coloring. otherHeadingText = the heading over products that have no subcategory. unavailableHeadingText = the heading of the last group, under More, holding products that are Temporarily Unavailable (it has no jump button). headingLine = the thin line under each heading. jumpButtons: normal = resting, hover = mouse over.",
       "otherHeadingText": "More",
+      "unavailableHeadingText": "Temporarily Unavailable",
       "headingFont": "default",
       "headingFontSize": "default",
       "headingColor": "#4b303b",

@@ -138,6 +138,7 @@ A category page can split its products into groups, each with its own heading. H
 - `label` is the heading shoppers see. Change it whenever you like; the formatting tags (`<b>`, `<i>`...) work in it.
 - `key` is small letters, numbers and dashes only. It is also the end of that subcategory's **shareable link**, such as `gracefulfashion.com.ng/category/hair-care#hair-coloring`, which opens the page at that heading. Once you have shared a link, keep its `key` the same. A link whose `key` no longer exists simply opens the page at the top.
 - A product with no `subcategory` goes in a last group headed **More**. A product whose `subcategory` is not in the list also goes there, and the Vercel logs say which product.
+- A product that is Temporarily Unavailable (a mistake in its CatalogEdit entry) goes in its own group at the very bottom, under More, headed by `unavailableHeadingText`. It has no jump button, and it moves back into its subcategory as soon as the mistake is fixed.
 - A subcategory with no products is not shown, so you can list one before its products arrive.
 - With two or more groups, a row of buttons above the first heading jumps to each group. Each button is that group's shareable link, and the browser's Back button returns to where you were.
 - Colours, fonts and the word "More" are in `categoryPageStyle` → `subcategories` (heading, the thin line under it, and the jump buttons' `normal` and `hover` looks). Every category file has this group, so the block stays identical across categories.
