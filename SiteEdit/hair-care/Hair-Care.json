@@ -4,9 +4,76 @@
       "id": "hair-color-001",
       "subcategory": "hair-coloring",
       "variants": [
-        { "id": "hair-color-001-pink", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#ed727c" },
-        { "id": "hair-color-001-blue", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#0911ed" },
-        { "id": "hair-color-001-red", "image": "/SiteEdit/fall-winter/hair_care_example.jpeg", "swatch": "#a8242f" }
+        { "id": "hair-color-001-black", "image": "/SiteEdit/hair-care/hair-color-samples/black.webp", "swatch": "#1e2020" },
+        { "id": "hair-color-001-brown", "image": "/SiteEdit/hair-care/hair-color-samples/brown.webp", "swatch": "#49342c", "shades": [
+          { "id": "hair-color-001-brown-light-chestnut", "image": "/SiteEdit/hair-care/hair-color-samples/brown_light_chestnut.webp", "swatch": "#743d23" },
+          { "id": "hair-color-001-brown-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/brown_blonde.webp", "swatch": "#5a3b1c" },
+          { "id": "hair-color-001-brown-gold", "image": "/SiteEdit/hair-care/hair-color-samples/brown_gold.webp", "swatch": "#69361d" },
+          { "id": "hair-color-001-brown-red", "image": "/SiteEdit/hair-care/hair-color-samples/brown_red.webp", "swatch": "#672e17" },
+          { "id": "hair-color-001-brown-brown", "image": "/SiteEdit/hair-care/hair-color-samples/brown.webp", "swatch": "#49342c" },
+          { "id": "hair-color-001-brown-heather-light", "image": "/SiteEdit/hair-care/hair-color-samples/brown_heather_light.webp", "swatch": "#5b2f1e" },
+          { "id": "hair-color-001-brown-dark-gold", "image": "/SiteEdit/hair-care/hair-color-samples/brown_dark_gold.webp", "swatch": "#592f1a" },
+          { "id": "hair-color-001-brown-chestnut", "image": "/SiteEdit/hair-care/hair-color-samples/brown_chestnut.webp", "swatch": "#5a2b1b" },
+          { "id": "hair-color-001-brown-light", "image": "/SiteEdit/hair-care/hair-color-samples/brown_light.webp", "swatch": "#392823" },
+          { "id": "hair-color-001-brown-dark-heather", "image": "/SiteEdit/hair-care/hair-color-samples/brown_dark_heather.webp", "swatch": "#3a2623" },
+          { "id": "hair-color-001-brown-chestnut-dark", "image": "/SiteEdit/hair-care/hair-color-samples/brown_chestnut_dark.webp", "swatch": "#392623" },
+          { "id": "hair-color-001-brown-red-chestnut", "image": "/SiteEdit/hair-care/hair-color-samples/brown_red_chestnut.webp", "swatch": "#4f1f16" },
+          { "id": "hair-color-001-brown-mahogany-dark", "image": "/SiteEdit/hair-care/hair-color-samples/brown_mahogany_dark.webp", "swatch": "#3a1f1e" },
+          { "id": "hair-color-001-brown-mahogany", "image": "/SiteEdit/hair-care/hair-color-samples/brown_mahogany.webp", "swatch": "#3e1d1c" },
+          { "id": "hair-color-001-brown-dark", "image": "/SiteEdit/hair-care/hair-color-samples/brown_dark.webp", "swatch": "#1e1a17" }
+        ] },
+        { "id": "hair-color-001-red", "image": "/SiteEdit/hair-care/hair-color-samples/red.webp", "swatch": "#741b1e", "shades": [
+          { "id": "hair-color-001-red-bright", "image": "/SiteEdit/hair-care/hair-color-samples/red_bright.webp", "swatch": "#e41924" },
+          { "id": "hair-color-001-red-chestnut", "image": "/SiteEdit/hair-care/hair-color-samples/red_chestnut.webp", "swatch": "#8a3216" },
+          { "id": "hair-color-001-red-orange", "image": "/SiteEdit/hair-care/hair-color-samples/red_orange.webp", "swatch": "#6e2a1e" },
+          { "id": "hair-color-001-red-light", "image": "/SiteEdit/hair-care/hair-color-samples/red_light.webp", "swatch": "#af1519" },
+          { "id": "hair-color-001-red-auburn", "image": "/SiteEdit/hair-care/hair-color-samples/red_auburn.webp", "swatch": "#552f1d" },
+          { "id": "hair-color-001-red-metallic", "image": "/SiteEdit/hair-care/hair-color-samples/red_metallic.webp", "swatch": "#a1181c" },
+          { "id": "hair-color-001-red-red", "image": "/SiteEdit/hair-care/hair-color-samples/red.webp", "swatch": "#741b1e" },
+          { "id": "hair-color-001-red-grape", "image": "/SiteEdit/hair-care/hair-color-samples/red_grape.webp", "swatch": "#552122" },
+          { "id": "hair-color-001-red-wine", "image": "/SiteEdit/hair-care/hair-color-samples/red_wine.webp", "swatch": "#631c1e" },
+          { "id": "hair-color-001-red-purple", "image": "/SiteEdit/hair-care/hair-color-samples/red_purple.webp", "swatch": "#441e23" }
+        ] },
+        { "id": "hair-color-001-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/blonde.webp", "swatch": "#835e2e", "shades": [
+          { "id": "hair-color-001-blonde-clear-tone", "image": "/SiteEdit/hair-care/hair-color-samples/blonde_clear_tone.webp", "swatch": "#f6e9d1" },
+          { "id": "hair-color-001-blonde-light", "image": "/SiteEdit/hair-care/hair-color-samples/blonde_light.webp", "swatch": "#a88f6f" },
+          { "id": "hair-color-001-blonde-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/blonde.webp", "swatch": "#835e2e" },
+          { "id": "hair-color-001-blonde-strawberry", "image": "/SiteEdit/hair-care/hair-color-samples/blonde_strawberry.webp", "swatch": "#9d5421" },
+          { "id": "hair-color-001-blonde-light-gold", "image": "/SiteEdit/hair-care/hair-color-samples/blonde_light_gold.webp", "swatch": "#94521f" },
+          { "id": "hair-color-001-blonde-gray", "image": "/SiteEdit/hair-care/hair-color-samples/blonde_gray.webp", "swatch": "#674e37" }
+        ] },
+        { "id": "hair-color-001-gray", "image": "/SiteEdit/hair-care/hair-color-samples/gray_light.webp", "swatch": "#8a7971", "shades": [
+          { "id": "hair-color-001-gray-very-light-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/gray_very_light_blonde.webp", "swatch": "#927d6b" },
+          { "id": "hair-color-001-gray-light", "image": "/SiteEdit/hair-care/hair-color-samples/gray_light.webp", "swatch": "#8a7971" },
+          { "id": "hair-color-001-gray-very-light", "image": "/SiteEdit/hair-care/hair-color-samples/gray_very_light.webp", "swatch": "#88776d" },
+          { "id": "hair-color-001-gray-light-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/gray_light_blonde.webp", "swatch": "#80695a" },
+          { "id": "hair-color-001-gray-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/gray_blonde.webp", "swatch": "#7f6044" },
+          { "id": "hair-color-001-gray-blue", "image": "/SiteEdit/hair-care/hair-color-samples/gray_blue.webp", "swatch": "#574d53" },
+          { "id": "hair-color-001-gray-brown", "image": "/SiteEdit/hair-care/hair-color-samples/gray_brown.webp", "swatch": "#2d241f" }
+        ] },
+        { "id": "hair-color-001-gold", "image": "/SiteEdit/hair-care/hair-color-samples/gold.webp", "swatch": "#b8782b", "shades": [
+          { "id": "hair-color-001-gold-very-light", "image": "/SiteEdit/hair-care/hair-color-samples/gold_very_light.webp", "swatch": "#c6924f" },
+          { "id": "hair-color-001-gold-light", "image": "/SiteEdit/hair-care/hair-color-samples/gold_light.webp", "swatch": "#c08a4e" },
+          { "id": "hair-color-001-gold-gold", "image": "/SiteEdit/hair-care/hair-color-samples/gold.webp", "swatch": "#b8782b" },
+          { "id": "hair-color-001-gold-chestnut", "image": "/SiteEdit/hair-care/hair-color-samples/gold_chestnut.webp", "swatch": "#8b3019" }
+        ] },
+        { "id": "hair-color-001-green", "image": "/SiteEdit/hair-care/hair-color-samples/green.webp", "swatch": "#204740" },
+        { "id": "hair-color-001-blue", "image": "/SiteEdit/hair-care/hair-color-samples/blue.webp", "swatch": "#2e2c47" },
+        { "id": "hair-color-001-purple", "image": "/SiteEdit/hair-care/hair-color-samples/purple_dark.webp", "swatch": "#2e1c24", "shades": [
+          { "id": "hair-color-001-purple-dark-gray", "image": "/SiteEdit/hair-care/hair-color-samples/purple_dark_gray.webp", "swatch": "#36222b" },
+          { "id": "hair-color-001-purple-burgundy", "image": "/SiteEdit/hair-care/hair-color-samples/purple_burgundy.webp", "swatch": "#401e22" },
+          { "id": "hair-color-001-purple-red", "image": "/SiteEdit/hair-care/hair-color-samples/purple_red.webp", "swatch": "#341f24" },
+          { "id": "hair-color-001-purple-dark", "image": "/SiteEdit/hair-care/hair-color-samples/purple_dark.webp", "swatch": "#2e1c24" }
+        ] },
+        { "id": "hair-color-001-yellow", "image": "/SiteEdit/hair-care/hair-color-samples/yellow.webp", "swatch": "#f5d133", "shades": [
+          { "id": "hair-color-001-yellow-yellow", "image": "/SiteEdit/hair-care/hair-color-samples/yellow.webp", "swatch": "#f5d133" },
+          { "id": "hair-color-001-yellow-blonde", "image": "/SiteEdit/hair-care/hair-color-samples/yellow_blonde.webp", "swatch": "#d9ab69" }
+        ] },
+        { "id": "hair-color-001-orange", "image": "/SiteEdit/hair-care/hair-color-samples/orange.webp", "swatch": "#ad361a", "shades": [
+          { "id": "hair-color-001-orange-light", "image": "/SiteEdit/hair-care/hair-color-samples/orange_light.webp", "swatch": "#d85318" },
+          { "id": "hair-color-001-orange-orange", "image": "/SiteEdit/hair-care/hair-color-samples/orange.webp", "swatch": "#ad361a" },
+          { "id": "hair-color-001-orange-red", "image": "/SiteEdit/hair-care/hair-color-samples/orange_red.webp", "swatch": "#922f1b" }
+        ] }
       ]
     },
     {
@@ -85,8 +152,9 @@
       "descriptionOpacity": 1
     },
     "subcategories": {
-      "$comment": "SUBCATEGORIES (only on categories whose card file in SiteEdit/Categories has a subcategories list). Each subcategory gets a heading with its products under it. When there are two or more, a row of jump buttons sits above the first heading; each one goes to its subcategory and is also a link you can share, such as /category/hair-care#hair-coloring. otherHeadingText = the heading over products that have no subcategory. headingLine = the thin line under each heading. jumpButtons: normal = resting, hover = mouse over.",
+      "$comment": "SUBCATEGORIES (only on categories whose card file in SiteEdit/Categories has a subcategories list). Each subcategory gets a heading with its products under it. When there are two or more, a row of jump buttons sits above the first heading; each one goes to its subcategory and is also a link you can share, such as /category/hair-care#hair-coloring. otherHeadingText = the heading over products that have no subcategory. unavailableHeadingText = the heading of the last group, under More, holding products that are Temporarily Unavailable (it has no jump button). headingLine = the thin line under each heading. jumpButtons: normal = resting, hover = mouse over.",
       "otherHeadingText": "More",
+      "unavailableHeadingText": "Temporarily Unavailable",
       "headingFont": "default",
       "headingFontSize": "default",
       "headingColor": "#4b303b",
