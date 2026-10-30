@@ -87,16 +87,19 @@ A font size is a number with a unit such as `1.5rem` or `24px` (rem, em, px, vw,
 
 ## Home.json
 
-Groups run from the top of the page down, after two site-wide groups: `errors`, `floatingHeader`, `basePalette`, `otherButtons`, `goldBars`, `topBar`, `navigation`, `hero`, `marquee`, `collection`, `about`, `contact`, `footer`. The top bar, navigation and footer appear on every page, so their words and colours here apply to all pages. The order of groups and lines does not matter to the site (it finds each setting by name); it is only kept tidy so things are easy to find.
+Groups run from the top of the page down, after two site-wide groups: `errors`, `floatingHeader`, `basePalette`, `otherButtons`, `goldBars`, `topBar`, `navigation`, `hero`, `marquee`, `collection`, `categoryPages`, `about`, `contact`, `footer`. The top bar, navigation and footer appear on every page, so their words and colours here apply to all pages. The order of groups and lines does not matter to the site (it finds each setting by name); it is only kept tidy so things are easy to find.
 
 - `errors`: the error picture, the "Temporarily Unavailable" words, and their font, size, colour and opacity. These are used everywhere the words appear: home page cards, category pages and product cards. `homeTilePanelColor` and its opacity are the pale panel behind the words on a home page card.
 - `floatingHeader`: `"enabled": true` keeps the dark top bar and the white logo/links bar at the top of the screen while scrolling; `false` lets them scroll away. If the line is missing or not true/false, the header does not float and the mistake is written to the Vercel logs.
 - `otherButtons`: colours, font and size for buttons that have no settings of their own (for example the page-not-found button).
 - `goldBars`: the gold bar borders on every page. `lightColor`, `middleColor` and `darkColor` are the three golds (light on the top and left of each bar, dark on the bottom and right). `large`, `medium` and `small` are the three thicknesses, each with a `Size` (such as `0.375rem`, which grows with the shopper's text size, or `6px`) and a `MinSize` and `MaxSize` that keep it between two pixel sizes. Large: navigation bar, footer, page openings, product and category cards, the rose picture's arch, the top of the cart, Terms/Privacy panels. Medium: buttons, scrolling banner, phone menu. Small: divider lines, size buttons and lists, form boxes, table lines. Corners are square, except pill-shaped buttons, where the bar follows the curve. The colour circles keep thin lines; the thin lines in the cart's item list and Order summary take their colour from Cart.json.
+- `navigation.floatingCartButton`: the round Cart button near the top right of every page except the cart. `text` is its word; `font` and `fontSize` as usual; `normal` (resting) and `hover` (mouse over) each have a background and text colour; `countBadge` is the small circle with the number of items. Its gold ring comes from `goldBars`.
+- `collection.cards`: the title and background colours (with opacities) shared by every category card on the home page. A card file that says `"default"` for one of them uses the value here.
+- `categoryPages`: the shared look of every category page. It has the same groups and settings as the `categoryPageStyle` block in each category file (see "Category files" below).
 - `marquee.bannerHeight` is `"default"` (today's height) or a height such as `3.5rem`.
 - `footer.legalText` is the line under the store name. Words written as `[Terms and Conditions](terms)` become a link to that legal page; see "Legal pages" below.
 
-The category cards under the collection heading are edited in the `Categories` folder, not here.
+Each category card's words and picture are edited in the `Categories` folder; their shared colours are in `collection.cards`.
 
 Where the buttons go: a home page category card opens that category at the top of its page. All collections (category pages) and Continue shopping (cart) return to the Collection section of the home page. The payment-complete page's Continue shopping goes to the top of the home page. The Collection, About and Contact links go to those sections, stopping just below the floating header, and Home goes to the very top. The browser's Back button returns to where you were.
 
@@ -108,9 +111,9 @@ Each category has two files, named in `Categories/index.json`:
 - `"folder"` names both folders: `SiteEdit/<folder>/` (products and photos) and `SiteEdit/Categories/<folder>/`. Lowercased, it is also the name the site asks the backend for, so its spelling must match the first word of that category's `loadCategory(...)` line in the backend's `lib/catalog-data.js`. Capitals may differ.
 - `"file"` names both JSON files: `SiteEdit/<folder>/<file>` and `SiteEdit/Categories/<folder>/<file>`. Rename the two files together and change `"file"` to match. If `"file"` is missing, that category shows Temporarily Unavailable and the Vercel logs say so.
 
-`SiteEdit/Categories/<folder>/<file>` holds the category's words and home page card: `slug` (the page address), `label`, `title`, `description`, `image`, and the card's title and background colours.
+`SiteEdit/Categories/<folder>/<file>` holds the category's words and home page card: `slug` (the page address), `label`, `title`, `description`, `image`, and the card's title and background colours (`titleColor`, `titleColorOpacity`, `backgroundColor`, `backgroundColorOpacity`). Each of these four says `"default"` to use `Home.json` → `collection` → `cards`, or holds the card's own value.
 
-`SiteEdit/<folder>/<file>` holds only the `products` list and one block called `categoryPageStyle`. Each product's `"id"` must match an `"id"` in the backend's CatalogEdit file exactly. The `categoryPageStyle` block is identical for every category: to style every category the same way, copy the whole block from one file and paste it over the matching block in the others.
+`SiteEdit/<folder>/<file>` holds only the `products` list and one block called `categoryPageStyle`. Each product's `"id"` must match an `"id"` in the backend's CatalogEdit file exactly. Every setting in `categoryPageStyle` says `"default"`, which means it uses the same setting in `Home.json` → `categoryPages`; change that block to restyle every category page at once. To give one category its own look for a setting, replace `"default"` with a value in that category's file; only that setting, on that page, changes, and putting `"default"` back undoes it. A setting that is missing counts as `"default"`. A setting that says `"default"` in `Home.json` too keeps the site's built-in look. This applies to colours, opacities, fonts, sizes and words alike.
 
 
 ## Subcategories (groups inside a category page)
@@ -142,7 +145,7 @@ A category page can split its products into groups, each with its own heading. H
 - A product that is Temporarily Unavailable (a mistake in its CatalogEdit entry) goes in its own group at the very bottom, under More, headed by `unavailableHeadingText`. It has no jump button, and it moves back into its subcategory as soon as the mistake is fixed.
 - A subcategory with no products is not shown, so you can list one before its products arrive.
 - With two or more groups, a row of buttons above the first heading jumps to each group. Each button is that group's shareable link, and the browser's Back button returns to where you were.
-- Colours, fonts and the word "More" are in `categoryPageStyle` → `subcategories` (heading, the thin line under it, and the jump buttons' `normal` and `hover` looks). Every category file has this group, so the block stays identical across categories.
+- Colours, fonts and the word "More" are in `categoryPageStyle` → `subcategories` (heading, the thin line under it, and the jump buttons' `normal` and `hover` looks). Every category file has this group; like the rest of `categoryPageStyle` it says `"default"` and follows `Home.json` → `categoryPages`.
 - Subcategories are a SiteEdit setting only. The backend's CatalogEdit files and the admin stock page are not affected.
 
 

@@ -2,8 +2,8 @@
   "slug": "hair-care",
   "label": "Hair Care & Colour",
   "title": "Hair Care & Colour",
-  "titleColor": "#864f5d",
-  "backgroundColor": "#fffaf8",
+  "titleColor": "default",
+  "backgroundColor": "default",
   "description": "From roots to tips",
   "subcategories": [
     { "key": "hair-coloring", "label": "Hair Coloring" },
@@ -12,6 +12,6 @@
   "image": "/SiteEdit/hair-care/hair_care_example.jpeg",
   "folder": "hair-care",
   "productsFile": "/SiteEdit/hair-care/Hair-Care.json",
-  "backgroundColorOpacity": 1,
-  "titleColorOpacity": 1
+  "backgroundColorOpacity": "default",
+  "titleColorOpacity": "default"
 }

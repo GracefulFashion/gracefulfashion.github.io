@@ -2,12 +2,12 @@
   "slug": "mens",
   "label": "For Men",
   "title": "For Men",
-  "titleColor": "#864f5d",
-  "backgroundColor": "#fffaf8",
+  "titleColor": "default",
+  "backgroundColor": "default",
   "description": "From comfortable fits to flashy styles.",
   "image": "/SiteEdit/mens/pleated_wide_leg_trousers-burgundy.jpeg",
   "folder": "mens",
   "productsFile": "/SiteEdit/mens/Mens.json",
-  "backgroundColorOpacity": 1,
-  "titleColorOpacity": 1
+  "backgroundColorOpacity": "default",
+  "titleColorOpacity": "default"
 }

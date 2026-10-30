@@ -2,12 +2,12 @@
   "slug": "test",
   "label": "Test products",
   "title": "Test products",
-  "titleColor": "#864f5d",
-  "backgroundColor": "#fffaf8",
+  "titleColor": "default",
+  "backgroundColor": "default",
   "description": "Labelled for cart and inventory testing",
   "image": "/SiteEdit/test/noImage-error-test.jpg",
   "folder": "test",
   "productsFile": "/SiteEdit/test/Test.json",
-  "backgroundColorOpacity": 1,
-  "titleColorOpacity": 1
+  "backgroundColorOpacity": "default",
+  "titleColorOpacity": "default"
 }
