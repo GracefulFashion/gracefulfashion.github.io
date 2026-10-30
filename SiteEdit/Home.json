@@ -17,7 +17,7 @@
   },
   "basePalette": {
     "$comment": "BASE COLOURS for the whole site. Anything without its own colour below uses these. The cart and each category page can override them inside their own files.",
-    "pageBackgroundColor": "#fff8f4",
+    "pageBackgroundColor": "#4a5f44",
     "pageBackgroundOpacity": 1,
     "mainTextColor": "#3f4d46",
     "mainTextOpacity": 1,
