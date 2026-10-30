@@ -18,12 +18,12 @@
     }
   ],
   "categoryPageStyle": {
-    "$comment": "CATEGORY PAGE STYLE. THIS WHOLE BLOCK IS IDENTICAL FOR EVERY CATEGORY: copy it from here and paste it over the same block in any other category file. Only the words above it (slug, label, title, description, image) and the products list differ per category. Groups run from the top of the page downward. Inside a group: the words first, then font and font size, then colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px.",
+    "$comment": "CATEGORY PAGE STYLE. THIS WHOLE BLOCK IS IDENTICAL FOR EVERY CATEGORY: copy it from here and paste it over the same block in any other category file. Only the words above it (slug, label, title, description, image) and the products list differ per category. Groups run from the top of the page downward. Inside a group: the words first, then font and font size, then colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #3f4d46. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px.",
     "basePalette": {
       "$comment": "BASE COLOURS for this category page only. Anything without its own colour below uses these.",
       "pageBackgroundColor": "#fff8f4",
       "pageBackgroundOpacity": 1,
-      "mainTextColor": "#4b303b",
+      "mainTextColor": "#3f4d46",
       "mainTextOpacity": 1,
       "brandColor": "#b54863",
       "brandOpacity": 1,
@@ -41,7 +41,7 @@
       "softTextOpacity": 1,
       "accentColor": "#d4ad55",
       "accentOpacity": 1,
-      "textOnAccentColor": "#4b303b",
+      "textOnAccentColor": "#3f4d46",
       "textOnAccentOpacity": 1
     },
     "hero": {
@@ -56,11 +56,11 @@
         "font": "default",
         "fontSize": "default",
         "normal": {
-          "backgroundColor": "#4b303b",
+          "backgroundColor": "#455e37",
           "backgroundOpacity": 1,
           "textColor": "#fff8f4",
           "textOpacity": 1,
-          "borderColor": "#4b303b",
+          "borderColor": "#455e37",
           "borderOpacity": 1
         },
         "hover": {
@@ -74,7 +74,7 @@
       },
       "titleFont": "default",
       "titleFontSize": "default",
-      "titleColor": "#4b303b",
+      "titleColor": "#3f4d46",
       "titleOpacity": 1,
       "descriptionFont": "default",
       "descriptionFontSize": "default",
@@ -87,7 +87,7 @@
       "unavailableHeadingText": "Temporarily Unavailable",
       "headingFont": "default",
       "headingFontSize": "default",
-      "headingColor": "#4b303b",
+      "headingColor": "#3f4d46",
       "headingOpacity": 1,
       "headingLineColor": "#e5cfd5",
       "headingLineOpacity": 1,
@@ -95,11 +95,11 @@
         "font": "default",
         "fontSize": "default",
         "normal": {
-          "backgroundColor": "#4b303b",
+          "backgroundColor": "#455e37",
           "backgroundOpacity": 1,
           "textColor": "#fff8f4",
           "textOpacity": 1,
-          "borderColor": "#4b303b",
+          "borderColor": "#455e37",
           "borderOpacity": 1
         },
         "hover": {
@@ -122,7 +122,7 @@
       "imageBackgroundOpacity": 1,
       "nameFont": "default",
       "nameFontSize": "default",
-      "nameColor": "#4b303b",
+      "nameColor": "#3f4d46",
       "nameOpacity": 1,
       "fromPriceText": "From {price}",
       "priceFont": "default",
@@ -137,7 +137,7 @@
         "borderOpacity": 0.6,
         "selectedRingColor": "#b54863",
         "selectedRingOpacity": 1,
-        "soldOutLineColor": "#4b303b",
+        "soldOutLineColor": "#3f4d46",
         "soldOutLineOpacity": 1,
         "shades": {
           "$comment": "SHADES (only on products where a colour has shades). Each shade's circle colour (swatch) and photo are set in this file's products list, inside its colour, under the shade's id. noteText = the words above the circles. A colour with shades has a small arrow mark on its circle; tapping it opens a menu of its shades, and once a shade is picked the circle takes the shade's colour. chooseShadeText = the Add to cart button's wording until a shade is picked. The menu uses the size dropdown's menu colours below.",
@@ -146,7 +146,7 @@
           "noteFontSize": "default",
           "noteColor": "#806670",
           "noteOpacity": 1,
-          "arrowColor": "#4b303b",
+          "arrowColor": "#3f4d46",
           "arrowOpacity": 1,
           "chooseShadeText": "Choose a shade"
         }
@@ -160,7 +160,7 @@
         "$comment": "SIZE BUTTONS (for products with a few sizes such as S, M, L). 'highlight' is the look when hovered or selected.",
         "buttonFont": "default",
         "buttonFontSize": "default",
-        "textColor": "#4b303b",
+        "textColor": "#3f4d46",
         "textOpacity": 1,
         "borderColor": "#e5cfd5",
         "borderOpacity": 1,
@@ -180,7 +180,7 @@
         "placeholderFontSize": "default",
         "triggerBackgroundColor": "#fff8f4",
         "triggerBackgroundOpacity": 1,
-        "triggerTextColor": "#4b303b",
+        "triggerTextColor": "#3f4d46",
         "triggerTextOpacity": 1,
         "triggerBorderColor": "#e5cfd5",
         "triggerBorderOpacity": 1,
@@ -194,7 +194,7 @@
         "menuBorderOpacity": 1,
         "optionFont": "default",
         "optionFontSize": "default",
-        "optionTextColor": "#4b303b",
+        "optionTextColor": "#3f4d46",
         "optionTextOpacity": 1,
         "optionHighlightBackgroundColor": "#b54863",
         "optionHighlightBackgroundOpacity": 1,
@@ -209,11 +209,11 @@
         "font": "default",
         "fontSize": "default",
         "normal": {
-          "backgroundColor": "#4b303b",
+          "backgroundColor": "#455e37",
           "backgroundOpacity": 1,
           "textColor": "#fff8f4",
           "textOpacity": 1,
-          "borderColor": "#4b303b",
+          "borderColor": "#455e37",
           "borderOpacity": 1
         },
         "hover": {
@@ -233,11 +233,11 @@
           "borderOpacity": 1
         },
         "disabled": {
-          "backgroundColor": "#4b303b",
+          "backgroundColor": "#455e37",
           "backgroundOpacity": 0.45,
           "textColor": "#fff8f4",
           "textOpacity": 0.45,
-          "borderColor": "#4b303b",
+          "borderColor": "#455e37",
           "borderOpacity": 0.45
         }
       }
