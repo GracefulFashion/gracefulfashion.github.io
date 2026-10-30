@@ -443,3 +443,7 @@ ol.gf-md-list{list-style:decimal}
 .category-tile:after{bottom:calc(var(--gf-bar-lg) + .15rem)}
 .category-tile>span{left:21%;right:21%}
 @media(max-width:700px){.category-tile>span{left:24%;right:24%}}
+/* Floating cart button colours (Home.json navigation > floatingCartButton) */
+.floating-cart{background:hsl(var(--gf-fc-bg,var(--button-default-background,var(--foreground))));color:hsl(var(--gf-fc-text,var(--background)))}
+.floating-cart:hover{background:hsl(var(--gf-fc-hover-bg,var(--primary)));color:hsl(var(--gf-fc-hover-text,var(--gf-fc-text,var(--background))))}
+.floating-cart .cart-count{background:hsl(var(--gf-fc-count-bg,var(--accent)));color:hsl(var(--gf-fc-count-text,var(--foreground)))}

@@ -2,12 +2,12 @@
   "slug": "makeup",
   "label": "Makeup",
   "title": "Makeup",
-  "titleColor": "#864f5d",
-  "backgroundColor": "#fffaf8",
+  "titleColor": "default",
+  "backgroundColor": "default",
   "description": "Blush tones in beautiful colours.",
   "image": "/SiteEdit/makeup/makeup-cover.jpg",
   "folder": "makeup",
   "productsFile": "/SiteEdit/makeup/Makeup.json",
-  "backgroundColorOpacity": 1,
-  "titleColorOpacity": 1
+  "backgroundColorOpacity": "default",
+  "titleColorOpacity": "default"
 }

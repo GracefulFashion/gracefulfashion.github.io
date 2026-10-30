@@ -131,7 +131,31 @@
     "mobileMenuBackgroundColor": "#fff8f4",
     "mobileMenuBackgroundOpacity": 1,
     "mobileMenuBorderColor": "#e5cfd5",
-    "mobileMenuBorderOpacity": 1
+    "mobileMenuBorderOpacity": 1,
+    "floatingCartButton": {
+      "$comment": "FLOATING CART BUTTON: the round Cart button near the top right of every page except the cart (it follows the floating header). text = its word. normal = resting, hover = mouse over. countBadge = the small circle with the number of items. Its gold ring is set in goldBars.",
+      "text": "Cart",
+      "font": "default",
+      "fontSize": "default",
+      "normal": {
+        "backgroundColor": "#455e37",
+        "backgroundOpacity": 1,
+        "textColor": "#fff8f4",
+        "textOpacity": 1
+      },
+      "hover": {
+        "backgroundColor": "#b54863",
+        "backgroundOpacity": 1,
+        "textColor": "#ffffff",
+        "textOpacity": 1
+      },
+      "countBadge": {
+        "backgroundColor": "#d4ad55",
+        "backgroundOpacity": 1,
+        "textColor": "#3f4d46",
+        "textOpacity": 1
+      }
+    }
   },
   "hero": {
     "$comment": "THE BIG OPENING SECTION: small label, big title (the second part is the coloured emphasis), intro, and the rose picture with its note.",
@@ -202,7 +226,7 @@
     "bannerHeight": "default"
   },
   "collection": {
-    "$comment": "HEADING ABOVE THE CATEGORY CARDS. (The cards themselves are edited in the Categories folder.)",
+    "$comment": "HEADING ABOVE THE CATEGORY CARDS, then the cards' shared colours. Each card's words and picture are edited in the Categories folder.",
     "eyebrowText": "Take your pick",
     "eyebrowFont": "default",
     "eyebrowFontSize": "default",
@@ -219,7 +243,240 @@
     "introFont": "default",
     "introFontSize": "default",
     "introColor": "#806670",
-    "introOpacity": 1
+    "introOpacity": 1,
+    "cards": {
+      "$comment": "COLOURS SHARED BY EVERY CATEGORY CARD on the home page. A card file in SiteEdit/Categories that says \"default\" for titleColor, titleColorOpacity, backgroundColor or backgroundColorOpacity uses these; a card file with its own value there uses its own.",
+      "titleColor": "#864f5d",
+      "titleColorOpacity": 1,
+      "backgroundColor": "#fffaf8",
+      "backgroundColorOpacity": 1
+    }
+  },
+  "categoryPages": {
+    "$comment": "CATEGORY PAGE STYLE SHARED BY EVERY CATEGORY PAGE. Each category file (SiteEdit/<folder>/<file>.json) has a categoryPageStyle block with the same settings; wherever it says \"default\", the page uses the value here. A category that has its own value for a setting uses its own value instead, for that setting only. A setting that says \"default\" here too keeps the site's built-in look. Inside a group: the words first, then font and font size, then colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #3f4d46. Font: 'default' or a name from the font list in the README. Font size: 'default', or a size such as 1.5rem or 24px.",
+    "basePalette": {
+      "$comment": "BASE COLOURS for this category page only. Anything without its own colour below uses these.",
+      "pageBackgroundColor": "#fff8f4",
+      "pageBackgroundOpacity": 1,
+      "mainTextColor": "#3f4d46",
+      "mainTextOpacity": 1,
+      "brandColor": "#b54863",
+      "brandOpacity": 1,
+      "textOnBrandColor": "#ffffff",
+      "textOnBrandOpacity": 1,
+      "softBackgroundColor": "#f4dfe6",
+      "softBackgroundOpacity": 1,
+      "textOnSoftBackgroundColor": "#5f3443",
+      "textOnSoftBackgroundOpacity": 1,
+      "lineColor": "#e5cfd5",
+      "lineOpacity": 1,
+      "mutedBackgroundColor": "#f3e8e3",
+      "mutedBackgroundOpacity": 1,
+      "softTextColor": "#806670",
+      "softTextOpacity": 1,
+      "accentColor": "#d4ad55",
+      "accentOpacity": 1,
+      "textOnAccentColor": "#3f4d46",
+      "textOnAccentOpacity": 1
+    },
+    "hero": {
+      "$comment": "TOP OF THE CATEGORY PAGE: the All collections button, then the category title and description (their words are edited at the top of this file).",
+      "sectionBackgroundColor": "#f5eaed",
+      "sectionBackgroundOpacity": 1,
+      "sectionBottomLineColor": "#e5cfd5",
+      "sectionBottomLineOpacity": 1,
+      "allCollectionsButton": {
+        "$comment": "ALL COLLECTIONS BUTTON (same look as the cart's Continue shopping button). normal = resting, hover = mouse over.",
+        "text": "All collections",
+        "font": "default",
+        "fontSize": "default",
+        "normal": {
+          "backgroundColor": "#455e37",
+          "backgroundOpacity": 1,
+          "textColor": "#fff8f4",
+          "textOpacity": 1,
+          "borderColor": "#455e37",
+          "borderOpacity": 1
+        },
+        "hover": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        }
+      },
+      "titleFont": "default",
+      "titleFontSize": "default",
+      "titleColor": "#3f4d46",
+      "titleOpacity": 1,
+      "descriptionFont": "default",
+      "descriptionFontSize": "default",
+      "descriptionColor": "#806670",
+      "descriptionOpacity": 1
+    },
+    "subcategories": {
+      "$comment": "SUBCATEGORIES (only on categories whose card file in SiteEdit/Categories has a subcategories list). Each subcategory gets a heading with its products under it. When there are two or more, a row of jump buttons sits above the first heading; each one goes to its subcategory and is also a link you can share, such as /category/hair-care#hair-coloring. otherHeadingText = the heading over products that have no subcategory. unavailableHeadingText = the heading of the last group, under More, holding products that are Temporarily Unavailable (it has no jump button). headingLine = the thin line under each heading. jumpButtons: normal = resting, hover = mouse over.",
+      "otherHeadingText": "More",
+      "unavailableHeadingText": "Temporarily Unavailable",
+      "headingFont": "default",
+      "headingFontSize": "default",
+      "headingColor": "#3f4d46",
+      "headingOpacity": 1,
+      "headingLineColor": "#e5cfd5",
+      "headingLineOpacity": 1,
+      "jumpButtons": {
+        "font": "default",
+        "fontSize": "default",
+        "normal": {
+          "backgroundColor": "#455e37",
+          "backgroundOpacity": 1,
+          "textColor": "#fff8f4",
+          "textOpacity": 1,
+          "borderColor": "#455e37",
+          "borderOpacity": 1
+        },
+        "hover": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        }
+      }
+    },
+    "productCards": {
+      "$comment": "THE PRODUCT CARDS. Product names and prices come from the shop database, so only their look is set here.",
+      "cardBackgroundColor": "#ffffff",
+      "cardBackgroundOpacity": 1,
+      "cardBorderColor": "#e5cfd5",
+      "cardBorderOpacity": 1,
+      "imageBackgroundColor": "#faf7f5",
+      "imageBackgroundOpacity": 1,
+      "nameFont": "default",
+      "nameFontSize": "default",
+      "nameColor": "#3f4d46",
+      "nameOpacity": 1,
+      "fromPriceText": "From {price}",
+      "priceFont": "default",
+      "priceFontSize": "default",
+      "priceColor": "#b54863",
+      "priceOpacity": 1,
+      "colorSwatches": {
+        "$comment": "COLOUR CIRCLES (only on products sold in colours). They sit right under the price, centred, and wrap onto a second row if there are many. Each colour's circle colour (swatch) and photo are set in this file's products list, under that colour's id. circleSize and gap: a size such as 1.6rem or 26px. The ring marks the chosen colour; a faded circle with a line through it is sold out in every size (it can still be tapped to see its photo).",
+        "circleSize": "1.6rem",
+        "gap": "0.5rem",
+        "borderColor": "#806670",
+        "borderOpacity": 0.6,
+        "selectedRingColor": "#b54863",
+        "selectedRingOpacity": 1,
+        "soldOutLineColor": "#3f4d46",
+        "soldOutLineOpacity": 1,
+        "shades": {
+          "$comment": "SHADES (only on products where a colour has shades). Each shade's circle colour (swatch) and photo are set in this file's products list, inside its colour, under the shade's id. noteText = the words above the circles. A colour with shades has a small arrow mark on its circle; tapping it opens a menu of its shades, and once a shade is picked the circle takes the shade's colour. chooseShadeText = the Add to cart button's wording until a shade is picked. The menu uses the size dropdown's menu colours below.",
+          "noteText": "Select color for shade",
+          "noteFont": "default",
+          "noteFontSize": "default",
+          "noteColor": "#806670",
+          "noteOpacity": 1,
+          "arrowColor": "#3f4d46",
+          "arrowOpacity": 1,
+          "chooseShadeText": "Choose a shade"
+        }
+      },
+      "sizeLabelText": "Select a size",
+      "sizeLabelFont": "default",
+      "sizeLabelFontSize": "default",
+      "sizeLabelColor": "#806670",
+      "sizeLabelOpacity": 1,
+      "sizeButtons": {
+        "$comment": "SIZE BUTTONS (for products with a few sizes such as S, M, L). 'highlight' is the look when hovered or selected.",
+        "buttonFont": "default",
+        "buttonFontSize": "default",
+        "textColor": "#3f4d46",
+        "textOpacity": 1,
+        "borderColor": "#e5cfd5",
+        "borderOpacity": 1,
+        "backgroundColor": "#ffffff",
+        "backgroundOpacity": 0,
+        "highlightTextColor": "#ffffff",
+        "highlightTextOpacity": 1,
+        "highlightBorderColor": "#b54863",
+        "highlightBorderOpacity": 1,
+        "highlightBackgroundColor": "#b54863",
+        "highlightBackgroundOpacity": 1
+      },
+      "sizeDropdown": {
+        "$comment": "SIZE DROPDOWN (for products with a longer list of sizes, such as shoes). The same look is used for the cart's State, Town and Pickup menus.",
+        "placeholderText": "Choose a size",
+        "placeholderFont": "default",
+        "placeholderFontSize": "default",
+        "triggerBackgroundColor": "#fff8f4",
+        "triggerBackgroundOpacity": 1,
+        "triggerTextColor": "#3f4d46",
+        "triggerTextOpacity": 1,
+        "triggerBorderColor": "#e5cfd5",
+        "triggerBorderOpacity": 1,
+        "triggerHoverBorderColor": "#b54863",
+        "triggerHoverBorderOpacity": 1,
+        "arrowColor": "#b54863",
+        "arrowOpacity": 1,
+        "menuBackgroundColor": "#fff8f4",
+        "menuBackgroundOpacity": 1,
+        "menuBorderColor": "#e5cfd5",
+        "menuBorderOpacity": 1,
+        "optionFont": "default",
+        "optionFontSize": "default",
+        "optionTextColor": "#3f4d46",
+        "optionTextOpacity": 1,
+        "optionHighlightBackgroundColor": "#b54863",
+        "optionHighlightBackgroundOpacity": 1,
+        "optionHighlightTextColor": "#ffffff",
+        "optionHighlightTextOpacity": 1
+      },
+      "addButton": {
+        "$comment": "ADD TO CART BUTTON. text = normal wording, addedText = wording for a moment after adding, chooseSizeText = wording while a size is still needed. States: normal, hover (mouse over), pressed (just clicked), disabled (size not chosen yet).",
+        "text": "Add to cart",
+        "addedText": "Added to cart",
+        "chooseSizeText": "Choose a size",
+        "font": "default",
+        "fontSize": "default",
+        "normal": {
+          "backgroundColor": "#455e37",
+          "backgroundOpacity": 1,
+          "textColor": "#fff8f4",
+          "textOpacity": 1,
+          "borderColor": "#455e37",
+          "borderOpacity": 1
+        },
+        "hover": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        },
+        "pressed": {
+          "backgroundColor": "#b54863",
+          "backgroundOpacity": 1,
+          "textColor": "#ffffff",
+          "textOpacity": 1,
+          "borderColor": "#b54863",
+          "borderOpacity": 1
+        },
+        "disabled": {
+          "backgroundColor": "#455e37",
+          "backgroundOpacity": 0.45,
+          "textColor": "#fff8f4",
+          "textOpacity": 0.45,
+          "borderColor": "#455e37",
+          "borderOpacity": 0.45
+        }
+      }
+    }
   },
   "about": {
     "$comment": "THE ABOUT SECTION: picture with its tag on the left, story on the right. 'paragraphs' is a list of paragraphs (they share one font, size and colour).",
