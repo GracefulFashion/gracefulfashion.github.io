@@ -1,5 +1,5 @@
 {
-  "$comment": "SITE EDIT FILE FOR THE HOME PAGE AND THE PARTS SHARED BY EVERY PAGE (top bar, navigation, footer, base colours). Groups run from the top of the page downward. Inside a group: the words first, then that text's font and font size, then its colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #4b303b. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px. Keep every comma and quotation mark; check the file with a JSON validator before saving. Notes like this one start with $comment and are ignored by the site.",
+  "$comment": "SITE EDIT FILE FOR THE HOME PAGE AND THE PARTS SHARED BY EVERY PAGE (top bar, navigation, footer, base colours). Groups run from the top of the page downward. Inside a group: the words first, then that text's font and font size, then its colour with its opacity on the very next line. Opacity runs from 0 (invisible) to 1 (solid). Colours are six-digit codes like #3f4d46. Font: 'default' keeps the current look, or type a name from the font list in the README (for example Playfair Display). Font size: 'default', or a size such as 1.5rem or 24px. Keep every comma and quotation mark; check the file with a JSON validator before saving. Notes like this one start with $comment and are ignored by the site.",
   "errors": {
     "$comment": "WHEN SOMETHING CAN'T BE SHOWN. image: the picture used for any product, colour or category photo that can't be found, and on cards that are Temporarily Unavailable. Put the file in the assets folder next to the roses and write its name here, starting with a slash (change .jpg to .png or .webp if your file is one of those). unavailableText: the words shown on a card or category whose file has a mistake. The mistake itself (file, line and column) is written to the Vercel logs, never shown to visitors. The words' font, size, colour and opacity come next; they are used everywhere the words appear (home page cards, category pages and product cards). homeTilePanel: the pale panel behind the words on a home page card, so they stay readable over the photo.",
     "image": "/assets/gf-error.png",
@@ -19,7 +19,7 @@
     "$comment": "BASE COLOURS for the whole site. Anything without its own colour below uses these. The cart and each category page can override them inside their own files.",
     "pageBackgroundColor": "#fff8f4",
     "pageBackgroundOpacity": 1,
-    "mainTextColor": "#4b303b",
+    "mainTextColor": "#3f4d46",
     "mainTextOpacity": 1,
     "brandColor": "#b54863",
     "brandOpacity": 1,
@@ -37,7 +37,7 @@
     "softTextOpacity": 1,
     "accentColor": "#d4ad55",
     "accentOpacity": 1,
-    "textOnAccentColor": "#4b303b",
+    "textOnAccentColor": "#3f4d46",
     "textOnAccentOpacity": 1
   },
   "otherButtons": {
@@ -45,11 +45,11 @@
     "font": "default",
     "fontSize": "default",
     "normal": {
-      "backgroundColor": "#4b303b",
+      "backgroundColor": "#455e37",
       "backgroundOpacity": 1,
       "textColor": "#fff8f4",
       "textOpacity": 1,
-      "borderColor": "#4b303b",
+      "borderColor": "#455e37",
       "borderOpacity": 1
     },
     "hover": {
@@ -69,13 +69,28 @@
       "borderOpacity": 1
     },
     "disabled": {
-      "backgroundColor": "#4b303b",
+      "backgroundColor": "#455e37",
       "backgroundOpacity": 0.45,
       "textColor": "#fff8f4",
       "textOpacity": 0.45,
-      "borderColor": "#4b303b",
+      "borderColor": "#455e37",
       "borderOpacity": 0.45
     }
+  },
+  "goldBars": {
+    "$comment": "THE GOLD BAR BORDERS on every page: buttons, cards, the navigation bar, footer, page openings, the rose picture's arch, the cart and the Terms/Privacy pages. Each bar looks like a rounded gold rod: lighter on its top and left, darker on its bottom and right. lightColor, middleColor and darkColor are its three golds. There are three thicknesses. large: navigation bar, footer, page openings, product and category cards, the rose arch, the top of the cart and the Terms/Privacy panels. medium: buttons, the scrolling banner and the phone menu. small: divider lines, size buttons and size lists, form boxes and table lines. Each Size is 'default' or a size such as 0.375rem (grows with the shopper's text size) or 6px (always the same); MinSize and MaxSize stop it getting too thin or too thick. The colour circles keep their thin lines, and the thin lines in the cart's item list and Order summary are set in Cart.json.",
+    "lightColor": "#fff1b8",
+    "middleColor": "#d4a937",
+    "darkColor": "#6e500d",
+    "largeSize": "0.375rem",
+    "largeMinSize": "4px",
+    "largeMaxSize": "8px",
+    "mediumSize": "0.25rem",
+    "mediumMinSize": "3px",
+    "mediumMaxSize": "6px",
+    "smallSize": "0.1875rem",
+    "smallMinSize": "3px",
+    "smallMaxSize": "4px"
   },
   "topBar": {
     "$comment": "THE THIN BAR AT THE VERY TOP OF EVERY PAGE.",
@@ -84,7 +99,7 @@
     "messageFontSize": "default",
     "messageColor": "#fff8f4",
     "messageOpacity": 1,
-    "backgroundColor": "#4b303b",
+    "backgroundColor": "#3f4d46",
     "backgroundOpacity": 1
   },
   "navigation": {
@@ -111,7 +126,7 @@
       "underlineColor": "#b54863",
       "underlineOpacity": 1
     },
-    "mobileMenuIconColor": "#4b303b",
+    "mobileMenuIconColor": "#3f4d46",
     "mobileMenuIconOpacity": 1,
     "mobileMenuBackgroundColor": "#fff8f4",
     "mobileMenuBackgroundOpacity": 1,
@@ -137,7 +152,7 @@
     "titleEmphasisText": "every day.",
     "titleFont": "default",
     "titleFontSize": "default",
-    "titleColor": "#4b303b",
+    "titleColor": "#3f4d46",
     "titleOpacity": 1,
     "titleEmphasisColor": "#b54863",
     "titleEmphasisOpacity": 1,
@@ -198,7 +213,7 @@
     "titleText": "Find what makes you feel like you.",
     "titleFont": "default",
     "titleFontSize": "default",
-    "titleColor": "#4b303b",
+    "titleColor": "#3f4d46",
     "titleOpacity": 1,
     "introText": "From a familiar fragrance to a new hair color for a special day, browse the collection at your own pace.",
     "introFont": "default",
@@ -219,7 +234,7 @@
     "titleEmphasisText": "beautiful.",
     "titleFont": "default",
     "titleFontSize": "default",
-    "titleColor": "#4b303b",
+    "titleColor": "#3f4d46",
     "titleOpacity": 1,
     "titleEmphasisColor": "#b54863",
     "titleEmphasisOpacity": 1,
@@ -245,7 +260,7 @@
     "tagFontSize": "default",
     "tagColor": "#fff8f4",
     "tagOpacity": 1,
-    "tagBackgroundColor": "#4b303b",
+    "tagBackgroundColor": "#3f4d46",
     "tagBackgroundOpacity": 1
   },
   "contact": {
@@ -297,7 +312,7 @@
     "linksLineOpacity": 0.2,
     "linksHoverColor": "#d4ad55",
     "linksHoverOpacity": 1,
-    "panelBackgroundColor": "#4b303b",
+    "panelBackgroundColor": "#3f4d46",
     "panelBackgroundOpacity": 1
   },
   "footer": {
@@ -321,7 +336,7 @@
     "taglineFontSize": "default",
     "taglineColor": "#fffaf8",
     "taglineOpacity": 0.639,
-    "backgroundColor": "#4b303b",
+    "backgroundColor": "#3f4d46",
     "backgroundOpacity": 1,
     "dividerColor": "#fffaf8",
     "dividerOpacity": 0.18

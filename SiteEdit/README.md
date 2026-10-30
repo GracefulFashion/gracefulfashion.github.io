@@ -70,7 +70,7 @@ Phone numbers are checked by the server. The checkout form only shows hints. Per
 
 ## Cart page and payment-result page styling
 
-`SiteEdit/Cart.json` is organised as groups that follow the page from the top down: `basePalette`, `cartHeading`, `cartItems`, `orderSummary` (with `formColors` and `payButton` inside it), the checkout form wording block, `emptyCart`, and `paymentStatusPage`. Inside each group the words come first, then every colour with its opacity on the very next line, so `titleColor` is always followed by `titleOpacity`. Opacity runs from `0` (invisible) to `1` (solid). Colours are six-digit codes such as `#4b303b`.
+`SiteEdit/Cart.json` is organised as groups that follow the page from the top down: `basePalette`, `cartHeading`, `cartItems`, `orderSummary` (with `formColors` and `payButton` inside it), the checkout form wording block, `emptyCart`, and `paymentStatusPage`. Inside each group the words come first, then every colour with its opacity on the very next line, so `titleColor` is always followed by `titleOpacity`. Opacity runs from `0` (invisible) to `1` (solid). Colours are six-digit codes such as `#3f4d46`.
 
 Buttons sit inside the group of the section they belong to (the Continue shopping button inside `cartHeading`, the Pay button inside `orderSummary`, and the payment-result page's own Continue shopping button inside `paymentStatusPage`). Each button has a `text` and then colour sets: `normal` (resting), `hover` (mouse over), and for the Pay button also `pressed` (while checkout starts) and `disabled` (not ready to pay). Every set has `backgroundColor`, `textColor` and `borderColor`, each followed by its opacity.
 
@@ -87,11 +87,12 @@ A font size is a number with a unit such as `1.5rem` or `24px` (rem, em, px, vw,
 
 ## Home.json
 
-Groups run from the top of the page down, after two site-wide groups: `errors`, `floatingHeader`, `basePalette`, `otherButtons`, `topBar`, `navigation`, `hero`, `marquee`, `collection`, `about`, `contact`, `footer`. The top bar, navigation and footer appear on every page, so their words and colours here apply to all pages. The order of groups and lines does not matter to the site (it finds each setting by name); it is only kept tidy so things are easy to find.
+Groups run from the top of the page down, after two site-wide groups: `errors`, `floatingHeader`, `basePalette`, `otherButtons`, `goldBars`, `topBar`, `navigation`, `hero`, `marquee`, `collection`, `about`, `contact`, `footer`. The top bar, navigation and footer appear on every page, so their words and colours here apply to all pages. The order of groups and lines does not matter to the site (it finds each setting by name); it is only kept tidy so things are easy to find.
 
 - `errors`: the error picture, the "Temporarily Unavailable" words, and their font, size, colour and opacity. These are used everywhere the words appear: home page cards, category pages and product cards. `homeTilePanelColor` and its opacity are the pale panel behind the words on a home page card.
 - `floatingHeader`: `"enabled": true` keeps the dark top bar and the white logo/links bar at the top of the screen while scrolling; `false` lets them scroll away. If the line is missing or not true/false, the header does not float and the mistake is written to the Vercel logs.
 - `otherButtons`: colours, font and size for buttons that have no settings of their own (for example the page-not-found button).
+- `goldBars`: the gold bar borders on every page. `lightColor`, `middleColor` and `darkColor` are the three golds (light on the top and left of each bar, dark on the bottom and right). `large`, `medium` and `small` are the three thicknesses, each with a `Size` (such as `0.375rem`, which grows with the shopper's text size, or `6px`) and a `MinSize` and `MaxSize` that keep it between two pixel sizes. Large: navigation bar, footer, page openings, product and category cards, the rose picture's arch, the top of the cart, Terms/Privacy panels. Medium: buttons, scrolling banner, phone menu. Small: divider lines, size buttons and lists, form boxes, table lines. Corners are square, except pill-shaped buttons, where the bar follows the curve. The colour circles keep thin lines; the thin lines in the cart's item list and Order summary take their colour from Cart.json.
 - `marquee.bannerHeight` is `"default"` (today's height) or a height such as `3.5rem`.
 - `footer.legalText` is the line under the store name. Words written as `[Terms and Conditions](terms)` become a link to that legal page; see "Legal pages" below.
 
