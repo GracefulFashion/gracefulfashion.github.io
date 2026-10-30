@@ -7,28 +7,6 @@
         { "id": "mens-004-green", "image": "/SiteEdit/mens/trunks-green.jpeg", "swatch": "#2f6b45" },
         { "id": "mens-004-black", "image": "/SiteEdit/mens/trunks-black.jpeg", "swatch": "#111111" }
       ]
-    },
-    {
-      "$comment": "A product sold in colours: list each colour by its id from CatalogEdit, with its photo and the colour of its circle (a six-digit code like #c9a54a). The product's own id comes first; it groups the colours into one card.",
-      "id": "mens-005",
-      "variants": [
-        { "id": "mens-005-black", "image": "/SiteEdit/mens/tracksuit-black.jpeg", "swatch": "#121212" },
-        { "id": "mens-005-charcoal", "image": "/SiteEdit/mens/tracksuit-charcoal.jpeg", "swatch": "#555555" },
-        { "id": "mens-005-lightgray", "image": "/SiteEdit/mens/tracksuit-lightgray.jpeg", "swatch": "#EEEEEE" },
-        { "id": "mens-005-yellow", "image": "/SiteEdit/mens/tracksuit-yellow.jpeg", "swatch": "#FFFF01" },
-        { "id": "mens-005-magenta", "image": "/SiteEdit/mens/tracksuit-magenta.jpeg", "swatch": "#AB0041" }
-      ]
-    },
-    {
-      "id": "mens-006",
-      "image": "/SiteEdit/mens/sport_jacket_shorts-red.jpeg"
-    },
-    {
-      "id": "mens-007",
-      "variants": [
-        { "id": "mens-007-lightgray", "image": "/SiteEdit/mens/pleated_wide_leg_trousers-lightgray.jpeg", "swatch": "#EEEEEE" },
-        { "id": "mens-007-burgundy", "image": "/SiteEdit/mens/pleated_wide_leg_trousers-burgundy.jpeg", "swatch": "#660033" }
-      ]
     }
   ],
   "categoryPageStyle": {
