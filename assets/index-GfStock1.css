@@ -447,3 +447,19 @@ ol.gf-md-list{list-style:decimal}
 .floating-cart{background:hsl(var(--gf-fc-bg,var(--button-default-background,var(--foreground))));color:hsl(var(--gf-fc-text,var(--background)))}
 .floating-cart:hover{background:hsl(var(--gf-fc-hover-bg,var(--primary)));color:hsl(var(--gf-fc-hover-text,var(--gf-fc-text,var(--background))))}
 .floating-cart .cart-count{background:hsl(var(--gf-fc-count-bg,var(--accent)));color:hsl(var(--gf-fc-count-text,var(--foreground)))}
+/* Lightbox menus open upward (gfFitLbMenu caps their height, or adds is-down when there is more room below) */
+.gf-lb-details .size-dropdown-menu{top:auto;bottom:calc(100% + .3rem)}
+.gf-lb-details .gf-shade-menu{top:auto;bottom:calc(100% + .55rem)}
+.gf-lb-details .size-dropdown-menu.is-down{top:calc(100% + .3rem);bottom:auto}
+.gf-lb-details .gf-shade-menu.is-down{top:calc(100% + .55rem);bottom:auto}
+/* Gallery controls: a ring so arrows and dots show on white photos (colours: productCards.gallery) */
+.gf-lb-arrow{border:1px solid hsl(var(--gf-lb-arrow-border,150 10% 27.5%))}
+.gf-lb-dot:before{box-sizing:border-box;border:1px solid hsl(var(--gf-lb-dot-border,150 10% 27.5%))}
+.product-image-wrap .gf-card-arrow{width:2.25rem;height:2.25rem;margin-top:-1.125rem}
+.product-image-wrap .gf-card-arrow.gf-lb-prev{left:.5rem}
+.product-image-wrap .gf-card-arrow.gf-lb-next{right:.5rem}
+.product-image-wrap .gf-card-arrow:focus-visible{outline:2px solid hsl(var(--gf-lb-dot-on,var(--primary)));outline-offset:2px}
+/* Category hero: All collections button bottom-right, level with the bottom of the description */
+@media(min-width:701px){.gf-category-hero .page-width{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:2rem}
+.gf-category-hero .page-width>h1,.gf-category-hero .page-width>p{grid-column:1}
+.gf-category-hero .gf-cat-back{grid-column:2;grid-row:1/span 2;align-self:end;margin-bottom:0}}

@@ -200,25 +200,28 @@ A colour can have shades, for example Red → Red, Wine, Crimson. The shades (na
 Tapping a product photo opens a large view (a "lightbox") over the page. It works on every category page, with or without extra photos. It shows:
 
 - the card's photo, followed by any photos in the product's `gallery` list. Use the left/right arrows, the dots, or swipe sideways to move between photos. The arrows and dots only appear when there is more than one photo.
-- the product name, price, colour circles, the **description** from CatalogEdit, the size choice, the stock line and Add to cart. These are the same controls as on the card, so choosing a size or adding to the cart in one shows in the other.
+- the product name, price, colour circles, the **description** from CatalogEdit, the size choice, the stock line and Add to cart. These are the same controls as on the card, so choosing a size or adding to the cart in one shows in the other. The description is the most specific one written in CatalogEdit: a shade's own, else its colour's, else the product's.
+- the size and shade lists open upward inside the lightbox, so a long list never pushes the box past the bottom of the screen (on tablets too).
+
+A card whose product (or chosen colour) has a gallery also gets left/right arrows on its photo, without dots. Tapping the photo itself opens the lightbox on the photo the card is showing.
 
 Close it with the X in the corner, a tap on the dark area outside it, the phone's Back button, or the Esc key.
 
 Extra photos go in a `gallery` list next to `image` in the category's products list. The `image` stays the card's photo and comes first in the lightbox. For a product sold in colours, each colour has its own gallery, so tapping a colour circle in the lightbox switches to that colour's photos:
 
 ```json
-{ "id": "shoes-002-gold",
-  "image": "/SiteEdit/shoes/leaf-lace-heels-gold.jpg",
-  "gallery": ["/SiteEdit/shoes/leaf-lace-heels-gold-side.jpg", "/SiteEdit/shoes/leaf-lace-heels-gold-back.jpg"],
-  "swatch": "#c9a54a" }
+{ "id": "body-wash-002-chamomile",
+  "image": "/SiteEdit/body-care/body_wash_example2.webp",
+  "gallery": ["/SiteEdit/body-care/body_wash_example3.jpg", "/SiteEdit/body-care/body_wash_example4.jpg"],
+  "swatch": "#c6c500" }
 ```
 
-A product with no colours puts `gallery` right next to its own `image`. The paths in Shoes.json now are placeholders that use the other colours' photos. Replace them with real photos when you have them.
+A product with no colours puts `gallery` right next to its own `image`.
 
 - `gallery` is optional. Without it, the lightbox shows just the one photo.
 - A gallery photo that can't be found shows the error picture and is reported to the Vercel logs, like any other photo. A `gallery` that isn't a list in square brackets `[ ]` is reported as well.
-- Only the photo being viewed and its neighbours are downloaded, and only once the lightbox is opened. Opening a category page costs no more data than before. Keep photos around 1200 pixels on the long side (roughly 200–300 KB each) so they stay quick on mobile data.
-- Looks are set in `categoryPageStyle` → `productCards` → `lightbox`: backdrop, panel and photo background, name and description (font, size, colour), the arrow buttons, the dots and the close button. A category without this group uses the same default look as Shoes. To use these settings everywhere, copy the whole `categoryPageStyle` block from Shoes.json as usual.
+- Only the photo being viewed and its neighbours are downloaded, and only once the lightbox is opened; a card's arrows load the next photo only when tapped. Opening a category page costs no more data than before. Keep photos around 1200 pixels on the long side (roughly 200–300 KB each) so they stay quick on mobile data.
+- The arrow buttons (cards and lightbox) and the dots are set in Home.json → `categoryPages` → `productCards` → `gallery`: `arrowButtons` (background, arrow and ring colour) and `dots` (dot, current dot and ring colour). Every category uses these through `"default"`; a category can override one value in its own `categoryPageStyle`. The ring's width stays in the style sheet.
 
 ## When something can't be shown ("Temporarily Unavailable")
 
