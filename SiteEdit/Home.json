@@ -291,11 +291,11 @@
         "font": "default",
         "fontSize": "default",
         "normal": {
-          "backgroundColor": "#455e37",
+          "backgroundColor": "#4B303E",
           "backgroundOpacity": 1,
           "textColor": "#fff8f4",
           "textOpacity": 1,
-          "borderColor": "#455e37",
+          "borderColor": "#4B303E",
           "borderOpacity": 1
         },
         "hover": {
@@ -309,11 +309,11 @@
       },
       "titleFont": "default",
       "titleFontSize": "default",
-      "titleColor": "#3f4d46",
+      "titleColor": "#4B303E",
       "titleOpacity": 1,
       "descriptionFont": "default",
       "descriptionFontSize": "default",
-      "descriptionColor": "#806670",
+      "descriptionColor": "#4B303E",
       "descriptionOpacity": 1
     },
     "subcategories": {
@@ -330,11 +330,11 @@
         "font": "default",
         "fontSize": "default",
         "normal": {
-          "backgroundColor": "#455e37",
+          "backgroundColor": "#4B303E",
           "backgroundOpacity": 1,
           "textColor": "#fff8f4",
           "textOpacity": 1,
-          "borderColor": "#455e37",
+          "borderColor": "#4B303E",
           "borderOpacity": 1
         },
         "hover": {
@@ -487,11 +487,11 @@
           "borderOpacity": 1
         },
         "dots": {
-          "dotColor": "#ffffff",
+          "dotColor": "#4B303E",
           "dotOpacity": 1,
-          "activeDotColor": "#3f4d46",
+          "activeDotColor": "#b54863",
           "activeDotOpacity": 1,
-          "borderColor": "#3f4d46",
+          "borderColor": "#4B303E",
           "borderOpacity": 1
         }
       }
