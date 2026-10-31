@@ -463,3 +463,20 @@ ol.gf-md-list{list-style:decimal}
 @media(min-width:701px){.gf-category-hero .page-width{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:2rem}
 .gf-category-hero .page-width>h1,.gf-category-hero .page-width>p{grid-column:1}
 .gf-category-hero .gf-cat-back{grid-column:2;grid-row:1/span 2;align-self:end;margin-bottom:0}}
+/* Gallery sizes (productCards.gallery ... Size). The arrow icon scales with its button; an invisible
+   tap area keeps every arrow and dot at least 2.25rem wide for fingers. */
+.gf-lb-arrow{--gf-arrow-s:var(--gf-lb-arrow-size,1.8rem);width:var(--gf-arrow-s);height:var(--gf-arrow-s);margin-top:calc(var(--gf-arrow-s)/-2)}
+.product-image-wrap .gf-card-arrow{--gf-arrow-s:var(--gf-card-arrow-size,1.45rem);width:var(--gf-arrow-s);height:var(--gf-arrow-s);margin-top:calc(var(--gf-arrow-s)/-2)}
+.gf-lb-arrow svg{width:45%;height:45%}
+.gf-lb-arrow:after{content:"";position:absolute;inset:calc((min(var(--gf-arrow-s),2.25rem) - 2.25rem)/2)}
+.gf-lb-dots{gap:0}
+.gf-lb-dot{width:max(2.25rem,calc(var(--gf-lb-dot-size,.55rem) + 1rem));height:max(2.25rem,calc(var(--gf-lb-dot-size,.55rem) + 1rem))}
+.gf-lb-dot:before{width:var(--gf-lb-dot-size,.55rem);height:var(--gf-lb-dot-size,.55rem)}
+/* Centred grids: same card widths as before, a short last row sits in the middle */
+.product-grid{--gf-gap:1.1rem;--gf-per-row:4;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--gf-gap)}
+.product-grid>*{flex:0 0 calc((100% - (var(--gf-per-row) - 1)*var(--gf-gap))/var(--gf-per-row));max-width:calc((100% - (var(--gf-per-row) - 1)*var(--gf-gap))/var(--gf-per-row))}
+.category-strip{--gf-gap:.75rem;--gf-per-row:5;display:flex;flex-wrap:wrap;justify-content:center;gap:var(--gf-gap)}
+.category-strip>*{flex:0 0 calc((100% - (var(--gf-per-row) - 1)*var(--gf-gap))/var(--gf-per-row));max-width:calc((100% - (var(--gf-per-row) - 1)*var(--gf-gap))/var(--gf-per-row))}
+@media(max-width:960px){.product-grid{--gf-per-row:3}.category-strip{--gf-per-row:4}}
+@media(max-width:700px){.product-grid{--gf-gap:.7rem;--gf-per-row:2}.category-strip{--gf-per-row:2}}
+

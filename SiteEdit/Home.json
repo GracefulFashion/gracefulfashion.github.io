@@ -477,8 +477,10 @@
         }
       },
       "gallery": {
-        "$comment": "PHOTO GALLERY CONTROLS, for products with a \"gallery\" list of extra photos. arrowButtons = the round < > buttons on the product card's photo and in the large photo view (lightbox). dots = the small circles under the lightbox photo, one per photo; the one being shown uses activeDotColor (cards show arrows only). Products without a gallery show none of these.",
+        "$comment": "PHOTO GALLERY CONTROLS, for products with a \"gallery\" list of extra photos. arrowButtons = the round < > buttons on the product card's photo and in the large photo view (lightbox). dots = the small circles under the lightbox photo, one per photo; the one being shown uses activeDotColor (cards show arrows only). Products without a gallery show none of these. Sizes are a number with rem or px, like \"1.8rem\" (1rem is about 16px); however small they look, the tap area stays at least 2.25rem.",
         "arrowButtons": {
+          "lightboxSize": "1.8rem",
+          "cardSize": "1.45rem",
           "backgroundColor": "#ffffff",
           "backgroundOpacity": 0.49,
           "arrowColor": "#3f4d46",
@@ -487,6 +489,7 @@
           "borderOpacity": 1
         },
         "dots": {
+          "size": ".55rem",
           "dotColor": "#4B303E",
           "dotOpacity": 1,
           "activeDotColor": "#b54863",
