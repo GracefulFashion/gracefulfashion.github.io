@@ -221,7 +221,7 @@ A product with no colours puts `gallery` right next to its own `image`.
 - `gallery` is optional. Without it, the lightbox shows just the one photo.
 - A gallery photo that can't be found shows the error picture and is reported to the Vercel logs, like any other photo. A `gallery` that isn't a list in square brackets `[ ]` is reported as well.
 - Only the photo being viewed and its neighbours are downloaded, and only once the lightbox is opened; a card's arrows load the next photo only when tapped. Opening a category page costs no more data than before. Keep photos around 1200 pixels on the long side (roughly 200–300 KB each) so they stay quick on mobile data.
-- The arrow buttons (cards and lightbox) and the dots are set in Home.json → `categoryPages` → `productCards` → `gallery`: `arrowButtons` (background, arrow and ring colour) and `dots` (dot, current dot and ring colour). Every category uses these through `"default"`; a category can override one value in its own `categoryPageStyle`. The ring's width stays in the style sheet.
+- The arrow buttons (cards and lightbox) and the dots are set in Home.json → `categoryPages` → `productCards` → `gallery`: `arrowButtons` (background, arrow and ring colour, plus `lightboxSize` and `cardSize`) and `dots` (dot, current dot and ring colour, plus `size`). Sizes are written like `"1.8rem"`; however small the arrows and dots look, the area a finger can tap stays at least 2.25rem. Every category uses these through `"default"`; a category can override one value in its own `categoryPageStyle`. The ring's width stays in the style sheet.
 
 ## When something can't be shown ("Temporarily Unavailable")
 
