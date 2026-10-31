@@ -9,7 +9,7 @@
       "id": "body-wash-002",
       "subcategory": "body-wash",
       "variants": [
-        { "id": "body-wash-002-chamomile", "image": "/SiteEdit/body-care/body_wash_example2.webp", "swatch": "#c6c500" },
+        { "id": "body-wash-002-chamomile", "image": "/SiteEdit/body-care/body_wash_example2.webp", "gallery": [ "/SiteEdit/body-care/body_wash_example3.jpg", "/SiteEdit/body-care/body_wash_example4.jpg", "/SiteEdit/body-care/body_wash_example5.jpg" ], "swatch": "#c6c500" },
         { "id": "body-wash-002-green-tea", "image": "/SiteEdit/body-care/body_wash_example2.webp", "swatch": "#11a200" }
       ]
     },
