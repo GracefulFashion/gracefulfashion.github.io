@@ -480,7 +480,7 @@
         "$comment": "PHOTO GALLERY CONTROLS, for products with a \"gallery\" list of extra photos. arrowButtons = the round < > buttons on the product card's photo and in the large photo view (lightbox). dots = the small circles under the lightbox photo, one per photo; the one being shown uses activeDotColor (cards show arrows only). Products without a gallery show none of these.",
         "arrowButtons": {
           "backgroundColor": "#ffffff",
-          "backgroundOpacity": 0.88,
+          "backgroundOpacity": 0.49,
           "arrowColor": "#3f4d46",
           "arrowOpacity": 1,
           "borderColor": "#3f4d46",
