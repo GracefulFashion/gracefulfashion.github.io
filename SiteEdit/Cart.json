@@ -191,7 +191,7 @@
       "pickupAddressTextOpacity": 1
     },
     "choiceTiles": {
-      "$comment": "PICKUP / DELIVERY CHOICE TILES. normal = not chosen, hover = mouse over, selected = the one the customer picked. Normal tiles have the gold bar border; on hover and when selected the gold bar is swapped for a solid bar in that state's borderColor. font/fontSize are for the big word (PICKUP), descriptionFont/descriptionFontSize for the small line under it.",
+      "$comment": "PICKUP / DELIVERY CHOICE TILES. normal = not chosen, hover = mouse over, selected = the one the customer picked. Every tile keeps the gold bar border; on hover and when selected, borderColor is a thin line just inside the gold bar. font/fontSize are for the big word (PICKUP), descriptionFont/descriptionFontSize for the small line under it.",
       "font": "default",
       "fontSize": "default",
       "descriptionFont": "default",

@@ -491,12 +491,12 @@ ol.gf-md-list{list-style:decimal}
 .gf-shade-option.is-out[aria-selected=true]{opacity:.75;outline:1px solid hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));outline-offset:-2px}
 
 /* Choice tiles (Pickup / Delivery), settings in Cart.json orderSummary.choiceTiles.
-   Normal tiles keep the small gold bar. On hover and when selected the gold bar is
-   replaced by a solid bar (same width) in that state's borderColor, and the tile
-   takes that state's background, text and description colours. */
-.cart-page .gf-method:hover{border-image:none;border-color:hsl(var(--gf-form-tile-hover,var(--primary)));background:hsl(var(--gf-tile-hover-bg,var(--gf-form-tile-bg,var(--background))))}
+   The gold bar stays on every state. On hover and when selected a thin line in that
+   state's borderColor is drawn just inside the gold bar, and the tile takes that
+   state's background, text and description colours. */
+.cart-page .gf-method:hover{box-shadow:inset 0 0 0 1px hsl(var(--gf-form-tile-hover,var(--primary)));background:hsl(var(--gf-tile-hover-bg,var(--gf-form-tile-bg,var(--background))))}
 .cart-page .gf-method:hover strong{color:hsl(var(--gf-tile-hover-text,var(--gf-form-tile-text,var(--foreground))))}
 .cart-page .gf-method:hover small{color:hsl(var(--gf-tile-hover-desc,var(--gf-form-tile-desc,var(--muted-foreground))))}
-.cart-page .gf-method.is-selected{border-image:none;border-color:hsl(var(--gf-form-tile-sel-border,var(--primary)));background:hsl(var(--gf-form-tile-sel-bg,var(--secondary)));box-shadow:none}
+.cart-page .gf-method.is-selected{background:hsl(var(--gf-form-tile-sel-bg,var(--secondary)));box-shadow:inset 0 0 0 1px hsl(var(--gf-form-tile-sel-border,var(--primary)))}
 .cart-page .gf-method.is-selected strong{color:hsl(var(--gf-tile-sel-text,var(--gf-form-tile-text,var(--foreground))))}
 .cart-page .gf-method.is-selected small{color:hsl(var(--gf-tile-sel-desc,var(--gf-form-tile-desc,var(--muted-foreground))))}
