@@ -248,7 +248,7 @@ body{white-space:pre-wrap}
 .gf-shade-menu.is-end{right:-.25rem}
 .gf-shade-option{display:flex;align-items:center;gap:.55rem;width:100%;min-height:2.4rem;padding:.5rem .7rem;border:0;border-bottom:1px solid hsl(var(--gf-dd-menu-border,var(--border)));background:transparent;color:hsl(var(--gf-dd-opt-text,var(--foreground)));font-size:.76rem;font-weight:700;text-align:left;cursor:pointer}
 .gf-shade-option:last-child{border-bottom:0}
-.gf-shade-option:hover:not(:disabled),.gf-shade-option[aria-selected=true]{background:hsl(var(--gf-dd-opt-hi-bg,var(--primary)));color:hsl(var(--gf-dd-opt-hi-text,var(--primary-foreground)))}
+.gf-shade-option:hover:not(:disabled):not(.is-out),.gf-shade-option[aria-selected=true]:not(.is-out){background:hsl(var(--gf-dd-opt-hi-bg,var(--primary)));color:hsl(var(--gf-dd-opt-hi-text,var(--primary-foreground)))}
 .gf-shade-option:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
 .gf-shade-dot{flex:0 0 auto;width:1rem;height:1rem;border-radius:50%;border:1px solid hsl(var(--gf-sw-border,var(--muted-foreground)/.6));background:var(--gf-swatch,transparent)}
 .gf-shade-dot.is-missing{background:repeating-linear-gradient(45deg,#d9d9d9 0 3px,#fff 3px 6px);border-style:dashed}
@@ -485,4 +485,7 @@ ol.gf-md-list{list-style:decimal}
 /* Sold-out sizes: colours and fade from Home.json productCards.sizeButtons.soldOut* and sizeDropdown.optionSoldOut* (vars set on the category page). Fallbacks = the old built-in look. */
 .category-products .size-button:disabled,.category-products .size-button:disabled:hover{opacity:var(--gf-sb-out-fade,.4);cursor:not-allowed;text-decoration:line-through;text-decoration-color:hsl(var(--gf-sb-out-line,var(--muted-foreground)));color:hsl(var(--gf-sb-out-text,var(--muted-foreground)));background:hsl(var(--gf-sb-out-bg,0 0% 0% / 0))}
 .category-products .size-dropdown-option:disabled,.category-products .size-dropdown-option:disabled:hover{opacity:var(--gf-dd-out-fade,.4);cursor:not-allowed;text-decoration:line-through;text-decoration-color:hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));color:hsl(var(--gf-dd-out-text,var(--gf-dd-opt-text,var(--foreground))));background:transparent}
-.gf-shade-option:disabled,.gf-shade-option:disabled:hover{opacity:var(--gf-dd-out-fade,.45);cursor:not-allowed;text-decoration:line-through;text-decoration-color:hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));color:hsl(var(--gf-dd-out-text,var(--gf-dd-opt-text,var(--foreground))));background:transparent}
+.gf-shade-option:disabled,.gf-shade-option:disabled:hover,.gf-shade-option.is-out,.gf-shade-option.is-out:hover{opacity:var(--gf-dd-out-fade,.45);cursor:pointer;text-decoration:line-through;text-decoration-color:hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));color:hsl(var(--gf-dd-out-text,var(--gf-dd-opt-text,var(--foreground))));background:transparent}
+
+/* A sold-out shade can be picked to see its photo and price; when it is the chosen one it keeps its line-through look with a soft outline. */
+.gf-shade-option.is-out[aria-selected=true]{opacity:.75;outline:1px solid hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));outline-offset:-2px}
