@@ -114,6 +114,28 @@
         }
       }
     },
+    "backToTopButton": {
+      "$comment": "BACK TO TOP BUTTON under the cards (see Home.json > categoryPages > backToTopButton).",
+      "text": "default",
+      "font": "default",
+      "fontSize": "default",
+      "normal": {
+        "backgroundColor": "default",
+        "backgroundOpacity": "default",
+        "textColor": "default",
+        "textOpacity": "default",
+        "borderColor": "default",
+        "borderOpacity": "default"
+      },
+      "hover": {
+        "backgroundColor": "default",
+        "backgroundOpacity": "default",
+        "textColor": "default",
+        "textOpacity": "default",
+        "borderColor": "default",
+        "borderOpacity": "default"
+      }
+    },
     "productCards": {
       "$comment": "THE PRODUCT CARDS. Product names and prices come from the shop database, so only their look is set here.",
       "cardBackgroundColor": "default",
