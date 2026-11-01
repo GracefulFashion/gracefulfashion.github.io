@@ -154,11 +154,11 @@ A category page can split its products into groups, each with its own heading. H
 
 The product card and cart show live stock from the backend. All of this wording has a built-in default, so nothing below has to be added. To change a word, add the line to the matching group.
 
-- **Product cards** (add inside a collection file's `productCards` group): `stockSelectSizeText` ("In Stock: Select a size"), `stockCountText` ("In Stock: {n}", where `{n}` becomes the number), `soldOutText` ("Sold out"), and under `addButton`: `maxInCartText` ("Maximum in cart").
+- **Product cards** (add inside a collection file's `productCards` group): `stockSelectSizeText` ("In Stock: Select a size"), `stockCountText` ("In Stock: {n}", where `{n}` becomes the number), `stockNotTrackedText` ("In Stock", shown instead of a number for items with `"requireStock": false` in the backend's CatalogEdit), `soldOutText` ("Sold out"), and under `addButton`: `maxInCartText` ("Maximum in cart").
 - **Cart items** (`Cart.json`, `cartItems` group): `stockLimitText`, `maxPerItemText`, `contactLinkText`, `cartUpdatedPrefixText`, `stockChangedText`, `cartUpdatedText`.
 - **Order summary** (`Cart.json`, `orderSummary` group): `deliveryLabelText` (Delivery Fee), `deliveryPromptText`, `noDeliveryFeeText`, `taxLabelText`, `taxIncludedText`, `vatIncludedText` (`{percent}` becomes the rate) and `totalLabelText`.
 
-The most of one item a customer can order (default 10) is set in the BACKEND file `CatalogEdit/limits.json`, not here. Sizes with no stock cannot be picked. Delivery fees and tax rates are set in the backend file `DeliveryEdit/areas.json`. Prices already include VAT, so the cart's Tax row only says Included.
+The most of one item a customer can order (default 10) is set in the BACKEND file `CatalogEdit/limits.json`, not here. Sizes with no stock cannot be picked. Items with `"requireStock": false` in CatalogEdit (whole file, product, colour or shade) are never sold out: they skip the stock check and are limited only by that maximum. Delivery fees and tax rates are set in the backend file `DeliveryEdit/areas.json`. Prices already include VAT, so the cart's Tax row only says Included.
 
 ## Products in several colours
 
