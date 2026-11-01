@@ -146,6 +146,7 @@ A category page can split its products into groups, each with its own heading. H
 - A subcategory with no products is not shown, so you can list one before its products arrive.
 - With two or more groups, a row of buttons above the first heading jumps to each group. Each button is that group's shareable link, and the browser's Back button returns to where you were.
 - Colours, fonts and the word "More" are in `categoryPageStyle` → `subcategories` (heading, the thin line under it, and the jump buttons' `normal` and `hover` looks). Every category file has this group; like the rest of `categoryPageStyle` it says `"default"` and follows `Home.json` → `categoryPages`.
+- A centred **Back to Top** button sits under each group's cards (on a category without subcategories, under all the cards). It glides back to the top of the page and takes any `#hair-coloring` off the address. A button that is already on the first screen when the page opens is hidden, so short pages don't show one. Its words, font and `normal`/`hover` colours are in `Home.json` → `categoryPages` → `backToTopButton`; a colour left as `"default"` copies the jump buttons.
 - Subcategories are a SiteEdit setting only. The backend's CatalogEdit files and the admin stock page are not affected.
 
 
