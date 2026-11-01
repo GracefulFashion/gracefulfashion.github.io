@@ -481,3 +481,8 @@ ol.gf-md-list{list-style:decimal}
 @media(max-width:960px){.product-grid{--gf-per-row:3}.category-strip{--gf-per-row:4}}
 @media(max-width:700px){.product-grid{--gf-gap:.7rem;--gf-per-row:2}.category-strip{--gf-per-row:2}}
 
+
+/* Sold-out sizes: colours and fade from Home.json productCards.sizeButtons.soldOut* and sizeDropdown.optionSoldOut* (vars set on the category page). Fallbacks = the old built-in look. */
+.category-products .size-button:disabled,.category-products .size-button:disabled:hover{opacity:var(--gf-sb-out-fade,.4);cursor:not-allowed;text-decoration:line-through;text-decoration-color:hsl(var(--gf-sb-out-line,var(--muted-foreground)));color:hsl(var(--gf-sb-out-text,var(--muted-foreground)));background:hsl(var(--gf-sb-out-bg,0 0% 0% / 0))}
+.category-products .size-dropdown-option:disabled,.category-products .size-dropdown-option:disabled:hover{opacity:var(--gf-dd-out-fade,.4);cursor:not-allowed;text-decoration:line-through;text-decoration-color:hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));color:hsl(var(--gf-dd-out-text,var(--gf-dd-opt-text,var(--foreground))));background:transparent}
+.gf-shade-option:disabled,.gf-shade-option:disabled:hover{opacity:var(--gf-dd-out-fade,.45);cursor:not-allowed;text-decoration:line-through;text-decoration-color:hsl(var(--gf-dd-out-line,var(--gf-dd-opt-text,var(--foreground))));color:hsl(var(--gf-dd-out-text,var(--gf-dd-opt-text,var(--foreground))));background:transparent}
