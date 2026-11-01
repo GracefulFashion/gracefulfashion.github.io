@@ -400,7 +400,7 @@
         "borderColor": "#e5cfd5",
         "borderOpacity": 1,
         "backgroundColor": "#4B303E",
-        "backgroundOpacity": 0,
+        "backgroundOpacity": 1,
         "highlightTextColor": "#ffffff",
         "highlightTextOpacity": 1,
         "highlightBorderColor": "#b54863",
