@@ -45,11 +45,11 @@
     "font": "default",
     "fontSize": "default",
     "normal": {
-      "backgroundColor": "#455e37",
+      "backgroundColor": "#4B303E",
       "backgroundOpacity": 1,
       "textColor": "#fff8f4",
       "textOpacity": 1,
-      "borderColor": "#455e37",
+      "borderColor": "#4B303E",
       "borderOpacity": 1
     },
     "hover": {
@@ -69,11 +69,11 @@
       "borderOpacity": 1
     },
     "disabled": {
-      "backgroundColor": "#455e37",
+      "backgroundColor": "#4B303E",
       "backgroundOpacity": 0.45,
       "textColor": "#fff8f4",
       "textOpacity": 0.45,
-      "borderColor": "#455e37",
+      "borderColor": "#4B303E",
       "borderOpacity": 0.45
     }
   },
