@@ -179,7 +179,7 @@
       "sizeLabelColor": "default",
       "sizeLabelOpacity": "default",
       "sizeButtons": {
-        "$comment": "SIZE BUTTONS (for products with a few sizes such as S, M, L). 'highlight' is the look when hovered or selected.",
+        "$comment": "SIZE BUTTONS (for products with a few sizes such as S, M, L). 'highlight' is the look when hovered or selected. 'soldOut' is the look of a size with none left: it can't be tapped, and its words get a line through them (soldOutLineColor). soldOutFade fades the whole button, gold bar included: 1 = no fade, 0.4 = quite faint.",
         "buttonFont": "default",
         "buttonFontSize": "default",
         "textColor": "default",
@@ -193,10 +193,17 @@
         "highlightBorderColor": "default",
         "highlightBorderOpacity": "default",
         "highlightBackgroundColor": "default",
-        "highlightBackgroundOpacity": "default"
+        "highlightBackgroundOpacity": "default",
+        "soldOutTextColor": "default",
+        "soldOutTextOpacity": "default",
+        "soldOutBackgroundColor": "default",
+        "soldOutBackgroundOpacity": "default",
+        "soldOutLineColor": "default",
+        "soldOutLineOpacity": "default",
+        "soldOutFade": "default"
       },
       "sizeDropdown": {
-        "$comment": "SIZE DROPDOWN (for products with a longer list of sizes, such as shoes). The same look is used for the cart's State, Town and Pickup menus.",
+        "$comment": "SIZE DROPDOWN (for products with a longer list of sizes, such as shoes). The same look is used for the cart's State, Town and Pickup menus. 'optionSoldOut' is the look of a size with none left in the menu: it can't be picked, and its words get a line through them. optionSoldOutFade fades the whole option: 1 = no fade, 0.4 = quite faint. Sold-out shades in the shade menu use the same look.",
         "placeholderText": "default",
         "placeholderFont": "default",
         "placeholderFontSize": "default",
@@ -221,7 +228,12 @@
         "optionHighlightBackgroundColor": "default",
         "optionHighlightBackgroundOpacity": "default",
         "optionHighlightTextColor": "default",
-        "optionHighlightTextOpacity": "default"
+        "optionHighlightTextOpacity": "default",
+        "optionSoldOutTextColor": "default",
+        "optionSoldOutTextOpacity": "default",
+        "optionSoldOutLineColor": "default",
+        "optionSoldOutLineOpacity": "default",
+        "optionSoldOutFade": "default"
       },
       "addButton": {
         "$comment": "ADD TO CART BUTTON. text = normal wording, addedText = wording for a moment after adding, chooseSizeText = wording while a size is still needed. States: normal, hover (mouse over), pressed (just clicked), disabled (size not chosen yet).",
