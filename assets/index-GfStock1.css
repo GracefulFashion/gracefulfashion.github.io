@@ -509,3 +509,8 @@ main.not-found h1{color:hsl(var(--gf-nf-heading,var(--foreground)))}
 main.not-found p{color:hsl(var(--gf-nf-message,var(--muted-foreground)))}
 main.not-found .button-primary{border-color:hsl(var(--gf-nf-btn-normal-border,var(--button-default-border)));background:hsl(var(--gf-nf-btn-normal-bg,var(--button-default-background)));color:hsl(var(--gf-nf-btn-normal-text,var(--button-default-foreground)))}
 main.not-found .button-primary:hover,main.not-found .button-primary:focus-visible{border-color:hsl(var(--gf-nf-btn-hover-border,var(--button-hover-border)));background:hsl(var(--gf-nf-btn-hover-bg,var(--button-hover-background)));color:hsl(var(--gf-nf-btn-hover-text,var(--button-hover-foreground)))}
+
+/* Placeholders on the cart form (grey hint text in empty boxes, and "Choose a ..." in the
+   State / Town / Pickup dropdowns until something is chosen). Colour from Cart.json
+   orderSummary.formColors.placeholderColor / placeholderOpacity. */
+.cart-page .checkout-email input::placeholder,.cart-page .gf-field input::placeholder,.cart-page .gf-field textarea::placeholder,.cart-page .size-dropdown-trigger .gf-dd-placeholder{color:hsl(var(--gf-form-placeholder,150 10% 27.5% / .5));opacity:1}
