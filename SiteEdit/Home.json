@@ -653,5 +653,48 @@
     "backgroundOpacity": 1,
     "dividerColor": "#fffaf8",
     "dividerOpacity": 0.18
+  },
+  "notFoundPage": {
+    "$comment": "THE PAGE-NOT-FOUND (404) SCREEN, shown when someone opens a web address that doesn't exist on the site. eyebrowText is the small line at the top (eyebrowLineColor is the short line before it), headingText is the big number, messageText is the sentence under it, and button is the Return home button. Each part has its own font, size, colour and opacity. backgroundColor is the colour behind all of it, between the menu and the footer. Write \"default\" for any colour to keep the normal look: the background then uses basePalette pageBackgroundColor, and the button uses the otherButtons colours.",
+    "backgroundColor": "default",
+    "backgroundOpacity": 1,
+    "eyebrowText": "A wrong turn",
+    "eyebrowFont": "default",
+    "eyebrowFontSize": "default",
+    "eyebrowColor": "#b54863",
+    "eyebrowOpacity": 1,
+    "eyebrowLineColor": "#b54863",
+    "eyebrowLineOpacity": 1,
+    "headingText": "404",
+    "headingFont": "default",
+    "headingFontSize": "default",
+    "headingColor": "#3f4d46",
+    "headingOpacity": 1,
+    "messageText": "That page has slipped out of the collection.",
+    "messageFont": "default",
+    "messageFontSize": "default",
+    "messageColor": "#806670",
+    "messageOpacity": 1,
+    "button": {
+      "text": "Return home",
+      "font": "default",
+      "fontSize": "default",
+      "normal": {
+        "backgroundColor": "default",
+        "backgroundOpacity": 1,
+        "textColor": "default",
+        "textOpacity": 1,
+        "borderColor": "default",
+        "borderOpacity": 1
+      },
+      "hover": {
+        "backgroundColor": "default",
+        "backgroundOpacity": 1,
+        "textColor": "default",
+        "textOpacity": 1,
+        "borderColor": "default",
+        "borderOpacity": 1
+      }
+    }
   }
 }
