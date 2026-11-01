@@ -2,7 +2,23 @@
   "products": [
     {
       "id": "makeup-001",
-      "image": "/SiteEdit/makeup/makeup-cover.jpg"
+      "variants": [
+        { "id": "makeup-001-red", "color": "Red", "swatch": "#c0392b", "shades": [
+          {"id": "makeup-001-red-light", "image": "/SiteEdit/makeup/makeup-001-red-light.jpg", "swatch": "#af1519"},
+          {"id": "makeup-001-red-medium", "image": "/SiteEdit/makeup/makeup-001-red-medium.jpg", "swatch": "#c0392b"},
+          {"id": "makeup-001-red-dark", "image": "/SiteEdit/makeup/makeup-001-red-dark.jpg", "swatch": "#8b0000"}
+        ] },
+        { "id": "makeup-001-blue", "color": "Blue", "swatch": "#2980b9", "shades": [
+          {"id": "makeup-001-blue-light", "image": "/SiteEdit/makeup/makeup-001-blue-light.jpg", "swatch": "#3498db"},
+          {"id": "makeup-001-blue-medium", "image": "/SiteEdit/makeup/makeup-001-blue-medium.jpg", "swatch": "#2980b9"},
+          {"id": "makeup-001-blue-dark", "image": "/SiteEdit/makeup/makeup-001-blue-dark.jpg", "swatch": "#1a5276"}
+        ] },
+        { "id": "makeup-001-green", "color": "Green", "swatch": "#27ae60", "shades": [
+          {"id": "makeup-001-green-light", "image": "/SiteEdit/makeup/makeup-001-green-light.jpg", "swatch": "#2ecc71"},
+          {"id": "makeup-001-green-medium", "image": "/SiteEdit/makeup/makeup-001-green-medium.jpg", "swatch": "#27ae60"},
+          {"id": "makeup-001-green-dark", "image": "/SiteEdit/makeup/makeup-001-green-dark.jpg", "swatch": "#145a32"}
+        ] }
+      ]
     }
   ],
   "categoryPageStyle": {
