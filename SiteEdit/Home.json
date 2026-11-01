@@ -119,7 +119,7 @@
       "contactText": "Contact",
       "font": "default",
       "fontSize": "default",
-      "textColor": "#806670",
+      "textColor": "#3f4d46",
       "textOpacity": 1,
       "hoverColor": "#b54863",
       "hoverOpacity": 1,
@@ -138,7 +138,7 @@
       "font": "default",
       "fontSize": "default",
       "normal": {
-        "backgroundColor": "#455e37",
+        "backgroundColor": "#3f4d46",
         "backgroundOpacity": 1,
         "textColor": "#fff8f4",
         "textOpacity": 1
@@ -668,12 +668,12 @@
     "headingText": "404",
     "headingFont": "default",
     "headingFontSize": "default",
-    "headingColor": "#3f4d46",
+    "headingColor": "#fffaf8",
     "headingOpacity": 1,
     "messageText": "That page has slipped out of the collection.",
     "messageFont": "default",
     "messageFontSize": "default",
-    "messageColor": "#806670",
+    "messageColor": "#fffaf8",
     "messageOpacity": 1,
     "button": {
       "text": "Return home",
